@@ -128,14 +128,15 @@ footer {
 }
 
 .generalHeader {
+  padding-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;
 }
 .generalHeader .logo {
   padding-left: 20px;
 }
 .generalHeader .logo img {
-  width: 20%;
+  width: 30%;
 }
 .generalHeader .flexCenter {
   display: -webkit-box;
@@ -149,7 +150,7 @@ footer {
           align-items: center;
 }
 .generalHeader .flexCenter h1 {
-  font-family: "MainFontBold", sans-serif;
+  font-family: "MainFontRegular", sans-serif;
   color: #30277D;
   font-size: 60px;
   text-transform: uppercase;
