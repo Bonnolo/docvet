@@ -1,7 +1,8 @@
 // time function
 const getTime = () => {
-  const date = new Date();
+  
   setInterval(() => {
+    const date = new Date();
     const hour = date.getHours();
     const minute = date.getMinutes().toString();
     const year = date.getFullYear();
