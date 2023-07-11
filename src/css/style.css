@@ -43,6 +43,7 @@ img {
 .grid {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  height: 10vh;
 }
 .grid .logo {
   padding-left: 20px;
@@ -104,4 +105,12 @@ img {
   -webkit-transform-origin: left;
           transform-origin: left;
   height: 2px;
+}
+
+.video {
+  height: 80vh;
+}
+
+footer {
+  height: 10vh;
 }/*# sourceMappingURL=style.css.map */

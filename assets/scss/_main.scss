@@ -19,6 +19,7 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  height: 10vh;
   .logo {
     padding-left: 20px;
     img {
@@ -70,3 +71,19 @@
 }
 
 // End Header Home
+
+// Main Video Home
+
+.video{
+    height: 80vh;
+}
+
+// End Main Video Home
+
+// Footer Home
+
+footer{
+    height: 10vh;
+}
+
+// End Footer Home
