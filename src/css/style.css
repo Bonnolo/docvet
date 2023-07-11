@@ -113,4 +113,15 @@ img {
 
 footer {
   height: 10vh;
+  padding: 0px 20px 0px 20px;
+  color: #30277D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }/*# sourceMappingURL=style.css.map */

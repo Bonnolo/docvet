@@ -4,6 +4,7 @@ const getTime = () => {
   setInterval(() => {
     const hour = date.getHours();
     const minute = date.getMinutes().toString();
+    const year = date.getFullYear();
 
     let set = "";
 
@@ -13,9 +14,12 @@ const getTime = () => {
       set = "PM";
     }
     // querySelector + innerHTML
-    // const time = document.querySelector("#time");
-    // time.innerHTML = `${hour}:${minute} ${set}`;
-    console.log(`${hour}:${minute.padStart(2, "0")} ${set}`);
+    const time = document.querySelector("#time");
+    const yearEl = document.querySelector("#year");
+
+    time.innerHTML = `${hour}:${minute} ${set}`;
+    yearEl.innerHTML = `${year} ® - Clinica Veterinaria Nervianese srl, via Rho 2 20014, Nerviano (MI) - P.IVA 09356660960`;
+    //console.log(`${hour}:${minute.padStart(2, "0")} ${set}`);
   }, 1000);
 };
 export default getTime;
