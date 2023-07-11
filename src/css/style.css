@@ -128,14 +128,17 @@ footer {
 }
 
 .generalHeader {
-  height: 20vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 10vh;
 }
-.generalHeader li {
+.generalHeader .logo {
+  padding-left: 20px;
+}
+.generalHeader .logo img {
+  width: 20%;
+}
+.generalHeader .flexCenter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,8 +148,16 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
 }
-.generalHeader img {
-  width: 40%;
+.generalHeader .flexEnd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 20px;
 }/*# sourceMappingURL=style.css.map */
