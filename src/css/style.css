@@ -33,4 +33,9 @@ img {
 @font-face {
   font-family: "MainFontBoldItalic";
   src: url("/assets/fonts/PTSans-BoldItalic.ttf") format("truetype");
+}
+.bg {
+  height: 100vh;
+  width: 100vw;
+  background: var(--sfondo-home, radial-gradient(165.01% 59.17% at 50% 47.78%, #0094CC 0%, #99D6EA 0.01%, #FFF 100%));
 }/*# sourceMappingURL=style.css.map */
