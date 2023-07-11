@@ -25,9 +25,12 @@
       align-items: center;
       justify-content: center;
     }
+    .active{
+        border-bottom: 3px solid $primaryColor;
+    }
     a {
       color: $primaryColor;
-      font-size: $fontSizeLarge;
+      font-size: $fontSizeMedium;
       font-family: $mainFontBold;
       text-decoration: none;
       text-transform: uppercase;
