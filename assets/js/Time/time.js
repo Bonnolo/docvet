@@ -1,3 +1,4 @@
+// time function
 const getTime = () => {
   const date = new Date();
   setInterval(() => {
@@ -11,7 +12,7 @@ const getTime = () => {
     } else {
       set = "PM";
     }
-
+    // querySelector + innerHTML
     // const time = document.querySelector("#time");
     // time.innerHTML = `${hour}:${minute} ${set}`;
     console.log(`${hour}:${minute.padStart(2, "0")} ${set}`);
