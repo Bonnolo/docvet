@@ -9,6 +9,25 @@
     <title>Staff</title>
   </head>
   <body class="bg">
+    <!-- hamburger menu -->
+    <section id="hamburger" class="hamburger">
+      <div class="hamburger-blur"></div>
+      <div class="hamburger-bg">
+        <button id="close-hamburger" class="close-menu">
+          <img src="/assets/imgs/icons/closed_menu.png" alt="" />
+        </button>
+        <ul>
+          <li>
+            <a href="index.html"><span>Home</span></a>
+          </li>
+          <li><a href="struttura.html">Struttura clinica</a></li>
+          <li><a href="specializzazioni.html">Specializzazione</a></li>
+          <li><a href="staff.html">Staff</a></li>
+          <li><a href="">Area Clienti</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+    </section>
     <header class="generalHeader">
       <div class="logo">
         <a href="index.html"
@@ -19,8 +38,16 @@
         <h1>staff</h1>
       </div>
       <div class="flexEnd">
-        <button><img src="/assets/imgs/icons/hamburger.png" alt="" /></button>
+        <button id="open-hamburger">
+          <img src="/assets/imgs/icons/hamburger.png" alt="" />
+        </button>
       </div>
     </header>
+    <footer>
+      <!-- footer injected from assets/js/time/time.js -->
+      <span id="year"></span>
+      <span id="time"></span>
+    </footer>
+    <script type="module" src="assets/js/index.js"></script>
   </body>
 </html>
