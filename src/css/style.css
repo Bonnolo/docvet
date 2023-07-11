@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+@font-face {
+  font-family: "MainFontRegular";
+  src: url("/assets/fonts/PTSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MainFontBold";
+  src: url("/assets/fonts/PTSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MainFontItalic";
+  src: url("/assets/fonts/PTSans-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MainFontBoldItalic";
+  src: url("/assets/fonts/PTSans-BoldItalic.ttf") format("truetype");
+}/*# sourceMappingURL=style.css.map */

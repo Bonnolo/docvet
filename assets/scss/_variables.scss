@@ -1,0 +1,43 @@
+//Font
+
+@font-face {
+    font-family: 'MainFontRegular';
+    src: url('/assets/fonts/PTSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MainFontBold';
+    src: url('/assets/fonts/PTSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MainFontItalic';
+    src: url('/assets/fonts/PTSans-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MainFontBoldItalic';
+    src: url('/assets/fonts/PTSans-BoldItalic.ttf') format('truetype');
+}
+
+
+$mainFontRegular: 'MainFontRegular', sans-serif;
+$mainFontBold: 'MainFontBold', sans-serif;
+$mainFontItalic: 'MainFontItalic', sans-serif;
+$mainFontBoldItalic: 'MainFontBoldItalic', sans-serif;
+
+
+// Colors
+
+$primaryColor: #30277D;
+$secondaryColor: #44A8DD;
+$black: #000000;
+$white: #FFFFFF;
+
+// Font Sizes
+
+$fontSizeSmall: 16px;
+$fontSizeMedium: 18px;
+$fontSizeLarge: 20px;
+$fontSizeExtraLarge: 22px;
+
