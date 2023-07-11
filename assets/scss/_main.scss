@@ -84,6 +84,11 @@
 
 footer{
     height: 10vh;
+    padding: 0px 20px 0px 20px;
+    color: $primaryColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 // End Footer Home
