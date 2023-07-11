@@ -3,3 +3,49 @@
     width: 100vw;
     background: var(--sfondo-home, radial-gradient(165.01% 59.17% at 50.00% 47.78%, #0094CC 0%, #99D6EA 0.01%, #FFF 100%));
 }
+
+
+// Header Home
+
+.head{
+    display: flex;
+    justify-content: space-around;
+    img{
+        width: 100%;
+        margin: 10px 10px;
+    }
+    li{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    a{
+        color: $primaryColor;
+        font-size: $fontSizeLarge;
+        font-family: $mainFontBold;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+
+    }
+    a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        width: 100%;
+        height: 1px;
+        background-color: $primaryColor;
+        border-radius: 20px;
+        scale: 0;
+        transform-origin: right;
+        transition: scale 0.25s;
+      }
+      a:hover::before {
+        scale: 1;
+        transform-origin: left;
+        height: 2px;
+
+      }
+}
