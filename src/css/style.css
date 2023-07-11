@@ -108,12 +108,13 @@ img {
 }
 
 .video {
-  height: 80vh;
+  height: 85vh;
 }
 
 footer {
-  height: 10vh;
+  height: 5vh;
   padding: 0px 20px 0px 20px;
+  font-family: "MainFontBold", sans-serif;
   color: #30277D;
   display: -webkit-box;
   display: -ms-flexbox;
