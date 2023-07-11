@@ -165,7 +165,16 @@ footer{
       align-items: center;
     }
     a{
-      color: $white;
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      font-size: $fontSizeTitle;
+      font-family: $mainFontBold;
+      text-transform: uppercase;
+      transition: all 0.8s;
+    }
+    a:hover{
+      color: $white;;
+      -webkit-text-stroke: 1px $white;
     }
   }
 }
