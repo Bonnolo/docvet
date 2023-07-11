@@ -130,7 +130,6 @@ footer {
 .generalHeader {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  height: 10vh;
 }
 .generalHeader .logo {
   padding-left: 20px;
@@ -149,6 +148,12 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+.generalHeader .flexCenter h1 {
+  font-family: "MainFontBold", sans-serif;
+  color: #30277D;
+  font-size: 60px;
+  text-transform: uppercase;
+}
 .generalHeader .flexEnd {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,4 +165,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   padding-right: 20px;
+}
+.generalHeader .flexEnd button {
+  background: none;
+  border: none;
 }/*# sourceMappingURL=style.css.map */
