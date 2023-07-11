@@ -1,6 +1,5 @@
 // time function
 const getTime = () => {
-  
   setInterval(() => {
     const date = new Date();
     const hour = date.getHours();
@@ -18,7 +17,7 @@ const getTime = () => {
     const time = document.querySelector("#time");
     const yearEl = document.querySelector("#year");
 
-    time.innerHTML = `${hour}:${minute} ${set}`;
+    time.innerHTML = `${hour}:${minute.padStart(2, "0")} ${set}`;
     yearEl.innerHTML = `${year} ® - Clinica Veterinaria Nervianese srl, via Rho 2 20014, Nerviano (MI) - P.IVA 09356660960`;
     //console.log(`${hour}:${minute.padStart(2, "0")} ${set}`);
   }, 1000);
