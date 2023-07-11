@@ -93,3 +93,23 @@ footer{
 }
 
 // End Footer Home
+
+
+// Header General
+
+.generalHeader{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    img{
+        width: 40%;
+    }
+}
+
+// End Header General
