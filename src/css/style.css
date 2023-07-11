@@ -44,6 +44,12 @@ img {
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
+.grid .logo {
+  padding-left: 20px;
+}
+.grid .logo img {
+  width: 60%;
+}
 .grid .head {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,16 +59,19 @@ img {
           justify-content: space-between;
 }
 .grid .head li {
-  margin: 0 40px;
+  margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.grid .head li:nth-child(6) {
+  padding-right: 40px;
 }
 .grid .head .active {
   border-bottom: 3px solid #30277D;
@@ -81,7 +90,7 @@ img {
   left: 0;
   bottom: -2px;
   width: 100%;
-  height: 1px;
+  height: 2px;
   background-color: #30277D;
   border-radius: 20px;
   scale: 0;
