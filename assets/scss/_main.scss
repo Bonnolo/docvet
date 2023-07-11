@@ -6,10 +6,12 @@
 
 
 // Header Home
-
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
 .head{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     img{
         width: 100%;
         margin: 10px 10px;
@@ -48,4 +50,5 @@
         height: 2px;
 
       }
+}
 }

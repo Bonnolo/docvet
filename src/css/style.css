@@ -40,18 +40,23 @@ img {
   background: var(--sfondo-home, radial-gradient(165.01% 59.17% at 50% 47.78%, #0094CC 0%, #99D6EA 0.01%, #FFF 100%));
 }
 
-.head {
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.grid .head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.head img {
+.grid .head img {
   width: 100%;
   margin: 10px 10px;
 }
-.head li {
+.grid .head li {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,7 +68,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.head a {
+.grid .head a {
   color: #30277D;
   font-size: 20px;
   font-family: "MainFontBold", sans-serif;
@@ -71,7 +76,7 @@ img {
   text-transform: uppercase;
   position: relative;
 }
-.head a::before {
+.grid .head a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -86,7 +91,7 @@ img {
   -webkit-transition: scale 0.25s;
   transition: scale 0.25s;
 }
-.head a:hover::before {
+.grid .head a:hover::before {
   scale: 1;
   -webkit-transform-origin: left;
           transform-origin: left;
