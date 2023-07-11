@@ -4,12 +4,12 @@ const openCloseMenu = () => {
 
   const hamburgerMenu = document.querySelector("#hamburger");
 
-  hamburgerElementOpen.addEventListener("click", () => {
+  hamburgerElementOpen?.addEventListener("click", () => {
     console.log("open");
     hamburgerMenu.style.display = "grid";
   });
 
-  hamburgerElementClose.addEventListener("click", () => {
+  hamburgerElementClose?.addEventListener("click", () => {
     console.log("close");
     hamburgerMenu.style.display = "none";
   });
