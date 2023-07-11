@@ -37,7 +37,7 @@ img {
 .bg {
   height: 100vh;
   width: 100vw;
-  background: var(--sfondo-home, radial-gradient(165.01% 59.17% at 50% 47.78%, #0094CC 0%, #99D6EA 0.01%, #FFF 100%));
+  background: var(--sfondo-home, radial-gradient(165.01% 59.17% at 50% 47.78%, #0094cc 0%, #99d6ea 0.01%, #fff 100%));
 }
 
 .grid {
@@ -52,12 +52,8 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.grid .head img {
-  width: 100%;
-  margin: 10px 10px;
-}
 .grid .head li {
-  width: 100%;
+  margin: 0 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -80,7 +76,7 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: -2px;
   width: 100%;
   height: 1px;
   background-color: #30277D;
@@ -88,8 +84,8 @@ img {
   scale: 0;
   -webkit-transform-origin: right;
           transform-origin: right;
-  -webkit-transition: scale 0.25s;
-  transition: scale 0.25s;
+  -webkit-transition: scale 0.5s;
+  transition: scale 0.5s;
 }
 .grid .head a:hover::before {
   scale: 1;
