@@ -114,7 +114,7 @@ img {
 .contatti {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 85vh;
+  height: 75vh;
 }
 .contatti .contattiLeft {
   display: -webkit-box;
@@ -191,6 +191,14 @@ img {
   -webkit-box-shadow: 2px 2px 0px 1px #44A8DD;
           box-shadow: 2px 2px 0px 1px #44A8DD;
   cursor: pointer;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.contatti .contattiLeft .formGroup button:hover {
+  -webkit-box-shadow: 2px 2px 0px 1px #30277D;
+          box-shadow: 2px 2px 0px 1px #30277D;
+  background-color: #44A8DD;
+  color: #30277D;
 }
 .contatti .contattiRight {
   display: -webkit-box;
