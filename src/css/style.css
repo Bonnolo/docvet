@@ -170,6 +170,7 @@ footer {
 .generalHeader .flexEnd button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -200,6 +201,7 @@ footer {
   position: fixed;
   top: 20px;
   right: 20px;
+  cursor: pointer;
 }
 .hamburger .hamburger-bg ul {
   height: 100%;
