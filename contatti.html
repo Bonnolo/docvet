@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/dist/css/style.min.css" />
-    <title>Contatti</title>
+    <link rel="icon" type="image/png" href="assets/imgs/zampaDocvet.png" />
+    <title>DOCVET | Contatti</title>
   </head>
   <body class="bg">
     <header class="generalHeader">
@@ -20,5 +21,51 @@
         <button><img src="/assets/imgs/icons/hamburger.png" alt="" /></button>
       </div>
     </header>
+    <main class="contatti">
+      <div class="contattiLeft">
+        <!-- form contatti -->
+        <form action="">
+          <div class="formGroup">
+            <input type="text" id="nome" placeholder="Nome e Cognome"/>
+          </div>
+          <div class="formGroup">
+            <input type="email" id="email" placeholder="Email"/>
+          </div>
+          <div class="formGroup">
+            <textarea name="messaggio" id="messaggio" placeholder="Messaggio..." cols="30" rows="10"></textarea>
+          </div>
+          <div class="formGroup">
+            <button type="submit">Invia</button>
+          </div>
+        </form>
+      </div>
+      <div class="contattiRight">
+        <!-- mappa da google maps e sotto indirizzo e telefono -->
+        <div class="contattiRightTop">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.630742821371!2d9.1900003155671!3d45.464999979101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c7b0b0b0b0b1%3A0x9c0b0b0b0b0b0b0b!2sVia%20Rho%2020014%20Nerviano%20MI!5e0!3m2!1sit!2sit!4v1614879200000!5m2!1sit!2sit"
+            width="640px"
+            height="280px"
+            style="border: 0; border-radius: 30px;"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <div class="contattiRightBottom">
+          <div class="contattiRightBottomLeft">
+            <p>Via Rho 2, 20014 Nerviano MI</p> 
+          </div>
+          <div class="contattiRightBottomRight">
+            <p>0331 4567890</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- footer injected from assets/js/time/time.js -->
+      <span id="year"></span>
+      <span id="time"></span>
+    </footer>
+    <script type="module" src="assets/js/index.js"></script>
   </body>
 </html>
