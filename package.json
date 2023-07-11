@@ -1,0 +1,20 @@
+{
+  "name": "docvet",
+  "version": "1.0.0",
+  "description": "Docvet Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bonnolo/docvet.git"
+  },
+  "keywords": [],
+  "author": "Fabio Bonetti, Marco Sommaruga, Gianluca Prodigo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bonnolo/docvet/issues"
+  },
+  "homepage": "https://github.com/Bonnolo/docvet#readme"
+}
