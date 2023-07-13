@@ -331,3 +331,16 @@ footer{
     }
   }
 }
+
+// Structure Main
+
+.struttura{
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  height: 75vh;
+  .link-struttura{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
