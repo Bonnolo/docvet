@@ -4,7 +4,8 @@
   "description": "Docvet Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/Bonnolo/docvet/issues"
   },
-  "homepage": "https://github.com/Bonnolo/docvet#readme"
+  "homepage": "https://github.com/Bonnolo/docvet#readme",
+  "devDependencies": {
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  }
 }
