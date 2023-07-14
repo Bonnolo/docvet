@@ -1,17 +1,28 @@
+import { gsap } from "gsap";
+
 const openCloseMenu = () => {
+  //const timeline = gsap.timeline({ defaults: { duration: 0.5 } });
   const hamburgerElementOpen = document.querySelector("#open-hamburger");
   const hamburgerElementClose = document.querySelector("#close-hamburger");
 
   const hamburgerMenu = document.querySelector("#hamburger");
+  const layerBlur = document.querySelector(".hamburger-blur");
+  console.log(layerBlur);
 
   hamburgerElementOpen?.addEventListener("click", () => {
     console.log("open");
-    hamburgerMenu.style.display = "grid";
+    gsap.fromTo(hamburgerMenu, { x: 1600 }, { duration: 0.8, x: 0 });
+    gsap.fromTo(layerBlur, { opacity: 0 }, { duration: 0.3, opacity: 1 });
+    hamburgerMenu.style.display = "block";
+    layerBlur.style.display = "block";
   });
 
-  hamburgerElementClose?.addEventListener("click", () => {
+  hamburgerElementClose?.addEventListener("click", async () => {
     console.log("close");
+    gsap.to(layerBlur, { duration: 0.3, opacity: 0 });
+    await gsap.to(hamburgerMenu, { duration: 0.8, x: 1400 });
     hamburgerMenu.style.display = "none";
+    layerBlur.style.display = "none";
   });
 };
 export default openCloseMenu;
