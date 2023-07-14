@@ -285,7 +285,8 @@ footer{
 // End Header General
 
 // Hamburguer Menu
-.hamburger {
+.hamburger-blur {
+  display: none;
   position: fixed;
   left: 0;
   backdrop-filter: blur(5px);
