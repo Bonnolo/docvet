@@ -1,4 +1,4 @@
-// Background 
+// Background
 .bg {
   height: 100vh;
   width: 100vw;
@@ -23,14 +23,14 @@
   .logo {
     padding-left: 20px;
     img {
-        width: 60%;
+      width: 60%;
     }
   }
   .head {
     display: flex;
     justify-content: space-between;
     li {
-        margin-top: 20px;
+      margin-top: 20px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -74,154 +74,153 @@
 
 // Main Video Home
 
-.video{
-    height: 85vh;
+.video {
+  height: 85vh;
 }
 
 // End Main Video Home
 
 // Main Contatti
 
-.contatti{
+.contatti {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 75vh;
-  .contattiLeft{
+  .contattiLeft {
     display: flex;
     justify-content: center;
     align-items: center;
-  .formGroup{
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-family: $mainFontBold;
+        color: $primaryColor;
+        font-size: $fontSizeTitle;
+        text-transform: uppercase;
+      }
+      p {
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-left: 20px;
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        background: #fff;
+      }
+      textarea {
+        width: 100%;
+        height: 100px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-left: 20px;
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        background: #fff;
+      }
+      button {
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-family: $mainFontRegular;
+        color: #fff;
+        font-size: $fontSizeMedium;
+        background: $primaryColor;
+        box-shadow: 2px 2px 0px 1px $secondaryColor;
+        cursor: pointer;
+        transition: all 0.8s;
+      }
+      button:hover {
+        box-shadow: 2px 2px 0px 1px $primaryColor;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+      }
+    }
+  }
+  .contattiRight {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h1{
+    h1 {
       font-family: $mainFontBold;
       color: $primaryColor;
       font-size: $fontSizeTitle;
       text-transform: uppercase;
     }
-    p{
+    p {
       font-family: $mainFontRegular;
       color: $primaryColor;
       font-size: $fontSizeMedium;
       text-align: center;
     }
-    input{
-      width: 100%;
-      height: 40px;
-      border: none;
-      border-radius: 30px;
-      margin-top: 20px;
-      padding-left: 20px;
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      background: #fff;
-    }
-    textarea{
-      width: 100%;
-      height: 100px;
-      border: none;
-      border-radius: 30px;
-      margin-top: 20px;
-      padding-left: 20px;
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      background: #fff;
-    }
-    button{
-      width: 100%;
-      height: 40px;
-      border: none;
-      border-radius: 30px;
-      margin-top: 20px;
-      font-family: $mainFontRegular;
-      color: #fff;
-      font-size: $fontSizeMedium;
-      background: $primaryColor;
-      box-shadow:  2px 2px 0px 1px $secondaryColor;
-      cursor: pointer;
-      transition: all 0.8s;
-    }
-    button:hover{
-      box-shadow:  2px 2px 0px 1px $primaryColor;
-      background-color: $secondaryColor;
-      color: $primaryColor;
-    }
-    
-  }
-  }
-  .contattiRight{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1{
-      font-family: $mainFontBold;
-      color: $primaryColor;
-      font-size: $fontSizeTitle;
-      text-transform: uppercase;
-    }
-    p{
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      text-align: center;
-    }
-    .contattiRightTop{
+    .contattiRightTop {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 20px;
     }
-    .contattiRightBottom{
+    .contattiRightBottom {
       display: flex;
       justify-content: center;
       align-items: center;
       margin-top: 20px;
-      .contattiRightBottomLeft{
+      .contattiRightBottomLeft {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding-right: 20px;
-        h2{
+        h2 {
           font-family: $mainFontBold;
           color: $primaryColor;
           font-size: $fontSizeTitle;
           text-transform: uppercase;
         }
-        p{
+        p {
           font-family: $mainFontRegular;
           color: $primaryColor;
           font-size: $fontSizeMedium;
           text-align: center;
         }
-        svg{
+        svg {
           margin-right: 10px;
         }
       }
-      .contattiRightBottomRight{
+      .contattiRightBottomRight {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding-left: 20px;
-        h2{
+        h2 {
           font-family: $mainFontBold;
           color: $primaryColor;
           font-size: $fontSizeTitle;
           text-transform: uppercase;
         }
-        p{
+        p {
           font-family: $mainFontRegular;
           color: $primaryColor;
           font-size: $fontSizeMedium;
           text-align: center;
         }
-        svg{
+        svg {
           margin-right: 10px;
         }
       }
@@ -233,58 +232,58 @@
 
 // Footer Home
 
-footer{
-    height: 5vh;
-    padding: 0px 20px 0px 20px;
-    font-family: $mainFontBold;
-    color: $primaryColor;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+footer {
+  height: 5vh;
+  padding: 0px 20px 0px 20px;
+  font-family: $mainFontBold;
+  color: $primaryColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // End Footer Home
 
-
 // Header General
 
-.generalHeader{
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns:1fr 2fr 1fr;
-    .logo{
-        padding-left: 20px;
-        img{
-            width: 30%;
-        }
+.generalHeader {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  .logo {
+    padding-left: 20px;
+    img {
+      width: 30%;
     }
-    .flexCenter{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        h1{
-            font-family: $mainFontRegular;
-            color: $primaryColor;
-            font-size: $fontSizeTitle;
-            text-transform: uppercase;
-        }
+  }
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeTitle;
+      text-transform: uppercase;
     }
-    .flexEnd{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 20px;
-        button{
-            background: none;
-            border: none;
-            cursor: pointer;
-        }
+  }
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
     }
+  }
 }
 
 // End Header General
 
 // Hamburguer Menu
+
 .hamburger-blur {
   display: none;
   position: fixed;
@@ -312,7 +311,7 @@ footer{
     justify-content: center;
     padding-right: 20px;
     padding-top: 20px;
-    button{
+    button {
       background: none;
       border: none;
       position: fixed;
@@ -320,14 +319,14 @@ footer{
       right: 20px;
       cursor: pointer;
     }
-    ul{
+    ul {
       height: 100%;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
     }
-    a{
+    a {
       color: transparent;
       -webkit-text-stroke: 1px $white;
       font-size: $fontSizeTitle;
@@ -335,9 +334,83 @@ footer{
       text-transform: uppercase;
       transition: all 0.8s;
     }
-    a:hover{
-      color: $white;;
+    a:hover {
+      color: $white;
       -webkit-text-stroke: 1px $white;
     }
   }
 }
+
+// Structure Main
+
+.main-content {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  width: 100vw;
+  .grid-2rows {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeSmall;
+      }
+    }
+  }
+  .link-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .active {
+      border-bottom: 3px solid $primaryColor;
+    }
+    a {
+      color: $primaryColor;
+      font-size: $fontSizeMedium;
+      font-family: $mainFontBold;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+    }
+    a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 2px;
+      background-color: $primaryColor;
+      border-radius: 20px;
+      scale: 0;
+      transform-origin: right;
+      transition: scale 0.5s;
+    }
+    a:hover::before {
+      scale: 1;
+      transform-origin: left;
+      height: 2px;
+    }
+  }
+  .img-content {
+    background-image: url(/assets/imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: $mainFontBold;
+      color: $white;
+      font-size: $fontSizeTitle;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// End Structure Main
