@@ -11,7 +11,7 @@ const openCloseMenu = () => {
 
   hamburgerElementOpen?.addEventListener("click", () => {
     //console.log("open");
-    gsap.fromTo(hamburgerMenu, { x: 1600 }, { duration: 0.8, x: 0 });
+    gsap.fromTo(hamburgerMenu, { x: 1600 }, { duration: 0.5, x: 0 });
     gsap.fromTo(layerBlur, { opacity: 0 }, { duration: 0.3, opacity: 1 });
     hamburgerMenu.style.display = "block";
     layerBlur.style.display = "block";
