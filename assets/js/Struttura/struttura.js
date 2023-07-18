@@ -27,7 +27,7 @@ const struttura = () => {
                 content = `
                     <div class="grid-2rows">
                         <ul class="link-content">
-                            <li><a id="piano-terra">piano terra</a></li>
+                            <li><a class="active" id="piano-terra">piano terra</a></li>
                             <li><a id="primo-piano">Primo piano</a></li>
                             <li><a id="secondo-piano">secondo piano</a></li>
                         </ul>
@@ -45,7 +45,7 @@ const struttura = () => {
                     <div class="grid-2rows">
                         <ul class="link-content">
                             <li><a id="piano-terra">piano terra</a></li>
-                            <li><a id="primo-piano">Primo piano</a></li>
+                            <li><a class="active" id="primo-piano">Primo piano</a></li>
                             <li><a id="secondo-piano">secondo piano</a></li>
                         </ul>
                         <div class="description">
@@ -63,7 +63,7 @@ const struttura = () => {
                         <ul class="link-content">
                             <li><a id="piano-terra">piano terra</a></li>
                             <li><a id="primo-piano">Primo piano</a></li>
-                            <li><a id="secondo-piano">secondo piano</a></li>
+                            <li><a class="active" id="secondo-piano">secondo piano</a></li>
                         </ul>
                         <div class="description">
                             <p>
