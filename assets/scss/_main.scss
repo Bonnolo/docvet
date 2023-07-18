@@ -415,7 +415,10 @@ footer {
 
 // End Structure Main
 
-
+.active {
+  border-bottom: 3px solid $primaryColor;
+}
+  
 .pianoterra {
   background-image: url(/assets/imgs/planimetria/pianoTerra.png);
   background-size: contain;
