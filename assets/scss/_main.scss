@@ -233,7 +233,6 @@
 // Footer Home
 
 footer {
-  height: 5vh;
   padding: 0px 20px 0px 20px;
   font-family: $mainFontBold;
   color: $primaryColor;
@@ -346,6 +345,8 @@ footer {
   display: grid;
   grid-template-rows: 1fr 5fr;
   width: 100vw;
+  height: 80vh;
+  margin-bottom: 30px;
   .grid-2rows {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -413,3 +414,25 @@ footer {
 }
 
 // End Structure Main
+
+
+.pianoterra {
+  background-image: url(/assets/imgs/planimetria/pianoTerra.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.primopiano{
+  background-image: url(/assets/imgs/planimetria/primoPiano.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.secondopiano {
+  background-image: url(/assets/imgs/planimetria/secondoPiano.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
