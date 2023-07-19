@@ -13,7 +13,7 @@ const specializzazioni = () => {
             <li>
               <a href="#" id="tessuti-molli">Chirurgia dei tessuti molli e oncologica</a>
             </li>
-            <li><a href="#" id="oncologica">Medicina oncologica</a></li>
+            <li><a href="#" id="oncologica">Oncologia Medica</a></li>
           </ul>
           <div class="description">
             <p>
@@ -31,11 +31,11 @@ const specializzazioni = () => {
         content = `
         <div class="grid-2rows">
           <ul class="link-content">
-            <li><a href="#" id="mininvasiva">Chirurgia mininvasiva</a></li>
+            <li><a href="#" id="mininvasiva" class="active">Chirurgia mininvasiva</a></li>
             <li>
-              <a href="#" id="tessuti-molli">Chirurgia dei tessuti molli</a>
+              <a href="#" id="tessuti-molli">Chirurgia dei tessuti molli e oncologica</a>
             </li>
-            <li><a href="#" id="oncologica">Chirurgia Oncologica</a></li>
+            <li><a href="#" id="oncologica">Oncologia Medica</a></li>
           </ul>
           <div class="description">
             <p>
@@ -69,9 +69,9 @@ const specializzazioni = () => {
           <ul class="link-content">
             <li><a href="#" id="mininvasiva">Chirurgia mininvasiva</a></li>
             <li>
-              <a href="#" id="tessuti-molli">Chirurgia dei tessuti molli</a>
+              <a href="#" id="tessuti-molli" class="active">Chirurgia dei tessuti molli e oncologica</a>
             </li>
-            <li><a href="#" id="oncologica">Chirurgia Oncologica</a></li>
+            <li><a href="#" id="oncologica">Oncologia Medica</a></li>
           </ul>
           <div class="description">
             <p>
@@ -105,9 +105,9 @@ const specializzazioni = () => {
           <ul class="link-content">
             <li><a href="#" id="mininvasiva">Chirurgia mininvasiva</a></li>
             <li>
-              <a href="#" id="tessuti-molli">Chirurgia dei tessuti molli</a>
+              <a href="#" id="tessuti-molli">Chirurgia dei tessuti molli e oncologica</a>
             </li>
-            <li><a href="#" id="oncologica">Chirurgia Oncologica</a></li>
+            <li><a href="#" id="oncologica" class="active">Oncologia Medica</a></li>
           </ul>
           <div class="description">
             <p>
