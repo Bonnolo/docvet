@@ -1,5 +1,5 @@
 const specializzazioni = () => {
-  const mainElement = document.querySelector("main");
+  const mainElement = document.querySelector("#main-spec");
   let currentState = "img-content";
 
   const updateContent = () => {
