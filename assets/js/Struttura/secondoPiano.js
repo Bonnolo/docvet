@@ -1,8 +1,8 @@
-const primoPiano = () => {
+const secondoPiano = () => {
     const mainElement = document.querySelector("main");
-    const primopiano = document.querySelector("#primo-piano");
-  
-    primopiano?.addEventListener("click", () => {
+    const secondopiano = document.querySelector("#secondo-piano");
+    
+    secondopiano?.addEventListener("click", () => {
       mainElement.innerHTML = `
       <div class="grid-2rows">
       <ul class="link-content">
@@ -16,10 +16,9 @@ const primoPiano = () => {
         </p>
       </div>
     </div>
-    <div class="primopiano">
+    <div class="secondopiano">
     </div>`;
       });
     };
 
-    
-export default primoPiano;
+export default secondoPiano;
