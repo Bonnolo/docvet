@@ -1,12 +1,12 @@
 const struttura = () => {
-    const mainElement = document.querySelector("main");
-    let currentState = "img-content";
+  const mainElement = document.querySelector("main");
+  let currentState = "img-content";
 
-    const updateContent = () => {
-        let content;
-        switch (currentState) {
-            case "img-content":
-                content = `
+  const updateContent = () => {
+    let content;
+    switch (currentState) {
+      case "img-content":
+        content = `
                     <div class="grid-2rows">
                         <ul class="link-content">
                             <li><a id="piano-terra">piano terra</a></li>
@@ -22,9 +22,9 @@ const struttura = () => {
                     <div class="img-content">
                         <h1>Sentirsi al Sicuro</h1>
                     </div>`;
-                break;
-            case "pianoterra":
-                content = `
+        break;
+      case "pianoterra":
+        content = `
                     <div class="grid-2rows">
                         <ul class="link-content">
                             <li><a class="active" id="piano-terra">piano terra</a></li>
@@ -39,9 +39,9 @@ const struttura = () => {
                     </div>
                     <div class="pianoterra">
                     </div>`;
-                break;
-            case "primopiano":
-                content = `
+        break;
+      case "primopiano":
+        content = `
                     <div class="grid-2rows">
                         <ul class="link-content">
                             <li><a id="piano-terra">piano terra</a></li>
@@ -56,9 +56,9 @@ const struttura = () => {
                     </div>
                     <div class="primopiano">
                     </div>`;
-                break;
-            case "secondopiano":
-                content = `
+        break;
+      case "secondopiano":
+        content = `
                     <div class="grid-2rows">
                         <ul class="link-content">
                             <li><a id="piano-terra">piano terra</a></li>
@@ -73,35 +73,35 @@ const struttura = () => {
                     </div>
                     <div class="secondopiano">
                     </div>`;
-                break;
-            default:
-                content = `<div>Errore: Stato non riconosciuto</div>`;
-                break;
-        }
+        break;
+      default:
+        content = `<div>Errore: Stato non riconosciuto</div>`;
+        break;
+    }
 
-        mainElement.innerHTML = content;
+    mainElement.innerHTML = content;
 
-        const pianoterra = document.querySelector("#piano-terra");
-        const primopiano = document.querySelector("#primo-piano");
-        const secondopiano = document.querySelector("#secondo-piano");
+    const pianoterra = document.querySelector("#piano-terra");
+    const primopiano = document.querySelector("#primo-piano");
+    const secondopiano = document.querySelector("#secondo-piano");
 
-        pianoterra?.addEventListener("click", () => {
-            currentState = "pianoterra";
-            updateContent();
-        });
+    pianoterra?.addEventListener("click", () => {
+      currentState = "pianoterra";
+      updateContent();
+    });
 
-        primopiano?.addEventListener("click", () => {
-            currentState = "primopiano";
-            updateContent();
-        });
+    primopiano?.addEventListener("click", () => {
+      currentState = "primopiano";
+      updateContent();
+    });
 
-        secondopiano?.addEventListener("click", () => {
-            currentState = "secondopiano";
-            updateContent();
-        });
-    };
+    secondopiano?.addEventListener("click", () => {
+      currentState = "secondopiano";
+      updateContent();
+    });
+  };
 
-    updateContent();
+  updateContent();
 };
 
 export default struttura;
