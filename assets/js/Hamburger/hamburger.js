@@ -24,11 +24,11 @@ const openCloseMenu = () => {
     layerBlur.style.display = "none";
   };
 
-  hamburgerElementClose.addEventListener("click", async () => {
+  hamburgerElementClose?.addEventListener("click", async () => {
     //console.log("close");
     closeMenu();
   });
-  hamburgerMenu.addEventListener("click", async () => {
+  hamburgerMenu?.addEventListener("click", async () => {
     //console.log("close");
     closeMenu();
   });
