@@ -44,7 +44,7 @@ const personaleMedico = [
   {
     name: "Stefania",
     surname: "Franceschini",
-    picture: "./assets/imgs/staffimgs/ChiaraCarosso.jpg",
+    picture: "./assets/imgs/staffimgs/StefaniaFranceschini.jpg",
     title: "Dott.ssa",
     description: "Anestesia, Terapia del dolore e Terapia intensiva",
   },

@@ -3,9 +3,10 @@ import {
   personaleInfermieristico,
   peronaleReceptionist,
 } from "./config.js";
+import { gsap } from "gsap";
 
 const staff = () => {
-  const mainElement = document.querySelector("main");
+  const mainElement = document.querySelector("#staff");
   let currentState = "img-content";
 
   const updateContent = () => {
@@ -140,23 +141,32 @@ const staff = () => {
     const receptionist = document.querySelector("#receptionist");
 
     medico?.addEventListener("click", () => {
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, opacity: 1, y: 0 }
+      );
       currentState = "medico";
-      updateContent();
-      const cards = document.querySelectorAll(".cards");
 
-      cards.forEach((card) => {
-        card.addEventListener("mouseover", (e) => {
-          console.log(e.target);
-        });
-      });
+      updateContent();
     });
 
     infermieristico?.addEventListener("click", () => {
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, opacity: 1, y: 0 }
+      );
       currentState = "infermieristico";
       updateContent();
     });
 
     receptionist?.addEventListener("click", () => {
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, opacity: 1, y: 0 }
+      );
       currentState = "receptionist";
       updateContent();
     });
