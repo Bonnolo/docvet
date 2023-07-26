@@ -38,7 +38,10 @@ const struttura = () => {
                         </div>
                     </div>
                     <div class="pianoterra">
-                    </div>`;
+                    <div class="stanza"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>
+                    `;
         break;
       case "primopiano":
         content = `
@@ -100,6 +103,27 @@ const struttura = () => {
       currentState = "secondopiano";
       updateContent();
     });
+
+
+    const imgContent = document.querySelector(".stanza");
+    imgContent?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="location">
+      <div class="close-modal">
+  <img src="assets/imgs/icons/icon _close circle.svg">
+  </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+
+
+    });
+  
   };
 
   updateContent();
