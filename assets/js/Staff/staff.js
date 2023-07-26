@@ -133,8 +133,9 @@ const staff = () => {
         content = `<div>Errore: Stato non riconosciuto</div>`;
         break;
     }
-
-    mainElement.innerHTML = content;
+    if (mainElement != null) {
+      mainElement.innerHTML = content;
+    }
 
     const medico = document.querySelector("#medico");
     const infermieristico = document.querySelector("#infermieristico");

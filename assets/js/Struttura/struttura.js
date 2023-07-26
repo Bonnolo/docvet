@@ -1,5 +1,5 @@
 const struttura = () => {
-  const mainElement = document.querySelector("main");
+  const mainElement = document.querySelector("#struttura");
   let currentState = "img-content";
 
   const updateContent = () => {
@@ -78,8 +78,9 @@ const struttura = () => {
         content = `<div>Errore: Stato non riconosciuto</div>`;
         break;
     }
-
-    mainElement.innerHTML = content;
+    if (mainElement != null) {
+      mainElement.innerHTML = content;
+    }
 
     const pianoterra = document.querySelector("#piano-terra");
     const primopiano = document.querySelector("#primo-piano");
