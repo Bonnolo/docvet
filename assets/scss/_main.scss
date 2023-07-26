@@ -480,6 +480,61 @@ footer {
   height: 40px;
   top: 50%;
   left: 50%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.stanza2{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 80%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.stanza3{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 10%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.stanza4{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 20%;
+  left: 50%;
+  cursor: pointer;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+.stanza5{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 90%;
+  cursor: pointer;
   img{
     width: 40px;
     height: 40px;
@@ -487,6 +542,26 @@ footer {
 }
 
 .location{
+  background-image: url(/assets/imgs/struttura/DSC01091.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.location2{
+  background-image: url(/assets/imgs/struttura/DSC01096.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.location3{
   background-image: url(/assets/imgs/staffimgs/CaterinaBaroneresize.jpg);
   background-size: cover;
   background-position: center;
@@ -495,6 +570,28 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
+
+.location4{
+  background-image: url(/assets/imgs/staffimgs/CaterinaBaroneresize.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.location5{
+  background-image: url(/assets/imgs/staffimgs/CaterinaBaroneresize.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+
 .close-modal{
   position: absolute;
   top: 120px;
