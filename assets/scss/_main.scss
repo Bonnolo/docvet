@@ -473,6 +473,36 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.stanza{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 50%;
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.location{
+  background-image: url(/assets/imgs/staffimgs/CaterinaBaroneresize.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.close-modal{
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 // End Struttura main
 
 
