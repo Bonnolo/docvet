@@ -1,5 +1,5 @@
 const struttura = () => {
-  const mainElement = document.querySelector("main");
+  const mainElement = document.querySelector("#struttura");
   let currentState = "img-content";
 
   const updateContent = () => {
