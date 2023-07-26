@@ -136,9 +136,8 @@ const specializzazioni = () => {
     }
     if (mainElement != null) {
       mainElement.innerHTML = content;
-    } else {
-      console.log("mainElement is null");
     }
+
     const chirurgiaMininvasiva = document.querySelector("#mininvasiva");
     const tessutiMolli = document.querySelector("#tessuti-molli");
     const oncologica = document.querySelector("#oncologica");

@@ -49,7 +49,6 @@ const staff = () => {
                 </div>
               </div>
               <div class="container">
-                <div class="scrollable">
                   <section class="grid-cards">
                     ${personaleMedico
                       .map((medico) => {
@@ -61,7 +60,6 @@ const staff = () => {
                       })
                       .join("")}
                   </section>
-                </div>
               </div>
               `;
         break;
@@ -82,7 +80,6 @@ const staff = () => {
                 </div>
               </div>
               <div class="container">
-                <div class="scrollable">
                   <section class="grid-cards">
                     ${personaleInfermieristico
                       .map((medico) => {
@@ -94,7 +91,6 @@ const staff = () => {
                       })
                       .join("")}
                   </section>
-                </div>
               </div>`;
         break;
       case "receptionist":
@@ -114,7 +110,6 @@ const staff = () => {
                 </div>
               </div>
               <div class="container">
-                <div class="scrollable">
                   <section class="grid-cards">
                     ${peronaleReceptionist
                       .map((medico) => {
@@ -126,7 +121,6 @@ const staff = () => {
                       })
                       .join("")}
                   </section>
-                </div>
               </div>`;
         break;
       default:
@@ -145,31 +139,66 @@ const staff = () => {
       gsap.fromTo(
         mainElement,
         { opacity: 0, y: -800 },
-        { duration: 0.5, opacity: 1, y: 0 }
+        { duration: 0.5, delay: 0.3, opacity: 1, y: 0 }
       );
       currentState = "medico";
 
       updateContent();
+      const imgs = document.querySelectorAll(".card img");
+      imgs.forEach((img) => {
+        img.addEventListener("click", () => {
+          imgs.forEach((img) => {
+            img.parentElement.classList.remove("open");
+            img.classList.remove("open");
+          });
+          img.parentElement.classList.add("open");
+          img.classList.add("open");
+        });
+      });
     });
 
     infermieristico?.addEventListener("click", () => {
       gsap.fromTo(
         mainElement,
         { opacity: 0, y: -800 },
-        { duration: 0.5, opacity: 1, y: 0 }
+        { duration: 0.5, delay: 0.3, opacity: 1, y: 0 }
       );
       currentState = "infermieristico";
       updateContent();
+
+      const imgs = document.querySelectorAll(".card img");
+      imgs.forEach((img) => {
+        img.addEventListener("click", () => {
+          imgs.forEach((img) => {
+            img.parentElement.classList.remove("open");
+            img.classList.remove("open");
+          });
+          img.parentElement.classList.add("open");
+          img.classList.add("open");
+        });
+      });
     });
 
     receptionist?.addEventListener("click", () => {
       gsap.fromTo(
         mainElement,
         { opacity: 0, y: -800 },
-        { duration: 0.5, opacity: 1, y: 0 }
+        { duration: 0.5, delay: 0.3, opacity: 1, y: 0 }
       );
       currentState = "receptionist";
       updateContent();
+
+      const imgs = document.querySelectorAll(".card img");
+      imgs.forEach((img) => {
+        img.addEventListener("click", () => {
+          imgs.forEach((img) => {
+            img.parentElement.classList.remove("open");
+            img.classList.remove("open");
+          });
+          img.parentElement.classList.add("open");
+          img.classList.add("open");
+        });
+      });
     });
   };
 
