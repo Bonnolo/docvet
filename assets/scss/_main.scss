@@ -564,13 +564,24 @@ footer {
     justify-content: center;
     align-items: center;
     height: 65vh;
+/*     padding-left: 10px;
+    padding-right: 10px; */
     //width: 300vw;
-    overflow: scroll;
-
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    ::-webkit-scrollbar {
+      width: 0px;
+    }
+    
     .grid-cards{
       display: flex;
-      justify-content: center;
-      align-items: center;      
+      align-items: center;
+      height: 65vh;
+      //width: 300vw;
+      overflow-x: scroll;
+      overflow-y: hidden;
+
     }
 
     .card{
@@ -586,6 +597,7 @@ footer {
       .open{
         width: 40vw;
       }
+      
       img{
         border: 1px solid white;
         border-radius: 30px;
