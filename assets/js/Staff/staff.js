@@ -51,12 +51,19 @@ const staff = () => {
               <div class="container">
                   <section class="grid-cards">
                     ${personaleMedico
-                      .map((medico) => {
-                        //console.log(medico);
-                        return `
+                      .map((person, index) => {
+                        //console.log(person);
+                        if (index == 0) {
+                          return `
+                          <div class="card open">
+                            <img class="open" src="${person.picture}">
+                          </div>`;
+                        } else {
+                          return `
                         <div class="card">
-                          <img src="${medico.picture}">
+                          <img src="${person.picture}">
                         </div>`;
+                        }
                       })
                       .join("")}
                   </section>
@@ -82,12 +89,19 @@ const staff = () => {
               <div class="container">
                   <section class="grid-cards">
                     ${personaleInfermieristico
-                      .map((medico) => {
-                        //console.log(medico);
-                        return `
+                      .map((person, index) => {
+                        //console.log(person);
+                        if (index == 0) {
+                          return `
+                          <div class="card open">
+                            <img class="open" src="${person.picture}">
+                          </div>`;
+                        } else {
+                          return `
                         <div class="card">
-                          <img src="${medico.picture}">
+                          <img src="${person.picture}">
                         </div>`;
+                        }
                       })
                       .join("")}
                   </section>
@@ -112,12 +126,19 @@ const staff = () => {
               <div class="container">
                   <section class="grid-cards">
                     ${peronaleReceptionist
-                      .map((medico) => {
-                        //console.log(medico);
-                        return `
+                      .map((person, index) => {
+                        //console.log(person);
+                        if (index == 0) {
+                          return `
+                          <div class="card open">
+                            <img class="open" src="${person.picture}">
+                          </div>`;
+                        } else {
+                          return `
                         <div class="card">
-                          <img src="${medico.picture}">
+                          <img src="${person.picture}">
                         </div>`;
+                        }
                       })
                       .join("")}
                   </section>
@@ -144,6 +165,7 @@ const staff = () => {
       currentState = "medico";
 
       updateContent();
+
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
         img.addEventListener("click", () => {
@@ -154,6 +176,19 @@ const staff = () => {
           img.parentElement.classList.add("open");
           img.classList.add("open");
         });
+      });
+
+      const container = document.querySelector(".container");
+      const scrollElement = document.querySelector(".grid-cards");
+      container.addEventListener("wheel", (event) => {
+        console.log(event);
+        if (event.deltaY > 0) {
+          scrollElement.scrollLeft += 70;
+          console.log("scrolling down");
+        } else {
+          scrollElement.scrollLeft -= 70;
+          console.log("scrolling up");
+        }
       });
     });
 
