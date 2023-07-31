@@ -743,21 +743,46 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      position: relative;
       border-radius: 30px;
       height: 60vh;
-      width: 15vw;
+      width: 14vw;
       transition: all 0.8S;
 
       .open{
         width: 40vw;
       }
+
+      .staff-details{
+        display: none;
+        position: absolute;
+        bottom: 5%;
+
+        h3{
+          font-family: $mainFontBold;
+          color: white;
+          font-size: $fontSizeExtraLarge;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+
+        p{
+          font-family: $mainFontRegular;
+          color: white;
+          font-size: $fontSizeMedium;
+        }
+      }
+      .staff-details-show{
+        display: block;
+      }
       
       img{
+        position: relative;
         border: 1px solid white;
         border-radius: 30px;
         object-fit: cover;
         height: 60vh;
-        width: 15vw;
+        width: 14vw;
         transition: all 0.8S;
         cursor: pointer;
       }

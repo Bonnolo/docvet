@@ -5,6 +5,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/PaoloSommarugaresize.jpg",
     title: "Dott.",
     description: "Direttore Sanitario",
+    study: "DVM",
   },
   {
     name: "Federico",
@@ -12,6 +13,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/FedericoMassariresize.jpg",
     title: "Dott.",
     description: "Chirurgia oncologica, dei tessuti molli e mininvasiva",
+    study: "DVM, Dipl. ECVS, GPCert. SASTS",
   },
   {
     name: "Marco",
@@ -19,6 +21,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/MarcoBianchiresize.jpg",
     title: "Dott.",
     description: "Oncologia Medica",
+    study: "DVM, MSc",
   },
   {
     name: "Gianluca",
@@ -26,6 +29,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/GianlucaMarescaresize.jpg",
     title: "Dott.",
     description: "Oncologia Medica",
+    study: "DVM, MSc, GPCert. (Onco)",
   },
   {
     name: "Dario",
@@ -33,6 +37,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/DarioDrudiresize.jpg",
     title: "Dott.",
     description: "Chirurgia oncologica, dei tessuti molli e mininvasiva",
+    study: "DVM, Board Eligible ECVS",
   },
   {
     name: "Chiara",
@@ -40,6 +45,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/ChiaraCarossoresize.jpg",
     title: "Dott.ssa",
     description: "Chirurgia oncologica, dei tessuti molli e mininvasiva",
+    study: "DVM",
   },
   {
     name: "Stefania",
@@ -47,6 +53,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/StefaniaFranceschiniresize.jpg",
     title: "Dott.ssa",
     description: "Anestesia, Terapia del dolore e Terapia intensiva",
+    study: "DVM",
   },
   {
     name: "Marta",
@@ -54,6 +61,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/MartaLisiresize.jpg",
     title: "Dott.ssa",
     description: "Anestesia, Terapia del dolore e Terapia intensiva",
+    study: "DVM, PhD",
   },
   {
     name: "Sara",
@@ -61,6 +69,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/SaraManfrediniresize.jpg",
     title: "Dott.ssa",
     description: "Anestesia, Terapia del dolore e Terapia intensiva",
+    study: "DVM, MSc",
   },
   {
     name: "Orsola",
@@ -68,6 +77,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/OrsolaCappielloresize.jpg",
     title: "Dott.ssa",
     description: "Anestesia, Terapia del dolore e Terapia intensiva",
+    study: "DVM",
   },
   {
     name: "Michele",
@@ -75,6 +85,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/MicheleDellacornaresize.jpg",
     title: "Dott.",
     description: "Ecografia",
+    study: "DVM",
   },
   {
     name: "Caterina",
@@ -82,6 +93,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/CaterinaBaroneresize.jpg",
     title: "Dott.ssa",
     description: "Cardiologia",
+    study: "DVM",
   },
   {
     name: "Federica",
@@ -89,6 +101,7 @@ const personaleMedico = [
     picture: "./assets/imgs/staffimgs/FedericaZausaresize.jpg",
     title: "Dott.ssa",
     description: "Responsabile degenza",
+    study: "DVM",
   },
   //{
   //  name: "Silvia",
@@ -147,7 +160,7 @@ const peronaleReceptionist = [
   },
   {
     name: "Sabrina",
-    surname: "",
+    surname: "Fabris",
     picture: "./assets/imgs/staffimgs/Sabrinaresize.jpg",
     title: "",
     description: "Receptionist",

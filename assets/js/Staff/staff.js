@@ -57,11 +57,19 @@ const staff = () => {
                           return `
                           <div class="card open">
                             <img class="open" src="${person.picture}">
+                            <div class="staff-details staff-details-show">
+                              <h3>${person.title}  ${person.surname}  ${person.name}</h3>
+                              <p>${person.study} <br> ${person.description}</p>
+                            </div>
                           </div>`;
                         } else {
                           return `
                         <div class="card">
                           <img src="${person.picture}">
+                          <div class="staff-details">
+                            <h3>${person.title}  ${person.surname}  ${person.name}</h3>
+                            <p>${person.study} <br> ${person.description}</p>
+                          </div>
                         </div>`;
                         }
                       })
@@ -95,11 +103,19 @@ const staff = () => {
                           return `
                           <div class="card open">
                             <img class="open" src="${person.picture}">
+                            <div class="staff-details staff-details-show">
+                              <h3>${person.title}  ${person.surname}  ${person.name}</h3>
+                              <p>${person.description}</p>                            
+                            </div>
                           </div>`;
                         } else {
                           return `
                         <div class="card">
                           <img src="${person.picture}">
+                          <div class="staff-details">
+                            <h3>${person.title}  ${person.surname}  ${person.name}</h3>
+                            <p>${person.description}</p>                            
+                          </div>
                         </div>`;
                         }
                       })
@@ -132,11 +148,19 @@ const staff = () => {
                           return `
                           <div class="card open">
                             <img class="open" src="${person.picture}">
+                            <div class="staff-details staff-details-show">
+                              <h3>${person.title}  ${person.surname}  ${person.name}</h3>
+                              <p>${person.description}</p>
+                            </div>
                           </div>`;
                         } else {
                           return `
                         <div class="card">
                           <img src="${person.picture}">
+                          <div class="staff-details">
+                            <h3>${person.title}  ${person.surname}  ${person.name}</h3>
+                            <p>${person.description}</p>
+                          </div>
                         </div>`;
                         }
                       })
@@ -169,11 +193,20 @@ const staff = () => {
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
         img.addEventListener("click", () => {
+          //console.log(img.nextElementSibling.classList);
           imgs.forEach((img) => {
             img.parentElement.classList.remove("open");
+            img.nextElementSibling.classList.remove("staff-details-show");
             img.classList.remove("open");
           });
+
           img.parentElement.classList.add("open");
+          img.nextElementSibling.classList.add("staff-details-show");
+          gsap.fromTo(
+            ".staff-details-show",
+            { opacity: 0 },
+            { duration: 0.5, delay: 0.4, opacity: 1 }
+          );
           img.classList.add("open");
         });
       });
@@ -181,13 +214,13 @@ const staff = () => {
       const container = document.querySelector(".container");
       const scrollElement = document.querySelector(".grid-cards");
       container.addEventListener("wheel", (event) => {
-        console.log(event);
+        //console.log(event);
         if (event.deltaY > 0) {
           scrollElement.scrollLeft += 70;
-          console.log("scrolling down");
+          //console.log("scrolling down");
         } else {
           scrollElement.scrollLeft -= 70;
-          console.log("scrolling up");
+          //console.log("scrolling up");
         }
       });
     });
@@ -204,11 +237,19 @@ const staff = () => {
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
         img.addEventListener("click", () => {
+          console.log(img.nextElementSibling.classList);
           imgs.forEach((img) => {
             img.parentElement.classList.remove("open");
+            img.nextElementSibling.classList.remove("staff-details-show");
             img.classList.remove("open");
           });
           img.parentElement.classList.add("open");
+          img.nextElementSibling.classList.add("staff-details-show");
+          gsap.fromTo(
+            ".staff-details-show",
+            { opacity: 0 },
+            { duration: 0.5, delay: 0.4, opacity: 1 }
+          );
           img.classList.add("open");
         });
       });
@@ -226,11 +267,19 @@ const staff = () => {
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
         img.addEventListener("click", () => {
+          console.log(img.nextElementSibling.classList);
           imgs.forEach((img) => {
             img.parentElement.classList.remove("open");
+            img.nextElementSibling.classList.remove("staff-details-show");
             img.classList.remove("open");
           });
           img.parentElement.classList.add("open");
+          img.nextElementSibling.classList.add("staff-details-show");
+          gsap.fromTo(
+            ".staff-details-show",
+            { opacity: 0 },
+            { duration: 0.5, delay: 0.4, opacity: 1 }
+          );
           img.classList.add("open");
         });
       });
