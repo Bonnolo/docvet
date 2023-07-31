@@ -38,22 +38,15 @@ const struttura = () => {
                         </div>
                     </div>
                     <div class="pianoterra">
-                    <div class="stanza"> 
+                    <div class="deposito-centrale"> 
                       <img src="assets/imgs/icons/icon_location.svg">
                     </div>
-                    <div class="stanza2"> 
-                    <img src="assets/imgs/icons/icon_location.svg">
+                    <div class="deposito-pulito"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
                     </div>
-                    <div class="stanza3"> 
-                    <img src="assets/imgs/icons/icon_location.svg">
-                    </div>
-                    <div class="stanza4"> 
-                    <img src="assets/imgs/icons/icon_location.svg">
-                    </div>
-                    <div class="stanza5"> 
-                    <img src="assets/imgs/icons/icon_location.svg">
-                    </div>
-                    </div>
+                    <div class="sala-operatoria"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
                     `;
         break;
       case "primopiano":
@@ -118,10 +111,10 @@ const struttura = () => {
     });
 
 
-    const imgContent = document.querySelector(".stanza");
-    imgContent?.addEventListener("click", () => {
+    const depositoCentrale = document.querySelector(".deposito-centrale");
+    depositoCentrale?.addEventListener("click", () => {
       mainElement.innerHTML = `
-      <div class="location">
+      <div class="deposito-centrale-open">
         <div class="close-modal">
           <img src="assets/imgs/icons/icon _close circle.svg">
           </div>
@@ -134,10 +127,10 @@ const struttura = () => {
       }
       )
     });
-    const imgContent2 = document.querySelector(".stanza2");
-    imgContent2?.addEventListener("click", () => {
+    const depositoPulito = document.querySelector(".deposito-pulito");
+    depositoPulito?.addEventListener("click", () => {
       mainElement.innerHTML = `
-      <div class="location2">
+      <div class="deposito-pulito-open">
         <div class="close-modal">
           <img src="assets/imgs/icons/icon _close circle.svg">
           </div>
@@ -151,10 +144,10 @@ const struttura = () => {
       )
     }
     );
-    const imgContent3 = document.querySelector(".stanza3");
+    const imgContent3 = document.querySelector(".sala-operatoria");
     imgContent3?.addEventListener("click", () => {
       mainElement.innerHTML = `
-      <div class="location3">
+      <div class="sala-operatoria-open">
         <div class="close-modal">
           <img src="assets/imgs/icons/icon _close circle.svg">
           </div>

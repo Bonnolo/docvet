@@ -474,12 +474,12 @@ footer {
   background-repeat: no-repeat;
 }
 
-.stanza{
+.deposito-centrale{
   position: fixed;
   width: 40px;
   height: 40px;
-  top: 50%;
-  left: 50%;
+  top: 42.5%;
+  left: 32.5%;
   cursor: pointer;
 
   img{
@@ -488,12 +488,22 @@ footer {
   }
 }
 
-.stanza2{
+.deposito-centrale-open{
+  background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.deposito-pulito{
   position: fixed;
   width: 40px;
   height: 40px;
-  top: 50%;
-  left: 80%;
+  top: 48.5%;
+  left: 46.5%;
   cursor: pointer;
 
   img{
@@ -502,12 +512,22 @@ footer {
   }
 }
 
-.stanza3{
+.deposito-pulito-open{
+  background-image: url(/assets/imgs/struttura/deposito-pulito.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.sala-operatoria{
   position: fixed;
   width: 40px;
   height: 40px;
-  top: 50%;
-  left: 10%;
+  top: 32.5%;
+  left: 51.5%;
   cursor: pointer;
 
   img{
@@ -516,33 +536,8 @@ footer {
   }
 }
 
-.stanza4{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 20%;
-  left: 50%;
-  cursor: pointer;
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-.stanza5{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  left: 90%;
-  cursor: pointer;
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.location{
-  background-image: url(/assets/imgs/struttura/DSC01091.jpg);
+.sala-operatoria-open{
+  background-image: url(/assets/imgs/struttura/sala-operatoria1.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -550,47 +545,6 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-
-.location2{
-  background-image: url(/assets/imgs/struttura/DSC01096.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.location3{
-  background-image: url(/assets/imgs/staffimgs/CaterinaBaroneresize.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.location4{
-  background-image: url(/assets/imgs/staffimgs/CaterinaBaroneresize.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.location5{
-  background-image: url(/assets/imgs/staffimgs/CaterinaBaroneresize.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
 
 .close-modal{
   position: absolute;
