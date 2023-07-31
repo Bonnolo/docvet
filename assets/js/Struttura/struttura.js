@@ -47,6 +47,25 @@ const struttura = () => {
                     <div class="sala-operatoria"> 
                       <img src="assets/imgs/icons/icon_location.svg">
                     </div>    
+                    <div class="sala-operatoria2"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="sala-rx"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="sala-tac"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="sala-controllo-tac"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="ingresso"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>
+                    <div class="degenza-cani">
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>        
+                    </div>
                     `;
         break;
       case "primopiano":
@@ -144,8 +163,8 @@ const struttura = () => {
       )
     }
     );
-    const imgContent3 = document.querySelector(".sala-operatoria");
-    imgContent3?.addEventListener("click", () => {
+    const salaOperatoria = document.querySelector(".sala-operatoria");
+    salaOperatoria?.addEventListener("click", () => {
       mainElement.innerHTML = `
       <div class="sala-operatoria-open">
         <div class="close-modal">
@@ -161,10 +180,10 @@ const struttura = () => {
       )
     }
     );
-    const imgContent4 = document.querySelector(".stanza4");
-    imgContent4?.addEventListener("click", () => {
+    const salaOperatoria2 = document.querySelector(".sala-operatoria2");
+    salaOperatoria2?.addEventListener("click", () => {
       mainElement.innerHTML = `
-      <div class="location4">
+      <div class="sala-operatoria2-open">
         <div class="close-modal">
           <img src="assets/imgs/icons/icon _close circle.svg">
           </div>
@@ -178,10 +197,10 @@ const struttura = () => {
       )
     }
     );
-    const imgContent5 = document.querySelector(".stanza5");
-    imgContent5?.addEventListener("click", () => {
+    const salaRx = document.querySelector(".sala-rx");
+    salaRx?.addEventListener("click", () => {
       mainElement.innerHTML = `
-      <div class="location5">
+      <div class="sala-rx-open">
         <div class="close-modal">
           <img src="assets/imgs/icons/icon _close circle.svg">
           </div>
@@ -195,6 +214,58 @@ const struttura = () => {
       )
     }
     );
+    const salaTac = document.querySelector(".sala-tac");
+    salaTac?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="sala-tac-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const salaControlloTac = document.querySelector(".sala-controllo-tac");
+    salaControlloTac?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="sala-controllo-tac-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const ingresso = document.querySelector(".ingresso");
+    ingresso?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="ingresso-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+
 
   };
 
