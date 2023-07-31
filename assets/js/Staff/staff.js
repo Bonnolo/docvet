@@ -193,7 +193,7 @@ const staff = () => {
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
         img.addEventListener("click", () => {
-          console.log(img.nextElementSibling.classList);
+          //console.log(img.nextElementSibling.classList);
           imgs.forEach((img) => {
             img.parentElement.classList.remove("open");
             img.nextElementSibling.classList.remove("staff-details-show");
@@ -245,6 +245,11 @@ const staff = () => {
           });
           img.parentElement.classList.add("open");
           img.nextElementSibling.classList.add("staff-details-show");
+          gsap.fromTo(
+            ".staff-details-show",
+            { opacity: 0 },
+            { duration: 0.5, delay: 0.4, opacity: 1 }
+          );
           img.classList.add("open");
         });
       });
@@ -270,6 +275,11 @@ const staff = () => {
           });
           img.parentElement.classList.add("open");
           img.nextElementSibling.classList.add("staff-details-show");
+          gsap.fromTo(
+            ".staff-details-show",
+            { opacity: 0 },
+            { duration: 0.5, delay: 0.4, opacity: 1 }
+          );
           img.classList.add("open");
         });
       });
