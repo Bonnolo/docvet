@@ -75,7 +75,11 @@ const staff = () => {
                       })
                       .join("")}
                   </section>
-              </div>
+                </div>
+                <div class="buttons-container">
+                  <button id="sx"> < Indietro</button>
+                  <button id="dx">Avanti > </button>
+                </div>
               `;
         break;
       case "infermieristico":
@@ -172,13 +176,12 @@ const staff = () => {
         content = `<div>Errore: Stato non riconosciuto</div>`;
         break;
     }
+
     if (mainElement != null) {
       mainElement.innerHTML = content;
     }
 
     const medico = document.querySelector("#medico");
-    const infermieristico = document.querySelector("#infermieristico");
-    const receptionist = document.querySelector("#receptionist");
 
     medico?.addEventListener("click", () => {
       gsap.fromTo(
@@ -213,17 +216,32 @@ const staff = () => {
 
       const container = document.querySelector(".container");
       const scrollElement = document.querySelector(".grid-cards");
+
       container.addEventListener("wheel", (event) => {
         //console.log(event);
         if (event.deltaY > 0) {
-          scrollElement.scrollLeft += 70;
+          //how much each scroll should scroll
+          scrollElement.scrollLeft += 100;
           //console.log("scrolling down");
         } else {
-          scrollElement.scrollLeft -= 70;
+          scrollElement.scrollLeft -= 100;
           //console.log("scrolling up");
         }
       });
+
+      const sx = document.querySelector("#sx");
+      const dx = document.querySelector("#dx");
+
+      sx?.addEventListener("click", () => {
+        scrollElement.scrollLeft -= 500;
+      });
+
+      dx?.addEventListener("click", () => {
+        scrollElement.scrollLeft += 500;
+      });
     });
+
+    const infermieristico = document.querySelector("#infermieristico");
 
     infermieristico?.addEventListener("click", () => {
       gsap.fromTo(
@@ -254,6 +272,8 @@ const staff = () => {
         });
       });
     });
+
+    const receptionist = document.querySelector("#receptionist");
 
     receptionist?.addEventListener("click", () => {
       gsap.fromTo(
