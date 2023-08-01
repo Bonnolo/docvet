@@ -1,5 +1,5 @@
 const struttura = () => {
-  const mainElement = document.querySelector("main");
+  const mainElement = document.querySelector("#struttura");
   let currentState = "img-content";
 
   const updateContent = () => {
@@ -38,7 +38,35 @@ const struttura = () => {
                         </div>
                     </div>
                     <div class="pianoterra">
-                    </div>`;
+                    <div class="deposito-centrale"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>
+                    <div class="deposito-pulito"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>
+                    <div class="sala-operatoria"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="sala-operatoria2"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="sala-rx"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="sala-tac"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="sala-controllo-tac"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>    
+                    <div class="ingresso"> 
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>
+                    <div class="degenza-cani">
+                      <img src="assets/imgs/icons/icon_location.svg">
+                    </div>        
+                    </div>
+                    `;
         break;
       case "primopiano":
         content = `
@@ -78,8 +106,9 @@ const struttura = () => {
         content = `<div>Errore: Stato non riconosciuto</div>`;
         break;
     }
-
-    mainElement.innerHTML = content;
+    if (mainElement != null) {
+      mainElement.innerHTML = content;
+    }
 
     const pianoterra = document.querySelector("#piano-terra");
     const primopiano = document.querySelector("#primo-piano");
@@ -99,6 +128,145 @@ const struttura = () => {
       currentState = "secondopiano";
       updateContent();
     });
+
+
+    const depositoCentrale = document.querySelector(".deposito-centrale");
+    depositoCentrale?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="deposito-centrale-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    });
+    const depositoPulito = document.querySelector(".deposito-pulito");
+    depositoPulito?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="deposito-pulito-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const salaOperatoria = document.querySelector(".sala-operatoria");
+    salaOperatoria?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="sala-operatoria-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const salaOperatoria2 = document.querySelector(".sala-operatoria2");
+    salaOperatoria2?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="sala-operatoria2-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const salaRx = document.querySelector(".sala-rx");
+    salaRx?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="sala-rx-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const salaTac = document.querySelector(".sala-tac");
+    salaTac?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="sala-tac-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const salaControlloTac = document.querySelector(".sala-controllo-tac");
+    salaControlloTac?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="sala-controllo-tac-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+    const ingresso = document.querySelector(".ingresso");
+    ingresso?.addEventListener("click", () => {
+      mainElement.innerHTML = `
+      <div class="ingresso-open">
+        <div class="close-modal">
+          <img src="assets/imgs/icons/icon _close circle.svg">
+          </div>
+        </div>
+      `;
+      const closeModal = document.querySelector(".close-modal");
+      closeModal?.addEventListener("click", () => {
+        currentState = "pianoterra";
+        updateContent();
+      }
+      )
+    }
+    );
+
+
   };
 
   updateContent();

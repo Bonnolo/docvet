@@ -83,9 +83,10 @@
 // Main Contatti
 
 .contatti {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 75vh;
+  display: flex;
+  height: 85vh;
+  justify-content: center;
+  gap: 50px;
   .contattiLeft {
     display: flex;
     justify-content: center;
@@ -109,7 +110,7 @@
       }
       input {
         width: 100%;
-        height: 40px;
+        height: 55px;
         border: none;
         border-radius: 30px;
         margin-top: 20px;
@@ -121,7 +122,7 @@
       }
       textarea {
         width: 100%;
-        height: 100px;
+        height: 120px;
         border: none;
         border-radius: 30px;
         margin-top: 20px;
@@ -133,7 +134,7 @@
       }
       button {
         width: 100%;
-        height: 40px;
+        height: 50px;
         border: none;
         border-radius: 30px;
         margin-top: 20px;
@@ -263,6 +264,13 @@ footer {
       color: $primaryColor;
       font-size: $fontSizeTitle;
       text-transform: uppercase;
+    }
+    a {
+      color: $primaryColor;
+      font-family: $mainFontBold;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
     }
   }
   .flexEnd {
@@ -431,6 +439,7 @@ footer {
     padding-left: 20px;
     img{
       width: 100%;
+      border-radius: 30px;
     }
   }
   .grid-2columns-right {
@@ -442,7 +451,7 @@ footer {
       font-family: $mainFontRegular;
       color: $primaryColor;
       font-size: $fontSizeMedium;
-      text-align: center;
+      margin-left: 20px;
     }
   }
 }
@@ -473,30 +482,260 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.deposito-centrale{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 42.5%;
+  left: 32.5%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.deposito-centrale-open{
+  background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.deposito-pulito{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 48.5%;
+  left: 46.5%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.deposito-pulito-open{
+  background-image: url(/assets/imgs/struttura/deposito-pulito.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.sala-operatoria{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 32.5%;
+  left: 51.5%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sala-operatoria-open{
+  background-image: url(/assets/imgs/struttura/sala-operatoria1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.sala-operatoria2{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 32.5%;
+  left: 41%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sala-operatoria2-open{
+  background-image: url(/assets/imgs/struttura/sala-operatoria2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.sala-rx{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 32.5%;
+  left: 59.5%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sala-rx-open{
+  background-image: url(/assets/imgs/struttura/sala-rxint.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.sala-tac{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 32.5%;
+  left: 72.5%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sala-tac-open{
+  background-image: url(/assets/imgs/struttura/tac.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.sala-controllo-tac{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 32.5%;
+  left: 64.5%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.sala-controllo-tac-open{
+  background-image: url(/assets/imgs/struttura/controllo-tac.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.ingresso{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  left: 82%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.ingresso-open{
+  background-image: url(/assets/imgs/struttura/ingresso.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.degenza-cani{
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 32.5%;
+  left: 51.5%;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.degenza-cani-open{
+  background-image: url(/assets/imgs/struttura/degenza-cani.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+
+.close-modal{
+  position: absolute;
+  top: 120px;
+  right: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 // End Struttura main
 
 
 // Staff 
 
 .container{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 65vh;
-    overflow: hidden;
-    margin-bottom: 20px;
-
-    .scrollable{
-      max-height: 65vh;
-      overflow:auto;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+/*     padding-left: 10px;
+    padding-right: 10px; */
+    //width: 300vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+    ::-webkit-scrollbar {
+      width: 0px;
     }
-
+    
     .grid-cards{
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1px;
-      width: 80vw;
+      display: flex;
+      align-items: center;
+      height: 65vh;
+      //width: 300vw;
+      overflow-x: scroll;
+      overflow-y: hidden;
+
     }
 
     .card{
@@ -504,15 +743,52 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 1px solid white;
+      position: relative;
       border-radius: 30px;
+      height: 60vh;
+      width: 14vw;
+      transition: all 0.8S;
 
-      img{
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 30px;
+      .open{
+        width: 40vw;
       }
+
+      .staff-details{
+        display: none;
+        position: absolute;
+        bottom: 5%;
+
+        h3{
+          font-family: $mainFontBold;
+          color: white;
+          font-size: $fontSizeExtraLarge;
+          text-transform: uppercase;
+          margin-bottom: 5px;
+        }
+
+        p{
+          font-family: $mainFontRegular;
+          color: white;
+          font-size: $fontSizeMedium;
+        }
+      }
+      .staff-details-show{
+        display: block;
+      }
+      
+      img{
+        position: relative;
+        border: 1px solid white;
+        border-radius: 30px;
+        object-fit: cover;
+        height: 60vh;
+        width: 14vw;
+        transition: all 0.8S;
+        cursor: pointer;
+      }
+    }
+    .open{
+      width: 40vw;
     }
   }
 // End Staff 

@@ -26,7 +26,7 @@ const specializzazioni = () => {
           <h1>Alta preparazione ed esperienza</h1>
         </div>
         `;
-      break;
+        break;
       case "mininvasiva":
         content = `
         <div class="grid-2rows">
@@ -62,7 +62,7 @@ const specializzazioni = () => {
           </div>
         </div>
         `;
-      break;
+        break;
       case "tessuti-molli":
         content = `
         <div class="grid-2rows">
@@ -98,7 +98,7 @@ const specializzazioni = () => {
           </div>
         </div>
         `;
-      break;
+        break;
       case "oncologica":
         content = `
         <div class="grid-2rows">
@@ -132,9 +132,11 @@ const specializzazioni = () => {
           </div>
         </div>
         `;
-      break;
+        break;
     }
-    mainElement.innerHTML = content;
+    if (mainElement != null) {
+      mainElement.innerHTML = content;
+    }
 
     const chirurgiaMininvasiva = document.querySelector("#mininvasiva");
     const tessutiMolli = document.querySelector("#tessuti-molli");
