@@ -718,8 +718,8 @@ footer {
     justify-content: center;
     align-items: center;
     height: 65vh;
-/*     padding-left: 10px;
-    padding-right: 10px; */
+    //padding-left: 10px;
+    //padding-right: 10px;
     //width: 300vw;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -735,7 +735,6 @@ footer {
       //width: 300vw;
       overflow-x: scroll;
       overflow-y: hidden;
-
     }
 
     .card{
@@ -790,6 +789,24 @@ footer {
     .open{
       width: 40vw;
     }
+}
+.buttons-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: $mainFontRegular;
+    font-size: $fontSizeMedium;
+    color: $primaryColor;
+    text-transform: uppercase;
   }
+}
+
 // End Staff 
 
