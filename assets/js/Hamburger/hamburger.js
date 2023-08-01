@@ -7,7 +7,7 @@ const openCloseMenu = () => {
 
   const hamburgerMenu = document.querySelector("#hamburger");
   const layerBlur = document.querySelector(".hamburger-blur");
-  console.log(layerBlur);
+  //console.log(layerBlur);
 
   hamburgerElementOpen?.addEventListener("click", () => {
     //console.log("open");
