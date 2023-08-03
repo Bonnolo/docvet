@@ -148,7 +148,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      iframe{
+      iframe {
         width: 600px !important;
         height: 280px !important;
       }
@@ -227,7 +227,9 @@
   // End Main Contatti
 
   // Footer Home
-
+  .custom-footer {
+    margin-top: 0px; 
+  }
   footer {
     padding: 0px 20px 0px 20px;
     font-family: $mainFontBold;
@@ -244,7 +246,7 @@
 
   .generalHeader {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     .logo {
       padding-left: 20px;
       img {
@@ -350,7 +352,6 @@
     grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 80vh;
-    margin-bottom: 30px;
     .grid-2rows {
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -366,9 +367,8 @@
       }
     }
     .link-content {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       .active {
         border-bottom: 3px solid $primaryColor;
       }
