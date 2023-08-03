@@ -1,3 +1,5 @@
+import { gsap } from "gsap";
+
 const struttura = () => {
   const mainElement = document.querySelector("#struttura");
   let currentState = "img-content";
@@ -114,21 +116,56 @@ const struttura = () => {
     const primopiano = document.querySelector("#primo-piano");
     const secondopiano = document.querySelector("#secondo-piano");
 
-    pianoterra?.addEventListener("click", () => {
+    pianoterra?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
       currentState = "pianoterra";
+
       updateContent();
+
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
+      );
     });
 
-    primopiano?.addEventListener("click", () => {
+    primopiano?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
       currentState = "primopiano";
+
       updateContent();
+
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
+      );
     });
 
-    secondopiano?.addEventListener("click", () => {
+    secondopiano?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
       currentState = "secondopiano";
-      updateContent();
-    });
 
+      updateContent();
+
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
+      );
+    });
 
     const depositoCentrale = document.querySelector(".deposito-centrale");
     depositoCentrale?.addEventListener("click", () => {
@@ -143,8 +180,7 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
+      });
     });
     const depositoPulito = document.querySelector(".deposito-pulito");
     depositoPulito?.addEventListener("click", () => {
@@ -159,10 +195,8 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
-    }
-    );
+      });
+    });
     const salaOperatoria = document.querySelector(".sala-operatoria");
     salaOperatoria?.addEventListener("click", () => {
       mainElement.innerHTML = `
@@ -176,10 +210,8 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
-    }
-    );
+      });
+    });
     const salaOperatoria2 = document.querySelector(".sala-operatoria2");
     salaOperatoria2?.addEventListener("click", () => {
       mainElement.innerHTML = `
@@ -193,10 +225,8 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
-    }
-    );
+      });
+    });
     const salaRx = document.querySelector(".sala-rx");
     salaRx?.addEventListener("click", () => {
       mainElement.innerHTML = `
@@ -210,10 +240,8 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
-    }
-    );
+      });
+    });
     const salaTac = document.querySelector(".sala-tac");
     salaTac?.addEventListener("click", () => {
       mainElement.innerHTML = `
@@ -227,10 +255,8 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
-    }
-    );
+      });
+    });
     const salaControlloTac = document.querySelector(".sala-controllo-tac");
     salaControlloTac?.addEventListener("click", () => {
       mainElement.innerHTML = `
@@ -244,10 +270,8 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
-    }
-    );
+      });
+    });
     const ingresso = document.querySelector(".ingresso");
     ingresso?.addEventListener("click", () => {
       mainElement.innerHTML = `
@@ -261,12 +285,8 @@ const struttura = () => {
       closeModal?.addEventListener("click", () => {
         currentState = "pianoterra";
         updateContent();
-      }
-      )
-    }
-    );
-
-
+      });
+    });
   };
 
   updateContent();
