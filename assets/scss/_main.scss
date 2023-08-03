@@ -14,11 +14,11 @@
 }
 
 .hiddenDesktop {
-  display: none;
+  display: none !important;
 }
 
 .hiddenMobile {
-  display: block;
+  display: block !important;
 }
 
 // general header
@@ -108,7 +108,8 @@
       text-align: center;
     }
     a {
-      color: $white;
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
       font-size: 40px;
       font-family: $mainFontBold;
       text-transform: uppercase;
@@ -117,17 +118,14 @@
 }
 
 // general footer
-
+.custom-footer {
+  margin-top: 60px;
+}
 footer {
   font-family: $mainFontBold;
   color: $primaryColor;
   display: flex;
-  width: 100vw;
   text-align: center;
-  gap: 20px;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
 }
 
 // home page
@@ -137,10 +135,6 @@ footer {
 }
 
 .main-content {
-  display: grid;
-  grid-template-rows: 1fr 5fr;
-  width: 100vw;
-  height: 80vh;
   .grid-2rows {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -161,6 +155,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0 10px;
     gap: 15px;
     text-align: center;
@@ -179,7 +174,7 @@ footer {
     background-image: url(/assets/imgs/bg.jpg);
     background-size: cover;
     background-position: center;
-    height: 65vh;
+    height: 80vh;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
@@ -340,7 +335,6 @@ footer {
         font-size: $fontSizeMedium;
         background: #fff;
         padding-left: 20px;
-
       }
       textarea {
         width: 100%;
@@ -411,7 +405,6 @@ footer {
           font-size: $fontSizeSmall;
           text-align: center;
           margin-top: 10px;
-
         }
       }
       .contattiRightBottomRight {
@@ -431,3 +424,137 @@ footer {
     }
   }
 }
+
+.pianoterra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deposito-centrale, .deposito-pulito, .sala-operatoria, .sala-operatoria2, .sala-rx, .sala-tac, .sala-controllo-tac, .ingresso, .degenza-cani, .sala-risveglio, .terapia-intensiva{
+cursor: pointer;
+}
+
+.deposito-centrale-open {
+  background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.deposito-pulito-open {
+  background-image: url(/assets/imgs/struttura/deposito-pulito.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-operatoria-open {
+  background-image: url(/assets/imgs/struttura/sala-operatoria1.jpg);
+  background-size: cover;
+   background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-operatoria2-open {
+  background-image: url(/assets/imgs/struttura/sala-operatoria2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-rx-open {
+  background-image: url(/assets/imgs/struttura/sala-rxint.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-tac-open {
+  background-image: url(/assets/imgs/struttura/tac.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-controllo-tac-open {
+  background-image: url(/assets/imgs/struttura/controllo-tac.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ingresso-open {
+  background-image: url(/assets/imgs/struttura/ingresso.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.degenza-cani-open {
+  background-image: url(/assets/imgs/struttura/degenza-cani.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.sala-risveglio-open{
+  background-image: url(/assets/imgs/struttura/sala-risveglio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+
+}
+
+.terapia-intesiva-open{
+  background-image: url(/assets/imgs/struttura/terapia-intensiva.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+
+}
+
+.close-modal {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  img{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+
+
+
+
