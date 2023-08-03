@@ -9,23 +9,55 @@
     <title>DOCVET | Clinica Veterinaria</title>
   </head>
   <body class="bg">
-    <header>
-      <nav class="grid">
-        <div class="logo">
-          <a href="index.html">
-            <img src="/assets/imgs/logoDocVet.png" alt="logoDocVet" />
-          </a>
-        </div>
-        <ul class="head">
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="struttura.html">Struttura Clinica</a></li>
-          <li><a href="specializzazioni.html">Specializzazioni</a></li>
+    <section id="hamburger" class="hamburger hiddenMobile">
+      <div class="hamburger-bg">
+        <button id="close-hamburger" class="close-menu">
+          <img src="/assets/imgs/icons/icon _close circle.svg" alt="" />
+        </button>
+        <ul>
+          <li>
+            <a href="index.html"><span>Home</span></a>
+          </li>
+          <li><a href="struttura.html">Struttura clinica</a></li>
+          <li><a href="specializzazioni.html">Specializzazione</a></li>
           <li><a href="staff.html">Staff</a></li>
-          <li><a href="#">Area Clienti</a></li>
+          <li><a href="">Area Clienti</a></li>
           <li><a href="contatti.html">Contatti</a></li>
         </ul>
-      </nav>
+      </div>
+    </section>
+    <div class="hamburger-blur"></div>
+    <!-- End Hamburger Menu -->
+    <header class="generalHeader hiddenMobile">
+      <div class="logo">
+        <a href="index.html"
+          ><img src="/assets/imgs/zampaDocvet.png" alt=""
+        /></a>
+      </div>
+      <div class="flexCenter">
+        <h1><a href="#">home</a></h1>
+      </div>
+      <div class="flexEnd">
+        <button id="open-hamburger">
+          <img src="/assets/imgs/icons/icon _menu.svg" alt="" />
+        </button>
+      </div>
     </header>
+    <nav class="grid hiddenDesktop">
+      <div class="logo">
+        <a href="index.html">
+          <img src="/assets/imgs/logoDocVet.png" alt="logoDocVet" />
+        </a>
+      </div>
+      <ul class="head">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="struttura.html">Struttura Clinica</a></li>
+        <li><a href="specializzazioni.html">Specializzazioni</a></li>
+        <li><a href="staff.html">Staff</a></li>
+        <li><a href="#">Area Clienti</a></li>
+        <li><a href="contatti.html">Contatti</a></li>
+      </ul>
+    </nav>
     <main class="video"></main>
     <footer>
       <!-- footer injected from assets/js/time/time.js -->

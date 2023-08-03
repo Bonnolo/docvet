@@ -13,246 +13,24 @@
   );
 }
 
-// End Background
-
-// Header Home
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  height: 10vh;
-  .logo {
-    padding-left: 20px;
-    img {
-      width: 60%;
-    }
-  }
-  .head {
-    display: flex;
-    justify-content: space-between;
-    li {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    li:nth-child(6) {
-      padding-right: 40px;
-    }
-    .active {
-      border-bottom: 3px solid $primaryColor;
-    }
-    a {
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      font-family: $mainFontBold;
-      text-decoration: none;
-      text-transform: uppercase;
-      position: relative;
-    }
-    a::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 100%;
-      height: 2px;
-      background-color: $primaryColor;
-      border-radius: 20px;
-      scale: 0;
-      transform-origin: right;
-      transition: scale 0.5s;
-    }
-    a:hover::before {
-      scale: 1;
-      transform-origin: left;
-      height: 2px;
-    }
-  }
+.hiddenDesktop {
+  display: none;
 }
 
-// End Header Home
-
-// Main Video Home
-
-.video {
-  height: 85vh;
+.hiddenMobile {
+  display: block;
 }
 
-// End Main Video Home
-
-// Main Contatti
-
-.contatti {
-  display: flex;
-  height: 85vh;
-  justify-content: center;
-  gap: 50px;
-  .contattiLeft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .formGroup {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      h1 {
-        font-family: $mainFontBold;
-        color: $primaryColor;
-        font-size: $fontSizeTitle;
-        text-transform: uppercase;
-      }
-      p {
-        font-family: $mainFontRegular;
-        color: $primaryColor;
-        font-size: $fontSizeMedium;
-        text-align: center;
-      }
-      input {
-        width: 100%;
-        height: 55px;
-        border: none;
-        border-radius: 30px;
-        margin-top: 20px;
-        padding-left: 20px;
-        font-family: $mainFontRegular;
-        color: $primaryColor;
-        font-size: $fontSizeMedium;
-        background: #fff;
-      }
-      textarea {
-        width: 100%;
-        height: 120px;
-        border: none;
-        border-radius: 30px;
-        margin-top: 20px;
-        padding-left: 20px;
-        font-family: $mainFontRegular;
-        color: $primaryColor;
-        font-size: $fontSizeMedium;
-        background: #fff;
-      }
-      button {
-        width: 100%;
-        height: 50px;
-        border: none;
-        border-radius: 30px;
-        margin-top: 20px;
-        font-family: $mainFontRegular;
-        color: #fff;
-        font-size: $fontSizeMedium;
-        background: $primaryColor;
-        box-shadow: 2px 2px 0px 1px $secondaryColor;
-        cursor: pointer;
-        transition: all 0.8s;
-      }
-      button:hover {
-        box-shadow: 2px 2px 0px 1px $primaryColor;
-        background-color: $secondaryColor;
-        color: $primaryColor;
-      }
-    }
-  }
-  .contattiRight {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h1 {
-      font-family: $mainFontBold;
-      color: $primaryColor;
-      font-size: $fontSizeTitle;
-      text-transform: uppercase;
-    }
-    p {
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      text-align: center;
-    }
-    .contattiRightTop {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-    }
-    .contattiRightBottom {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 20px;
-      .contattiRightBottomLeft {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-right: 20px;
-        h2 {
-          font-family: $mainFontBold;
-          color: $primaryColor;
-          font-size: $fontSizeTitle;
-          text-transform: uppercase;
-        }
-        p {
-          font-family: $mainFontRegular;
-          color: $primaryColor;
-          font-size: $fontSizeMedium;
-          text-align: center;
-        }
-        svg {
-          margin-right: 10px;
-        }
-      }
-      .contattiRightBottomRight {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        padding-left: 20px;
-        h2 {
-          font-family: $mainFontBold;
-          color: $primaryColor;
-          font-size: $fontSizeTitle;
-          text-transform: uppercase;
-        }
-        p {
-          font-family: $mainFontRegular;
-          color: $primaryColor;
-          font-size: $fontSizeMedium;
-          text-align: center;
-        }
-        svg {
-          margin-right: 10px;
-        }
-      }
-    }
-  }
-}
-
-// End Main Contatti
-
-// Footer Home
-
-footer {
-  padding: 0px 20px 0px 20px;
-  font-family: $mainFontBold;
-  color: $primaryColor;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-// End Footer Home
-
-// Header General
+// general header
 
 .generalHeader {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   .logo {
+    padding-top: 10px;
     padding-left: 20px;
     img {
-      width: 20%;
+      width: 80%;
     }
   }
   .flexCenter {
@@ -262,7 +40,7 @@ footer {
     h1 {
       font-family: $mainFontRegular;
       color: $primaryColor;
-      font-size: $fontSizeTitle;
+      font-size: 26px;
       text-transform: uppercase;
     }
     a {
@@ -277,6 +55,7 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-top: 5px;
     padding-right: 20px;
     button {
       background: none;
@@ -286,9 +65,7 @@ footer {
   }
 }
 
-// End Header General
-
-// Hamburguer Menu
+// hamburger menù
 
 .hamburger-blur {
   display: none;
@@ -306,17 +83,14 @@ footer {
   z-index: 9999;
   height: 100vh;
   width: 100vw;
-  
+
   .hamburger-bg {
     background-color: $secondaryColor;
     height: 100vh;
-    width: 50vw;
+    width: 100vw;
     position: fixed;
-    left: 50%;
     display: flex;
     justify-content: center;
-    padding-right: 20px;
-    padding-top: 20px;
     button {
       background: none;
       border: none;
@@ -331,37 +105,51 @@ footer {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
+      text-align: center;
     }
     a {
-      color: transparent;
-      -webkit-text-stroke: 1px $white;
-      font-size: $fontSizeTitle;
+      color: $white;
+      font-size: 40px;
       font-family: $mainFontBold;
       text-transform: uppercase;
-      transition: all 0.8s;
-    }
-    a:hover {
-      color: $white;
-      -webkit-text-stroke: 1px $white;
     }
   }
 }
 
-// Structure Main
+// general footer
+
+footer {
+  font-family: $mainFontBold;
+  color: $primaryColor;
+  display: flex;
+  width: 100vw;
+  text-align: center;
+  gap: 20px;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+// home page
+
+.video {
+  height: 80vh;
+}
 
 .main-content {
   display: grid;
   grid-template-rows: 1fr 5fr;
   width: 100vw;
   height: 80vh;
-  margin-bottom: 30px;
   .grid-2rows {
     display: grid;
     grid-template-rows: 1fr 1fr;
     .description {
+      padding-top: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
+      text-align: center;
       p {
         font-family: $mainFontRegular;
         color: $primaryColor;
@@ -371,36 +159,20 @@ footer {
   }
   .link-content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin: 0 10px;
+    gap: 15px;
+    text-align: center;
     .active {
       border-bottom: 3px solid $primaryColor;
     }
     a {
       color: $primaryColor;
-      font-size: $fontSizeMedium;
+      font-size: $fontSizeSmall;
       font-family: $mainFontBold;
       text-decoration: none;
       text-transform: uppercase;
-      position: relative;
-    }
-    a::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -2px;
-      width: 100%;
-      height: 2px;
-      background-color: $primaryColor;
-      border-radius: 20px;
-      scale: 0;
-      transform-origin: right;
-      transition: scale 0.5s;
-    }
-    a:hover::before {
-      scale: 1;
-      transform-origin: left;
-      height: 2px;
     }
   }
   .img-content {
@@ -415,387 +187,119 @@ footer {
     h1 {
       font-family: $mainFontBold;
       color: $white;
-      font-size: $fontSizeTitle;
+      font-size: 46px;
       text-transform: uppercase;
+      text-align: center;
     }
   }
 }
 
-// End Structure Main
-
-
-
-// Structure Specializzazioni
+// specializzazioni
 
 .grid-2columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 65vh;
-  margin-bottom: 20px;
-  .grid-2columns-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 20px;
-    img{
-      width: 100%;
-      border-radius: 30px;
-    }
-  }
-  .grid-2columns-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-right: 20px;
-    p {
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      margin-left: 20px;
-    }
-  }
-}
-
-// End Structure Specializzazioni
-
-.active {
-  border-bottom: 3px solid $primaryColor;
-}
-  
-.pianoterra {
-  background-image: url(/assets/imgs/planimetria/pianoTerra.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.primopiano{
-  background-image: url(/assets/imgs/planimetria/primoPiano.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.secondopiano {
-  background-image: url(/assets/imgs/planimetria/secondoPiano.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.deposito-centrale{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 42.5%;
-  left: 32.5%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.deposito-centrale-open{
-  background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.deposito-pulito{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 48.5%;
-  left: 46.5%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.deposito-pulito-open{
-  background-image: url(/assets/imgs/struttura/deposito-pulito.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.sala-operatoria{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 32.5%;
-  left: 51.5%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.sala-operatoria-open{
-  background-image: url(/assets/imgs/struttura/sala-operatoria1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.sala-operatoria2{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 32.5%;
-  left: 41%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.sala-operatoria2-open{
-  background-image: url(/assets/imgs/struttura/sala-operatoria2.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.sala-rx{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 32.5%;
-  left: 59.5%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.sala-rx-open{
-  background-image: url(/assets/imgs/struttura/sala-rxint.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.sala-tac{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 32.5%;
-  left: 72.5%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.sala-tac-open{
-  background-image: url(/assets/imgs/struttura/tac.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.sala-controllo-tac{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 32.5%;
-  left: 64.5%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.sala-controllo-tac-open{
-  background-image: url(/assets/imgs/struttura/controllo-tac.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.ingresso{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 50%;
-  left: 82%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.ingresso-open{
-  background-image: url(/assets/imgs/struttura/ingresso.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-.degenza-cani{
-  position: fixed;
-  width: 40px;
-  height: 40px;
-  top: 32.5%;
-  left: 51.5%;
-  cursor: pointer;
-
-  img{
-    width: 40px;
-    height: 40px;
-  }
-}
-
-.degenza-cani-open{
-  background-image: url(/assets/imgs/struttura/degenza-cani.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 75vh;
-  margin: 30px;
-  border-radius: 30px;
-}
-
-
-.close-modal{
-  position: absolute;
-  top: 120px;
-  right: 50px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-// End Struttura main
-
-
-// Staff 
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65vh;
-    //padding-left: 10px;
-    //padding-right: 10px;
-    //width: 300vw;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    
-    ::-webkit-scrollbar {
-      width: 0px;
-    }
-    
-    .grid-cards{
-      display: flex;
-      align-items: center;
-      height: 65vh;
-      //width: 300vw;
-      overflow-x: scroll;
-      overflow-y: hidden;
-    }
-
-    .card{
-      display:flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      border-radius: 30px;
-      height: 60vh;
-      width: 14vw;
-      transition: all 0.8S;
-
-      .open{
-        width: 40vw;
-      }
-
-      .staff-details{
-        display: none;
-        position: absolute;
-        bottom: 5%;
-
-        h3{
-          font-family: $mainFontBold;
-          color: white;
-          font-size: $fontSizeExtraLarge;
-          text-transform: uppercase;
-          margin-bottom: 5px;
-        }
-
-        p{
-          font-family: $mainFontRegular;
-          color: white;
-          font-size: $fontSizeMedium;
-        }
-      }
-      .staff-details-show{
-        display: block;
-      }
-      
-      img{
-        position: relative;
-        border: 1px solid white;
-        border-radius: 30px;
-        object-fit: cover;
-        height: 60vh;
-        width: 14vw;
-        transition: all 0.8S;
-        cursor: pointer;
-      }
-    }
-    .open{
-      width: 40vw;
-    }
-}
-.buttons-container{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  button{
+  flex-direction: column;
+  .grid-2columns-left {
+    img {
+      width: 100%;
+      border-radius: 30px;
+      padding: 0 5px;
+    }
+    margin-bottom: 20px;
+  }
+  .grid-2columns-right {
+    text-align: center;
+    font-size: $fontSizeSmall;
+    font-family: $mainFontRegular;
+    color: $primaryColor;
+  }
+}
+
+// staff
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  .grid-cards {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    height: 65vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    height: 60vh;
+    width: 60vw;
+    transition: all 0.8s;
+
+    .open {
+      width: 90vw;
+    }
+
+    .staff-details {
+      display: none;
+      position: absolute;
+      bottom: 5%;
+      text-align: center;
+
+      h3 {
+        font-family: $mainFontBold;
+        color: white;
+        font-size: $fontSizeExtraLarge;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-family: $mainFontRegular;
+        color: white;
+        font-size: $fontSizeMedium;
+      }
+    }
+    .staff-details-show {
+      display: block;
+    }
+
+    img {
+      position: relative;
+      border: 1px solid white;
+      border-radius: 30px;
+      object-fit: cover;
+      height: 60vh;
+      width: 60vw;
+      transition: all 0.8s;
+      cursor: pointer;
+    }
+  }
+  .open {
+    width: 90vw;
+  }
+}
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
     background: none;
     border: none;
     cursor: pointer;
@@ -808,5 +312,122 @@ footer {
   }
 }
 
-// End Staff 
+// contatti
 
+.contatti {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+  justify-content: center;
+  gap: 40px;
+  .contattiLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .formGroup {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      input {
+        width: 100%;
+        height: 55px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        background: #fff;
+        padding-left: 20px;
+
+      }
+      textarea {
+        width: 100%;
+        height: 120px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        background: #fff;
+        padding-left: 20px;
+        padding-top: 10px;
+      }
+      button {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-family: $mainFontRegular;
+        color: #fff;
+        font-size: $fontSizeMedium;
+        background: $primaryColor;
+        box-shadow: 2px 2px 0px 1px $secondaryColor;
+        cursor: pointer;
+        transition: all 0.8s;
+      }
+    }
+  }
+  .contattiRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeSmall;
+      text-align: center;
+    }
+    .contattiRightTop {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 30px;
+      }
+    }
+    .contattiRightBottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      .contattiRightBottomLeft {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        p {
+          font-family: $mainFontRegular;
+          color: $primaryColor;
+          font-size: $fontSizeSmall;
+          text-align: center;
+          margin-top: 10px;
+
+        }
+      }
+      .contattiRightBottomRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        p {
+          font-family: $mainFontRegular;
+          color: $primaryColor;
+          font-size: $fontSizeSmall;
+          text-align: center;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
