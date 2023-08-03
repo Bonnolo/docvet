@@ -183,15 +183,21 @@ const staff = () => {
 
     const medico = document.querySelector("#medico");
 
-    medico?.addEventListener("click", () => {
-      gsap.fromTo(
+    medico?.addEventListener("click", async () => {
+      await gsap.fromTo(
         mainElement,
-        { opacity: 0, y: -800 },
-        { duration: 0.5, delay: 0.3, opacity: 1, y: 0 }
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
       );
       currentState = "medico";
 
       updateContent();
+
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
+      );
 
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
@@ -243,14 +249,21 @@ const staff = () => {
 
     const infermieristico = document.querySelector("#infermieristico");
 
-    infermieristico?.addEventListener("click", () => {
+    infermieristico?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
+      currentState = "infermieristico";
+
+      updateContent();
+
       gsap.fromTo(
         mainElement,
         { opacity: 0, y: -800 },
-        { duration: 0.5, delay: 0.3, opacity: 1, y: 0 }
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
       );
-      currentState = "infermieristico";
-      updateContent();
 
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
@@ -275,14 +288,21 @@ const staff = () => {
 
     const receptionist = document.querySelector("#receptionist");
 
-    receptionist?.addEventListener("click", () => {
+    receptionist?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
+      currentState = "receptionist";
+
+      updateContent();
+
       gsap.fromTo(
         mainElement,
         { opacity: 0, y: -800 },
-        { duration: 0.5, delay: 0.3, opacity: 1, y: 0 }
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
       );
-      currentState = "receptionist";
-      updateContent();
 
       const imgs = document.querySelectorAll(".card img");
       imgs.forEach((img) => {
