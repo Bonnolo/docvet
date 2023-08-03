@@ -1,3 +1,4 @@
+import { gsap } from "gsap";
 const specializzazioni = () => {
   const mainElement = document.querySelector("#main-spec");
   let currentState = "img-content";
@@ -142,18 +143,48 @@ const specializzazioni = () => {
     const tessutiMolli = document.querySelector("#tessuti-molli");
     const oncologica = document.querySelector("#oncologica");
 
-    chirurgiaMininvasiva?.addEventListener("click", () => {
+    chirurgiaMininvasiva?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
       currentState = "mininvasiva";
       updateContent();
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
+      );
     });
 
-    tessutiMolli?.addEventListener("click", () => {
+    tessutiMolli?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
       currentState = "tessuti-molli";
       updateContent();
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
+      );
     });
-    oncologica?.addEventListener("click", () => {
+    oncologica?.addEventListener("click", async () => {
+      await gsap.fromTo(
+        mainElement,
+        { opacity: 1, y: 0 },
+        { duration: 0.5, delay: 0.1, opacity: 0, y: -800, animation: "ease" }
+      );
       currentState = "oncologica";
       updateContent();
+      gsap.fromTo(
+        mainElement,
+        { opacity: 0, y: -800 },
+        { duration: 0.5, delay: 0.1, opacity: 1, y: 0, animation: "ease" }
+      );
     });
   };
   updateContent();
