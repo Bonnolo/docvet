@@ -15,11 +15,11 @@
 
 // general header
 
-.grid{
+.grid {
   display: none;
 }
 
-.hiddenTime{
+.hiddenTime {
   display: none;
 }
 
@@ -150,8 +150,9 @@
       text-align: center;
     }
     a {
-      color: $white;
-      font-size: 40px;
+      color: transparent;
+      -webkit-text-stroke: 1px $white;
+      font-size: 44px;
       font-family: $mainFontBold;
       text-transform: uppercase;
     }
@@ -159,7 +160,7 @@
 }
 
 // general footer
-.custom-footer{
+.custom-footer {
   margin-top: 60px;
 }
 footer {
@@ -383,7 +384,6 @@ footer {
         font-size: $fontSizeMedium;
         background: #fff;
         padding-left: 20px;
-
       }
       textarea {
         width: 100%;
@@ -454,7 +454,6 @@ footer {
           font-size: $fontSizeSmall;
           text-align: center;
           margin-top: 10px;
-
         }
       }
       .contattiRightBottomRight {
@@ -475,18 +474,47 @@ footer {
   }
 }
 
-
 // struttura
 
 .pianoterra {
   display: flex;
   justify-content: center;
   align-items: center;
-  .hiddenMobile{
+  .hiddenMobile {
     display: none;
   }
-  .hiddenDesktop{
+  .hiddenDesktop {
     display: block;
+  }
+}
+
+.primopiano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hiddenDesktop {
+    display: block;
+  }
+  .hiddenMobile {
+    display: none;
+  }
+  svg {
+    transform: translate(6%);
+  }
+}
+
+.secondopiano {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hiddenDesktop {
+    display: block;
+  }
+  .hiddenMobile {
+    display: none;
+  }
+  svg {
+    transform: translate(6%);
   }
 }
 
@@ -572,6 +600,209 @@ footer {
   border-radius: 30px;
 }
 
+.sala-risveglio-open {
+  background-image: url(/assets/imgs/struttura/sala-risveglio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.terapia-intesiva-open {
+  background-image: url(/assets/imgs/struttura/terapia-intensiva.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.degenza-gatti-open {
+  background-image: url(/assets/imgs/struttura/degenza-gatti.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.degenza-cani-grande-open {
+  background-image: url(/assets/imgs/struttura/degenza-cani3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.degenza-infettivi-open {
+  background-image: url(/assets/imgs/struttura/degenza-infettivi.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.laboratorio-open {
+  background-image: url(/assets/imgs/struttura/laboratorio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.somministrazione-chemio-open {
+  background-image: url(/assets/imgs/struttura/somministrazione-chemio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.preparazione-chemio-open {
+  background-image: url(/assets/imgs/struttura/preparazione-chemio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ambulatorio-oncologi-open {
+  background-image: url(/assets/imgs/struttura/ambulatorio-oncologi.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-eco-open {
+  background-image: url(/assets/imgs/struttura/sala-ecogg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.preparazione-operazione-open {
+  background-image: url(/assets/imgs/struttura/preparazione-operazione3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ascensore-open {
+  background-image: url(/assets/imgs/struttura/ascensore.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.reception-open {
+  background-image: url(/assets/imgs/struttura/reception.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ambulatorio-open {
+  background-image: url(/assets/imgs/struttura/ambulatorio1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ambulatorio2-open {
+  background-image: url(/assets/imgs/struttura/ambulatorio2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ambulatorio3-open {
+  background-image: url(/assets/imgs/struttura/ambulatorio3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-attesa-cani-open{
+  background-image: url(/assets/imgs/struttura/sala-attesa-cani.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-attesa-gatti-open{
+  background-image: url(/assets/imgs/struttura/sala-attesa-gatti.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-riunioni-open{
+  background-image: url(/assets/imgs/struttura/sala-riunioni.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ufficio-imperatore-open{
+  background-image: url(/assets/imgs/struttura/ufficio-imperatore.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ufficio-open{
+  background-image: url(/assets/imgs/struttura/ufficio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.spogliatoio-open{
+  background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
 
 // modale struttura
 
