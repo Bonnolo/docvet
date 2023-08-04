@@ -1,10 +1,9 @@
 @media (min-width: 768px) {
-
-  .hiddenTime{
+  .hiddenTime {
     display: block;
   }
 
-  .generalHeaderMobile{
+  .generalHeaderMobile {
     display: none;
   }
   .grid {
@@ -148,7 +147,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      iframe{
+      iframe {
         width: 600px !important;
         height: 280px !important;
       }
@@ -228,7 +227,7 @@
 
   // Footer Home
 
-  .custom-footer{
+  .custom-footer {
     margin-top: 0;
   }
 
@@ -385,6 +384,7 @@
         text-decoration: none;
         text-transform: uppercase;
         position: relative;
+        cursor: pointer;
       }
       a::before {
         content: "";
@@ -466,29 +466,78 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    .hiddenDesktop{
+    .hiddenDesktop {
       display: none;
     }
-    .hiddenMobile{
+    .hiddenMobile {
       display: block;
     }
   }
 
   .primopiano {
-    background-image: url(/assets/imgs/planimetria/primoPiano.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hiddenDesktop {
+      display: none;
+    }
+    .hiddenMobile {
+      display: block;
+    }
+    svg {
+      transform: translate(-6%);
+    }
   }
 
   .secondopiano {
-    background-image: url(/assets/imgs/planimetria/secondoPiano.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hiddenDesktop {
+      display: none;
+    }
+    .hiddenMobile {
+      display: block;
+    }
+    svg {
+      transform: translate(-6%);
+    }
   }
 
-  .deposito-centrale, .deposito-pulito, .sala-operatoria, .sala-rx, .sala-tac, .sala-controllo-tac, .ingresso, .degenza-cani, .sala-risveglio, .terapia-intensiva {
+  .somministrazione-chemio,
+  .laboratorio,
+  .degenza-infettivi,
+  .ascensore,
+  .preparazione-operazione,
+  .degenza-gatti,
+  .degenza-cani-grande,
+  .sala-operatoria2,
+  .sala-eco,
+  .ambulatorio-oncologi,
+  .preparazione-chemio,
+  .terapia-intensiva,
+  .deposito-centrale,
+  .deposito-pulito,
+  .sala-operatoria,
+  .sala-rx,
+  .sala-tac,
+  .sala-controllo-tac,
+  .degenza-cani,
+  .sala-risveglio,
+  .terapia-intensiva,
+  .ufficio-imperatore,
+  .sala-attesa-cani,
+  .sala-attesa-gatti,
+  .ingresso,
+  .reception,
+  .ambulatorio,
+  .ambulatorio2,
+  .ambulatorio3,
+  .sala-riunioni,
+  .spogliatoio,
+  .spogliatoio2,
+  .ascensore2,
+  .ufficio {
     cursor: pointer;
   }
 
@@ -581,6 +630,217 @@
     margin: 30px;
     border-radius: 30px;
   }
+
+  .terapia-intensiva-open {
+    background-image: url(/assets/imgs/struttura/terapia-intensiva.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .degenza-gatti-open {
+    background-image: url(/assets/imgs/struttura/degenza-gatti.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .degenza-cani-grande-open {
+    background-image: url(/assets/imgs/struttura/degenza-cani3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .degenza-infettivi-open {
+    background-image: url(/assets/imgs/struttura/degenza-infettivi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .laboratorio-open {
+    background-image: url(/assets/imgs/struttura/laboratorio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .somministrazione-chemio-open {
+    background-image: url(/assets/imgs/struttura/somministrazione-chemio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .preparazione-chemio-open {
+    background-image: url(/assets/imgs/struttura/preparazione-chemio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .ambulatorio-oncologi-open {
+    background-image: url(/assets/imgs/struttura/ambulatorio-oncologi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .sala-eco-open {
+    background-image: url(/assets/imgs/struttura/sala-ecogg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .preparazione-operazione-open {
+    background-image: url(/assets/imgs/struttura/preparazione-operazione3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .ascensore-open {
+    background-image: url(/assets/imgs/struttura/ascensore.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .reception-open {
+    background-image: url(/assets/imgs/struttura/reception.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .ambulatorio-open {
+    background-image: url(/assets/imgs/struttura/ambulatorio1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+  .ambulatorio2-open {
+    background-image: url(/assets/imgs/struttura/ambulatorio2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+  .ambulatorio3-open {
+    background-image: url(/assets/imgs/struttura/ambulatorio3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .sala-attesa-cani-open{
+    background-image: url(/assets/imgs/struttura/sala-attesa-cani.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .sala-attesa-gatti-open{
+    background-image: url(/assets/imgs/struttura/sala-attesa-gatti.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .sala-riunioni-open{
+    background-image: url(/assets/imgs/struttura/sala-riunioni.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .ufficio-imperatore-open{
+    background-image: url(/assets/imgs/struttura/ufficio-imperatore.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .ufficio-open{
+    background-image: url(/assets/imgs/struttura/ufficio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+  .spogliatoio-open{
+    background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+
+
+  
 
   .close-modal {
     position: absolute;
