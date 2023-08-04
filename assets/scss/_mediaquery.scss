@@ -1,12 +1,12 @@
 @media (min-width: 768px) {
-  .hiddenDesktop {
+
+  .hiddenTime{
     display: block;
   }
 
-  .hiddenMobile {
-    display: none !important;
+  .generalHeaderMobile{
+    display: none;
   }
-
   .grid {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -228,6 +228,10 @@
 
   // Footer Home
 
+  .custom-footer{
+    margin-top: 0;
+  }
+
   footer {
     padding: 0px 20px 0px 20px;
     font-family: $mainFontBold;
@@ -358,6 +362,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0;
         p {
           font-family: $mainFontRegular;
           color: $primaryColor;
@@ -369,6 +374,7 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
+      flex-direction: row;
       .active {
         border-bottom: 3px solid $primaryColor;
       }
@@ -457,10 +463,15 @@
   }
 
   .pianoterra {
-    background-image: url(/assets/imgs/planimetria/pianoTerra.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hiddenDesktop{
+      display: none;
+    }
+    .hiddenMobile{
+      display: block;
+    }
   }
 
   .primopiano {
@@ -477,18 +488,8 @@
     background-repeat: no-repeat;
   }
 
-  .deposito-centrale {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 42.5%;
-    left: 32.5%;
+  .deposito-centrale, .deposito-pulito, .sala-operatoria, .sala-rx, .sala-tac, .sala-controllo-tac, .ingresso, .degenza-cani, .sala-risveglio, .terapia-intensiva {
     cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   .deposito-centrale-open {
@@ -501,20 +502,6 @@
     border-radius: 30px;
   }
 
-  .deposito-pulito {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 48.5%;
-    left: 46.5%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
   .deposito-pulito-open {
     background-image: url(/assets/imgs/struttura/deposito-pulito.jpg);
     background-size: cover;
@@ -523,20 +510,6 @@
     height: 75vh;
     margin: 30px;
     border-radius: 30px;
-  }
-
-  .sala-operatoria {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 32.5%;
-    left: 51.5%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   .sala-operatoria-open {
@@ -549,20 +522,6 @@
     border-radius: 30px;
   }
 
-  .sala-operatoria2 {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 32.5%;
-    left: 41%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
   .sala-operatoria2-open {
     background-image: url(/assets/imgs/struttura/sala-operatoria2.jpg);
     background-size: cover;
@@ -571,20 +530,6 @@
     height: 75vh;
     margin: 30px;
     border-radius: 30px;
-  }
-
-  .sala-rx {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 32.5%;
-    left: 59.5%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   .sala-rx-open {
@@ -597,20 +542,6 @@
     border-radius: 30px;
   }
 
-  .sala-tac {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 32.5%;
-    left: 72.5%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
   .sala-tac-open {
     background-image: url(/assets/imgs/struttura/tac.jpg);
     background-size: cover;
@@ -619,20 +550,6 @@
     height: 75vh;
     margin: 30px;
     border-radius: 30px;
-  }
-
-  .sala-controllo-tac {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 32.5%;
-    left: 64.5%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   .sala-controllo-tac-open {
@@ -645,20 +562,6 @@
     border-radius: 30px;
   }
 
-  .ingresso {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    left: 82%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
-  }
-
   .ingresso-open {
     background-image: url(/assets/imgs/struttura/ingresso.jpg);
     background-size: cover;
@@ -667,20 +570,6 @@
     height: 75vh;
     margin: 30px;
     border-radius: 30px;
-  }
-
-  .degenza-cani {
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    top: 32.5%;
-    left: 51.5%;
-    cursor: pointer;
-
-    img {
-      width: 40px;
-      height: 40px;
-    }
   }
 
   .degenza-cani-open {
@@ -695,7 +584,7 @@
 
   .close-modal {
     position: absolute;
-    top: 120px;
+    top: 50px;
     right: 50px;
     background: none;
     border: none;
