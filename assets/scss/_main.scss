@@ -13,19 +13,61 @@
   );
 }
 
-.hiddenDesktop {
+// general header
+
+.grid{
   display: none;
 }
 
-.hiddenMobile {
-  display: block;
+.hiddenTime{
+  display: none;
 }
 
-// general header
+.generalHeaderMobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  .logo {
+    padding-top: 10px;
+    padding-left: 20px;
+    img {
+      width: 80%;
+    }
+  }
+  .flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: 26px;
+      text-transform: uppercase;
+    }
+    a {
+      color: $primaryColor;
+      font-family: $mainFontBold;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+    }
+  }
+  .flexEnd {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 5px;
+    padding-right: 20px;
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
 
 .generalHeader {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   .logo {
     padding-top: 10px;
     padding-left: 20px;
@@ -117,7 +159,9 @@
 }
 
 // general footer
-
+.custom-footer{
+  margin-top: 60px;
+}
 footer {
   font-family: $mainFontBold;
   color: $primaryColor;
@@ -137,10 +181,7 @@ footer {
 }
 
 .main-content {
-  display: grid;
-  grid-template-rows: 1fr 5fr;
   width: 100vw;
-  height: 80vh;
   .grid-2rows {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -150,6 +191,7 @@ footer {
       justify-content: center;
       align-items: center;
       text-align: center;
+      padding-bottom: 20px;
       p {
         font-family: $mainFontRegular;
         color: $primaryColor;
@@ -161,6 +203,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0 10px;
     gap: 15px;
     text-align: center;
@@ -430,4 +473,113 @@ footer {
       }
     }
   }
+}
+
+
+// struttura
+
+.pianoterra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .hiddenMobile{
+    display: none;
+  }
+  .hiddenDesktop{
+    display: block;
+  }
+}
+
+.deposito-centrale-open {
+  background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.deposito-pulito-open {
+  background-image: url(/assets/imgs/struttura/deposito-pulito.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-operatoria-open {
+  background-image: url(/assets/imgs/struttura/sala-operatoria1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-operatoria2-open {
+  background-image: url(/assets/imgs/struttura/sala-operatoria2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-rx-open {
+  background-image: url(/assets/imgs/struttura/sala-rxint.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-tac-open {
+  background-image: url(/assets/imgs/struttura/tac.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.sala-controllo-tac-open {
+  background-image: url(/assets/imgs/struttura/controllo-tac.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.ingresso-open {
+  background-image: url(/assets/imgs/struttura/ingresso.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+.degenza-cani-open {
+  background-image: url(/assets/imgs/struttura/degenza-cani.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+
+// modale struttura
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
