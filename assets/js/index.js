@@ -13,6 +13,6 @@ window.addEventListener("DOMContentLoaded", () => {
   staff();
 });
 
-window.addEventListener("click", (e) => {
-  console.log(e);
-});
+// window.addEventListener("click", (e) => {
+//   console.log(e);
+// });
