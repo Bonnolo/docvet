@@ -6,11 +6,11 @@
   .grid {
     display: none;
   }
-  
+
   .hiddenTime {
     display: none;
   }
-  
+
   .generalHeaderMobile {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -18,7 +18,7 @@
       padding-top: 10px;
       padding-left: 20px;
       img {
-        width: 60%;
+        width: 50%;
       }
     }
     .flexCenter {
@@ -52,7 +52,7 @@
       }
     }
   }
-  
+
   .generalHeader {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -60,7 +60,7 @@
       padding-top: 10px;
       padding-left: 20px;
       img {
-        width: 80%;
+        width: 60%;
       }
     }
     .flexCenter {
@@ -94,7 +94,6 @@
       }
     }
   }
-  
 
   // End Header Home
 
@@ -105,7 +104,7 @@
     padding-top: 60px;
     padding-bottom: 20px;
     position: relative;
-    h1{
+    h1 {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -296,7 +295,7 @@
     .logo {
       padding-left: 20px;
       img {
-        width: 20%;
+        width: 50%;
       }
     }
     .flexCenter {
@@ -343,14 +342,14 @@
     height: 100vh;
     z-index: 100;
   }
-  
+
   .hamburger {
     display: none;
     position: fixed;
     z-index: 9999;
     height: 100vh;
     width: 100vw;
-  
+
     .hamburger-bg {
       background-color: $secondaryColor;
       height: 100vh;
@@ -466,31 +465,24 @@
   // Structure Specializzazioni
 
   .grid-2columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 65vh;
-    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     .grid-2columns-left {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-left: 20px;
       img {
         width: 100%;
         border-radius: 30px;
+        padding: 0 5px;
       }
+      margin-bottom: 20px;
     }
     .grid-2columns-right {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-right: 20px;
-      p {
-        font-family: $mainFontRegular;
-        color: $primaryColor;
-        font-size: $fontSizeMedium;
-        margin-left: 20px;
-      }
+      text-align: center;
+      font-size: $fontSizeSmall;
+      font-family: $mainFontRegular;
+      color: $primaryColor;
     }
   }
 
@@ -501,15 +493,18 @@
   }
 
   .pianoterra {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .hiddenMobile {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hiddenDesktop {
+      display: block;
+    }
+    .hiddenMobile {
+      display: none
+      
+      ;
+    }
   }
-}
-
-
   .primopiano {
     display: flex;
     justify-content: center;
@@ -524,7 +519,6 @@
       transform: translate(-6%);
     }
   }
-
   .secondopiano {
     display: flex;
     justify-content: center;
@@ -539,43 +533,8 @@
       transform: translate(-6%);
     }
   }
+  
 
-  .somministrazione-chemio,
-  .laboratorio,
-  .degenza-infettivi,
-  .ascensore,
-  .preparazione-operazione,
-  .degenza-gatti,
-  .degenza-cani-grande,
-  .sala-operatoria2,
-  .sala-eco,
-  .ambulatorio-oncologi,
-  .preparazione-chemio,
-  .terapia-intensiva,
-  .deposito-centrale,
-  .deposito-pulito,
-  .sala-operatoria,
-  .sala-rx,
-  .sala-tac,
-  .sala-controllo-tac,
-  .degenza-cani,
-  .sala-risveglio,
-  .terapia-intensiva,
-  .ufficio-imperatore,
-  .sala-attesa-cani,
-  .sala-attesa-gatti,
-  .ingresso,
-  .reception,
-  .ambulatorio,
-  .ambulatorio2,
-  .ambulatorio3,
-  .sala-riunioni,
-  .spogliatoio,
-  .spogliatoio2,
-  .ascensore2,
-  .ufficio {
-    cursor: pointer;
-  }
 
   .deposito-centrale-open {
     background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
@@ -815,7 +774,7 @@
     border-radius: 30px;
   }
 
-  .sala-attesa-cani-open{
+  .sala-attesa-cani-open {
     background-image: url(/assets/imgs/struttura/sala-attesa-cani.jpg);
     background-size: cover;
     background-position: center;
@@ -825,7 +784,7 @@
     border-radius: 30px;
   }
 
-  .sala-attesa-gatti-open{
+  .sala-attesa-gatti-open {
     background-image: url(/assets/imgs/struttura/sala-attesa-gatti.jpg);
     background-size: cover;
     background-position: center;
@@ -835,7 +794,7 @@
     border-radius: 30px;
   }
 
-  .sala-riunioni-open{
+  .sala-riunioni-open {
     background-image: url(/assets/imgs/struttura/sala-riunioni.jpg);
     background-size: cover;
     background-position: center;
@@ -845,7 +804,7 @@
     border-radius: 30px;
   }
 
-  .ufficio-imperatore-open{
+  .ufficio-imperatore-open {
     background-image: url(/assets/imgs/struttura/ufficio-imperatore.jpg);
     background-size: cover;
     background-position: center;
@@ -855,7 +814,7 @@
     border-radius: 30px;
   }
 
-  .ufficio-open{
+  .ufficio-open {
     background-image: url(/assets/imgs/struttura/ufficio.jpg);
     background-size: cover;
     background-position: center;
@@ -865,7 +824,7 @@
     border-radius: 30px;
   }
 
-  .spogliatoio-open{
+  .spogliatoio-open {
     background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
     background-size: cover;
     background-position: center;
@@ -874,7 +833,7 @@
     margin: 30px;
     border-radius: 30px;
   }
-  .spogliatoio2-open{
+  .spogliatoio2-open {
     background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
     background-size: cover;
     background-position: center;
@@ -883,9 +842,6 @@
     margin: 30px;
     border-radius: 30px;
   }
-
-
-  
 
   .close-modal {
     position: absolute;
