@@ -255,7 +255,7 @@
 
   .generalHeader {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     .logo {
       padding-left: 20px;
       img {
@@ -360,7 +360,7 @@
     display: grid;
     grid-template-rows: 1fr 5fr;
     width: 100vw;
-    height: 80vh;
+    height: 75vh;
     margin-bottom: 30px;
     .grid-2rows {
       display: grid;
