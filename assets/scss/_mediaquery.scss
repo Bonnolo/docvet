@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1179px) {
   .hiddenTime {
     display: block;
   }
@@ -66,6 +66,14 @@
 
   .video {
     height: 85vh;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    h1{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 
   // End Main Video Home
@@ -370,10 +378,8 @@
       }
     }
     .link-content {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       .active {
         border-bottom: 3px solid $primaryColor;
       }
@@ -838,14 +844,23 @@
     margin: 30px;
     border-radius: 30px;
   }
+  .spogliatoio2-open{
+    background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 75vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
 
 
   
 
   .close-modal {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 20px;
+    right: 20px;
     background: none;
     border: none;
     cursor: pointer;
@@ -904,12 +919,15 @@
           font-size: $fontSizeExtraLarge;
           text-transform: uppercase;
           margin-bottom: 5px;
+          text-shadow: 1px 1px 1px black;
         }
 
         p {
           font-family: $mainFontRegular;
           color: white;
           font-size: $fontSizeMedium;
+          text-shadow: 1px 1px 1px black;
+
         }
       }
       .staff-details-show {

@@ -803,13 +803,22 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
+.spogliatoio2-open{
+  background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
+}
 
 // modale struttura
 
 .close-modal {
   position: absolute;
   top: 10px;
-  right: 40px;
+  right: 20px;
   background: none;
   border: none;
   cursor: pointer;
