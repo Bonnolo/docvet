@@ -13,6 +13,77 @@
   );
 }
 
+// loading
+
+.loading-screen {
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+  height: 100vh;
+  background: var(
+    --sfondo-home,
+    radial-gradient(
+      165.01% 59.17% at 50% 47.78%,
+      #0094cc 0%,
+      #99d6ea 0.01%,
+      #fff 100%
+    )
+  );
+  color: $primaryColor;
+  overflow: hidden;
+}
+.loading-section {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#loader {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-family: $mainFontBold, sans-serif;
+  img{
+    width: 60%;
+  }
+}
+
+.transition-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  z-index: 999999;
+  pointer-events: none;
+}
+.transition-container span {
+  position: relative;
+}
+.transition-container.from-left {
+  flex-direction: column;
+}
+.transition-container.from-left span {
+  background: var(
+  --sfondo-home,
+  radial-gradient(
+    165.01% 59.17% at 50% 47.78%,
+    #0094cc 0%,
+    #99d6ea 0.01%,
+    #fff 100%
+  )
+);
+  height: 100%;
+  width: 0%;
+}
+
 // general header
 
 .grid {
