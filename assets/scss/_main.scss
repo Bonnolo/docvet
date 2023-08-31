@@ -84,6 +84,30 @@
   width: 0%;
 }
 
+// topbar
+
+.topbar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  li{
+    height: 30px;
+    font-family: $mainFontBold;
+    color: $primaryColor;
+    font-size: $fontSizeSmall;
+    text-transform: uppercase;
+    img{
+      width: 20px;
+      position: relative;
+      top: 5px;
+      margin-right: 3px;
+    }
+  }
+}
+
 // general header
 
 .grid {
@@ -196,6 +220,24 @@
   z-index: 9999;
   height: 100vh;
   width: 100vw;
+  .topbarHamburger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li{
+      font-family: $mainFontBold;
+      color: $primaryColor;
+      font-size: 12px;
+      text-transform: uppercase;
+      img{
+        width: 20px;
+        position: relative;
+        top: 5px;
+        margin-right: 3px;
+      }
+    }
+  }
 
   .hamburger-bg {
     background-color: $secondaryColor;
@@ -204,6 +246,7 @@
     position: fixed;
     display: flex;
     justify-content: center;
+
     button {
       background: none;
       border: none;
@@ -249,8 +292,8 @@ footer {
 // home page
 
 .video {
-  height: 80vh;
   position: relative;
+  height: 60vh;
   h1 {
     position: absolute;
     top: 50%;
@@ -525,7 +568,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
         p {
           font-family: $mainFontRegular;
           color: $primaryColor;
@@ -539,7 +581,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
         p {
           font-family: $mainFontRegular;
           color: $primaryColor;
@@ -548,6 +589,16 @@ footer {
           margin-top: 10px;
         }
       }
+    }
+  }
+  .orari{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      margin-right: 5px;
+      height: 40px;
+      width: 40px;
     }
   }
 }
