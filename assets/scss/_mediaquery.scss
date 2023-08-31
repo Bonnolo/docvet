@@ -82,7 +82,7 @@
 
   .contatti {
     display: flex;
-    height: 85vh;
+    height: 80vh;
     justify-content: center;
     flex-direction: row;
     gap: 50px;
@@ -380,6 +380,7 @@
     .link-content {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 10px;
       .active {
         border-bottom: 3px solid $primaryColor;
       }
