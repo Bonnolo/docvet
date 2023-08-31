@@ -1,20 +1,6 @@
-import openCloseMenu from "./Hamburger/hamburger.js";
-import getTime from "./time/time.js";
-import struttura from "./Struttura/struttura.js";
-import specializzazioni from "./Specializzazioni/specializzazioni.js";
-import staff from "./Staff/staff.js";
-import gsap from "gsap";
+import { gsap } from "gsap";
 
-window.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM fully loaded and parsed");
-  getTime();
-  openCloseMenu();
-  struttura();
-  specializzazioni();
-  staff();
-});
-
-const loadingScreen = () => {
+const loader = () => {
   var tl = gsap.timeline();
 
   const welcomeScreen = gsap.timeline({
@@ -63,21 +49,4 @@ const loadingScreen = () => {
   });
 };
 
-const visitobj = window.sessionStorage.getItem("visit");
-//console.log(visitobj);
-if (
-  document.querySelector("#loading") !== null &&
-  document.querySelector("#loading") !== undefined
-) {
-  //console.log(document.querySelector("#loading"));
-  if (visitobj == null) {
-    loadingScreen();
-  } else {
-    document.querySelector("#loading").style.display = "none";
-    document.querySelector("#loading1").style.display = "none";
-  }
-}
-
-// window.addEventListener("click", (e) => {
-//   console.log(e);
-// });
+export default loader;

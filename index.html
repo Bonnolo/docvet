@@ -9,13 +9,18 @@
     <title>DOCVET | Clinica Veterinaria</title>
   </head>
   <body class="bg">
+    <script>
+      function visit() {
+        window.sessionStorage.setItem("visit", 1);
+      }
+    </script>
     <!-- Loading Screen -->
-    <div class="loading-screen">
+    <div id="loading" class="loading-screen">
       <div class="loading-section">
         <div id="loader"></div>
       </div>
     </div>
-    <div class="transition-container from-left">
+    <div id="loading1" class="transition-container from-left">
       <span class="tile"></span>
     </div>
 
@@ -27,13 +32,19 @@
         </button>
         <ul>
           <li>
-            <a href="index.html"><span>Home</span></a>
+            <a href="index.html" onclick="visit()"><span>Home</span></a>
           </li>
-          <li><a href="struttura.html">Struttura clinica</a></li>
-          <li><a href="specializzazioni.html">Specializzazione</a></li>
-          <li><a href="staff.html">Staff</a></li>
+          <li>
+            <a href="struttura.html" onclick="visit()">Struttura clinica</a>
+          </li>
+          <li>
+            <a href="specializzazioni.html" onclick="visit()"
+              >Specializzazione</a
+            >
+          </li>
+          <li><a href="staff.html" onclick="visit()">Staff</a></li>
           <li><a href="">Area Clienti</a></li>
-          <li><a href="contatti.html">Contatti</a></li>
+          <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
         </ul>
       </div>
     </section>
@@ -41,7 +52,7 @@
     <!-- End Hamburger Menu -->
     <header class="generalHeaderMobile">
       <div class="logo">
-        <a href="index.html"
+        <a href="index.html" onclick="visit()"
           ><img src="/assets/imgs/zampaDocvet.png" alt=""
         /></a>
       </div>
@@ -56,17 +67,21 @@
     </header>
     <nav class="grid">
       <div class="logo">
-        <a href="index.html">
+        <a href="index.html" onclick="visit()">
           <img src="/assets/imgs/logoDocVet.png" alt="logoDocVet" />
         </a>
       </div>
       <ul class="head">
-        <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="struttura.html">Struttura Clinica</a></li>
-        <li><a href="specializzazioni.html">Specializzazioni</a></li>
-        <li><a href="staff.html">Staff</a></li>
+        <li><a class="active" href="index.html" onclick="visit()">Home</a></li>
+        <li>
+          <a href="struttura.html" onclick="visit()">Struttura Clinica</a>
+        </li>
+        <li>
+          <a href="specializzazioni.html" onclick="visit()">Specializzazioni</a>
+        </li>
+        <li><a href="staff.html" onclick="visit()">Staff</a></li>
         <li><a href="#">Area Clienti</a></li>
-        <li><a href="contatti.html">Contatti</a></li>
+        <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
       </ul>
     </nav>
     <main class="video">
