@@ -1,4 +1,9 @@
 @media (min-width: 1179px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
   .hiddenTime {
     display: block;
   }
@@ -6,9 +11,32 @@
   .generalHeaderMobile {
     display: none;
   }
+
+  .topbar{
+    position: relative;
+    top: 25px;
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    width: 100vw;
+    padding-right: 40px;
+      li{
+      height: 30px;
+      font-family: $mainFontBold;
+      color: $primaryColor;
+      font-size: 14px;
+      text-transform: uppercase;
+      img{
+        height: 20px;
+        position: relative;
+      }
+    }
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    position: relative;
+    top: -30px;
     height: 10vh;
     .logo {
       padding-left: 20px;
@@ -65,9 +93,9 @@
   // Main Video Home
 
   .video {
-    height: 85vh;
-    padding-top: 60px;
+    height: 80vh;
     padding-bottom: 20px;
+    padding-top: 20px;
     h1{
       position: fixed;
       top: 50%;
@@ -179,9 +207,8 @@
       }
       .contattiRightBottom {
         display: flex;
-        justify-content: center;
+        text-align: right;
         align-items: center;
-        flex-direction: row;
         margin-top: 20px;
         .contattiRightBottomLeft {
           display: flex;
@@ -350,6 +377,26 @@
       a:hover {
         color: $white;
         -webkit-text-stroke: 1px $white;
+      }
+    }
+
+    .topbarHamburger{
+      display: flex;
+      flex-direction: center;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      li{
+        font-family: $mainFontBold;
+        color: $primaryColor;
+        font-size: 14px;
+        text-transform: uppercase;
+        img{
+          width: 25px;
+          padding-right: 5px;
+          position: relative;
+          top: 5px;
+        }
       }
     }
   }
