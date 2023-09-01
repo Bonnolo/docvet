@@ -97,6 +97,31 @@
 
   // End Header Home
 
+
+  .strumentiMain {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 50px;
+    margin: 20px 30px;
+    margin-bottom: 80px;
+    .cardStrumenti {
+      position: relative;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+      } 
+    }
+    .titleStrumenti{
+      color: $primaryColor;
+      text-align: center;
+      font-family: $mainFontBold;
+      font-size: $fontSizeExtraLarge;
+      text-transform: uppercase;
+    }
+  }
+
   // Main Video Home
 
   .video {

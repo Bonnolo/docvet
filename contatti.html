@@ -34,7 +34,7 @@
             >
           </li>
           <li><a href="staff.html" onclick="visit()">Staff</a></li>
-          <li><a href="">Area Clienti</a></li>
+          <li><a href="strumenti.html" onclick="visit()">Strumenti</a></li>
           <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
           <div class="topbarHamburger">
             <li>
@@ -85,15 +85,33 @@
           ></textarea>
 
           <div class="checkbox">
+
+            <input type="checkbox" id="privacy" required />
+
             <input type="checkbox" id="privacy" required/>
+
             <label for="privacy"
               >Acconsento al trattamento dei dati personali</label
             >
           </div>
+
+          <div
+            class="g-recaptcha recaptcha"
+            data-sitekey="6LdGa-wnAAAAAOj003YhWbnDUp9ajvVEX8KDNKDC"
+          ></div>
+          <button type="submit">Invia</button>
+        </form>
+        <script
+          src="https://www.google.com/recaptcha/api.js"
+          async
+          defer
+        ></script>
+
           <div class="g-recaptcha recaptcha" data-sitekey="6LdGa-wnAAAAAOj003YhWbnDUp9ajvVEX8KDNKDC"></div>
           <button type="submit">Invia</button>
         </form>
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
       </div>
       <div class="contattiRight">
         <!-- mappa da google maps e sotto indirizzo e telefono -->

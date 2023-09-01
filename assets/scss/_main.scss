@@ -301,6 +301,42 @@ footer {
   }
 }
 
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+  p {
+    font-family: $mainFontRegular;
+    color: $primaryColor;
+    font-size: $fontSizeSmall;
+  }
+}
+  .strumentiMain {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin: 20px 30px;
+    .cardStrumenti {
+      position: relative;
+      img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+      } 
+    }
+    .titleStrumenti{
+      color: $primaryColor;
+      text-align: center;
+      font-family: $mainFontBold;
+      font-size: $fontSizeExtraLarge;
+      text-transform: uppercase;
+    }
+  }
+
+
 .main-content {
   width: 100vw;
   .grid-2rows {

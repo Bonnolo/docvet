@@ -1,6 +1,5 @@
 @media (min-width: 1179px) {
-
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -12,7 +11,7 @@
     display: none;
   }
 
-  .topbar{
+  .topbar {
     position: relative;
     top: 10px;
     display: flex;
@@ -20,13 +19,19 @@
     gap: 40px;
     width: 100vw;
     padding-right: 40px;
+
+    li {
+
     z-index: 20;
       li{
+
       height: 30px;
       font-family: $mainFontBold;
       color: $primaryColor;
       font-size: 12px;
       text-transform: uppercase;
+      img {
+
       a{
         color: $primaryColor;
         text-decoration: none;
@@ -101,7 +106,7 @@
     height: 80vh;
     padding-bottom: 20px;
     padding-top: 20px;
-    h1{
+    h1 {
       position: fixed;
       top: 50%;
       left: 50%;
@@ -110,6 +115,43 @@
   }
 
   // End Main Video Home
+
+  .strumentiMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 20px 30px;
+    .cardStrumenti {
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+      }
+      .titleStrumenti {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50% );
+        color: $primaryColor;
+        font-family: $mainFontBold;
+        font-size: $fontSizeExtraLarge;
+        text-transform: uppercase;
+      }
+    }
+    .cardStrumenti:hover {
+      .titleStrumenti {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      img {
+        opacity: 0.4;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
 
   // Main Contatti
 
@@ -385,18 +427,18 @@
       }
     }
 
-    .topbarHamburger{
+    .topbarHamburger {
       display: flex;
       flex-direction: center;
       justify-content: center;
       align-items: center;
       gap: 40px;
-      li{
+      li {
         font-family: $mainFontBold;
         color: $primaryColor;
         font-size: 14px;
         text-transform: uppercase;
-        img{
+        img {
           width: 25px;
           padding-right: 5px;
           position: relative;
@@ -838,7 +880,7 @@
     border-radius: 30px;
   }
 
-  .sala-attesa-cani-open{
+  .sala-attesa-cani-open {
     background-image: url(/assets/imgs/struttura/sala-attesa-cani.jpg);
     background-size: cover;
     background-position: center;
@@ -848,7 +890,7 @@
     border-radius: 30px;
   }
 
-  .sala-attesa-gatti-open{
+  .sala-attesa-gatti-open {
     background-image: url(/assets/imgs/struttura/sala-attesa-gatti.jpg);
     background-size: cover;
     background-position: center;
@@ -858,7 +900,7 @@
     border-radius: 30px;
   }
 
-  .sala-riunioni-open{
+  .sala-riunioni-open {
     background-image: url(/assets/imgs/struttura/sala-riunioni.jpg);
     background-size: cover;
     background-position: center;
@@ -868,7 +910,7 @@
     border-radius: 30px;
   }
 
-  .ufficio-imperatore-open{
+  .ufficio-imperatore-open {
     background-image: url(/assets/imgs/struttura/ufficio-imperatore.jpg);
     background-size: cover;
     background-position: center;
@@ -878,7 +920,7 @@
     border-radius: 30px;
   }
 
-  .ufficio-open{
+  .ufficio-open {
     background-image: url(/assets/imgs/struttura/ufficio.jpg);
     background-size: cover;
     background-position: center;
@@ -888,7 +930,7 @@
     border-radius: 30px;
   }
 
-  .spogliatoio-open{
+  .spogliatoio-open {
     background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
     background-size: cover;
     background-position: center;
@@ -897,7 +939,7 @@
     margin: 30px;
     border-radius: 30px;
   }
-  .spogliatoio2-open{
+  .spogliatoio2-open {
     background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
     background-size: cover;
     background-position: center;
@@ -906,9 +948,6 @@
     margin: 30px;
     border-radius: 30px;
   }
-
-
-  
 
   .close-modal {
     position: absolute;
@@ -980,7 +1019,6 @@
           color: white;
           font-size: $fontSizeMedium;
           text-shadow: 1px 1px 1px black;
-
         }
       }
       .staff-details-show {
