@@ -13,19 +13,30 @@
 
   .topbar {
     position: relative;
-    top: 25px;
+    top: 10px;
     display: flex;
     justify-content: end;
     gap: 40px;
     width: 100vw;
     padding-right: 40px;
+
     li {
+
+    z-index: 20;
+      li{
+
       height: 30px;
       font-family: $mainFontBold;
       color: $primaryColor;
-      font-size: 14px;
+      font-size: 12px;
       text-transform: uppercase;
       img {
+
+      a{
+        color: $primaryColor;
+        text-decoration: none;
+      }
+      img{
         height: 20px;
         position: relative;
       }

@@ -38,7 +38,6 @@
   width: 100%;
   height: 100vh;
   align-items: center;
-  justify-content: center;
 }
 
 
@@ -569,6 +568,26 @@ footer {
         cursor: pointer;
         transition: all 0.8s;
       }
+      .checkbox {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 20px;
+        input {
+          margin-right: 10px;
+          height: 20px;
+          width: 20px;
+          margin-top: 0px;
+        }
+        label {
+          font-family: $mainFontRegular;
+          color: $primaryColor;
+          font-size: $fontSizeSmall;
+        }
+      }
+      .recaptcha {
+        margin-top: 20px;
+      }
     }
   }
   .contattiRight {
@@ -624,6 +643,11 @@ footer {
           text-align: center;
           margin-top: 10px;
         }
+        img{
+          margin-right: 5px;
+          height: 30px;
+          width: 30px;
+        }
       }
     }
   }
@@ -633,8 +657,8 @@ footer {
     align-items: center;
     img{
       margin-right: 5px;
-      height: 40px;
-      width: 40px;
+      height: 30px;
+      width: 30px;
     }
   }
 }
