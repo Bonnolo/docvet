@@ -98,13 +98,13 @@
   // End Header Home
 
 
-  .strumentiMain {
+  .strumentazioneMain {
     display: grid;
     grid-template-columns: 2fr;
     gap: 50px;
     margin: 20px 30px;
     margin-bottom: 80px;
-    .cardStrumenti {
+    .cardstrumentazione {
       position: relative;
       img{
         width: 100%;
@@ -113,7 +113,7 @@
         object-fit: cover;
       } 
     }
-    .titleStrumenti{
+    .titlestrumentazione{
       color: $primaryColor;
       text-align: center;
       font-family: $mainFontBold;

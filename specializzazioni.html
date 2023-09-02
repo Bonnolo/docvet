@@ -15,6 +15,7 @@
       }
     </script>
     <!-- hamburger menu -->
+    <!-- hamburger menu -->
     <section id="hamburger" class="hamburger">
       <div class="hamburger-bg">
         <button id="close-hamburger" class="close-menu">
@@ -33,12 +34,14 @@
             >
           </li>
           <li><a href="staff.html" onclick="visit()">Staff</a></li>
-          <li><a href="strumenti.html" onclick="visit()">Strumenti</a></li>
+          <li>
+            <a href="strumentazione.html" onclick="visit()">strumentazione</a>
+          </li>
           <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
           <div class="topbarHamburger">
             <li>
-              <img src="assets/imgs/icons/clock.svg" alt="" /> LUN-VEN 9:00 -
-              18:00 SAB-DOM CHIUSI
+              <img src="assets/imgs/icons/clock.svg" alt="" /> LUN-VEN: 9:00 -
+              18:00 SAB-DOM: CHIUSI
             </li>
             <li>
               <img src="assets/imgs/icons/phone.svg" alt="" /> +39 0331 588 696
@@ -52,14 +55,14 @@
     </section>
     <div class="hamburger-blur"></div>
     <!-- End Hamburger Menu -->
-    <header class="generalHeader">
+    <header class="generalHeaderMobile">
       <div class="logo">
         <a href="index.html" onclick="visit()"
           ><img src="/assets/imgs/zampaDocvet.png" alt=""
         /></a>
       </div>
       <div class="flexCenter">
-        <h1><a href="specializzazioni.html">Specializzazioni</a></h1>
+        <h1><a href="#">specializzazioni</a></h1>
       </div>
       <div class="flexEnd">
         <button id="open-hamburger">
@@ -67,6 +70,29 @@
         </button>
       </div>
     </header>
+    <nav class="grid">
+      <div class="logo">
+        <a href="index.html" onclick="visit()">
+          <img src="/assets/imgs/logoDocVet.png" alt="logoDocVet" />
+        </a>
+      </div>
+      <ul class="head">
+        <li><a href="index.html" onclick="visit()">Home</a></li>
+        <li>
+          <a href="struttura.html" onclick="visit()">Struttura Clinica</a>
+        </li>
+        <li>
+          <a class="active" href="specializzazioni.html" onclick="visit()"
+            >Specializzazioni</a
+          >
+        </li>
+        <li><a href="staff.html" onclick="visit()">Staff</a></li>
+        <li>
+          <a href="strumentazione.html" onclick="visit()">strumentazione</a>
+        </li>
+        <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
+      </ul>
+    </nav>
     <main class="main-content" id="main-spec">
       <div class="grid-2rows">
         <ul class="link-content">
