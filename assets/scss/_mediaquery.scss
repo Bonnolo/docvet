@@ -41,7 +41,7 @@
         position: relative;
       }
     }
-  }
+  }}}
   .grid {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -429,7 +429,6 @@
 
     .topbarHamburger {
       display: flex;
-      flex-direction: center;
       justify-content: center;
       align-items: center;
       gap: 40px;
