@@ -86,17 +86,16 @@
 // topbar
 
 .topbar{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 90vw;
+  gap: 20px;
   li{
     height: 30px;
     font-family: $mainFontBold;
     color: $primaryColor;
-    font-size: $fontSizeSmall;
+    font-size: 10px;
     text-transform: uppercase;
     img{
       width: 20px;
@@ -104,12 +103,16 @@
       top: 5px;
       margin-right: 3px;
     }
+    a{
+      color: $primaryColor;
+      text-decoration: none;
+    }
   }
 }
 
 // general header
 
-.grid {
+.grid, .gridHome {
   display: none;
 }
 
@@ -221,7 +224,7 @@
   width: 100vw;
   .topbarHamburger{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     li{
@@ -313,12 +316,12 @@ footer {
     font-size: $fontSizeSmall;
   }
 }
-  .strumentiMain {
+  .strumentazioneMain {
     display: grid;
     grid-template-columns: 1fr;
     gap: 50px;
     margin: 20px 30px;
-    .cardStrumenti {
+    .cardstrumentazione {
       position: relative;
       img{
         width: 100%;
@@ -327,7 +330,7 @@ footer {
         object-fit: cover;
       } 
     }
-    .titleStrumenti{
+    .titlestrumentazione{
       color: $primaryColor;
       text-align: center;
       font-family: $mainFontBold;

@@ -16,58 +16,82 @@
       }
     </script>
     <!-- hamburger menu -->
-    <section id="hamburger" class="hamburger">
-      <div class="hamburger-bg">
-        <button id="close-hamburger" class="close-menu">
-          <img src="/assets/imgs/icons/icon _close circle.svg" alt="" />
-        </button>
-        <ul>
-          <li>
-            <a href="index.html" onclick="visit()"><span>Home</span></a>
-          </li>
-          <li>
-            <a href="struttura.html" onclick="visit()">Struttura clinica</a>
-          </li>
-          <li>
-            <a href="specializzazioni.html" onclick="visit()"
-              >Specializzazione</a
-            >
-          </li>
-          <li><a href="staff.html" onclick="visit()">Staff</a></li>
-          <li><a href="strumenti.html" onclick="visit()">Strumenti</a></li>
-          <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
-          <div class="topbarHamburger">
-            <li>
-              <img src="assets/imgs/icons/clock.svg" alt="" /> LUN-VEN 9:00 -
-              18:00 SAB-DOM CHIUSI
-            </li>
-            <li>
-              <img src="assets/imgs/icons/phone.svg" alt="" /> +39 0331 588 696
-            </li>
-            <li>
-              <img src="assets/imgs/icons/email.svg" alt="" /> info@docvet.it
-            </li>
-          </div>
-        </ul>
+     <!-- hamburger menu -->
+ <section id="hamburger" class="hamburger">
+  <div class="hamburger-bg">
+    <button id="close-hamburger" class="close-menu">
+      <img src="/assets/imgs/icons/icon _close circle.svg" alt="" />
+    </button>
+    <ul>
+      <li>
+        <a href="index.html" onclick="visit()"><span>Home</span></a>
+      </li>
+      <li>
+        <a href="struttura.html" onclick="visit()">Struttura clinica</a>
+      </li>
+      <li>
+        <a href="specializzazioni.html" onclick="visit()"
+          >Specializzazione</a
+        >
+      </li>
+      <li><a href="staff.html" onclick="visit()">Staff</a></li>
+      <li><a href="strumentazione.html" onclick="visit()">strumentazione</a></li>
+      <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
+      <div class="topbarHamburger">
+        <li>
+          <img src="assets/imgs/icons/clock.svg" alt="" /> LUN-VEN: 9:00 -
+          18:00 SAB-DOM: CHIUSI
+        </li>
+        <li>
+          <img src="assets/imgs/icons/phone.svg" alt="" /> +39 0331 588 696
+        </li>
+        <li>
+          <img src="assets/imgs/icons/email.svg" alt="" /> info@docvet.it
+        </li>
       </div>
-    </section>
-    <div class="hamburger-blur"></div>
-    <!-- End Hamburger Menu -->
-    <header class="generalHeader">
-      <div class="logo">
-        <a href="index.html" onclick="visit()"
-          ><img src="/assets/imgs/zampaDocvet.png" alt=""
-        /></a>
-      </div>
-      <div class="flexCenter">
-        <h1><a href="contatti.html">contatti</a></h1>
-      </div>
-      <div class="flexEnd">
-        <button id="open-hamburger">
-          <img src="/assets/imgs/icons/icon _menu.svg" alt="" />
-        </button>
-      </div>
-    </header>
+    </ul>
+  </div>
+</section>
+<div class="hamburger-blur"></div>
+<!-- End Hamburger Menu -->
+<header class="generalHeaderMobile">
+  <div class="logo">
+    <a href="index.html" onclick="visit()"
+      ><img src="/assets/imgs/zampaDocvet.png" alt=""
+    /></a>
+  </div>
+  <div class="flexCenter">
+    <h1><a href="#">Contatti</a></h1>
+  </div>
+  <div class="flexEnd">
+    <button id="open-hamburger">
+      <img src="/assets/imgs/icons/icon _menu.svg" alt="" />
+    </button>
+  </div>
+</header>
+<nav class="grid">
+  <div class="logo">
+    <a href="index.html" onclick="visit()">
+      <img src="/assets/imgs/logoDocVet.png" alt="logoDocVet" />
+    </a>
+  </div>
+  <ul class="head">
+    <li><a href="index.html" onclick="visit()">Home</a></li>
+    <li>
+      <a href="struttura.html" onclick="visit()">Struttura Clinica</a>
+    </li>
+    <li>
+      <a href="specializzazioni.html" onclick="visit()">Specializzazioni</a>
+    </li>
+    <li><a href="staff.html" onclick="visit()">Staff</a></li>
+    <li>
+      <a  href="strumentazione.html" onclick="visit()"
+        >strumentazione</a
+      >
+    </li>
+    <li><a class="active" href="contatti.html" onclick="visit()">Contatti</a></li>
+  </ul>
+</nav>
     <main class="contatti">
       <div class="contattiLeft">
         <!-- form contatti -->

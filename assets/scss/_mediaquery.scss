@@ -1,4 +1,5 @@
 @media (min-width: 1179px) {
+
   body {
     overflow-x: hidden;
   }
@@ -19,16 +20,13 @@
     gap: 40px;
     width: 100vw;
     padding-right: 40px;
-
-    li {
-
-    z-index: 20;
       li{
+        z-index: 20;
 
       height: 30px;
       font-family: $mainFontBold;
       color: $primaryColor;
-      font-size: 12px;
+      font-size: 16px;
       text-transform: uppercase;
       img {
 
@@ -41,13 +39,71 @@
         position: relative;
       }
     }
-  }}}
-  .grid {
+  }
+}
+
+  .gridHome {
     display: grid;
     grid-template-columns: 1fr 4fr;
     position: relative;
     top: -30px;
     height: 10vh;
+    margin-bottom: 10px;
+    .logo {
+      padding-left: 20px;
+      img {
+        width: 60%;
+      }
+    }
+    .head {
+      display: flex;
+      justify-content: space-between;
+      li {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      li:nth-child(6) {
+        padding-right: 40px;
+      }
+      .active {
+        border-bottom: 3px solid $primaryColor;
+      }
+      a {
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        font-family: $mainFontBold;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+      }
+      a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: $primaryColor;
+        border-radius: 20px;
+        scale: 0;
+        transform-origin: right;
+        transition: scale 0.5s;
+      }
+      a:hover::before {
+        scale: 1;
+        transform-origin: left;
+        height: 2px;
+      }
+    }
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+    height: 10vh;
+    margin-bottom: 50px;
     .logo {
       padding-left: 20px;
       img {
@@ -116,12 +172,12 @@
 
   // End Main Video Home
 
-  .strumentiMain {
+  .strumentazioneMain {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     margin: 20px 30px;
-    .cardStrumenti {
+    .cardstrumentazione {
       position: relative;
       img {
         width: 100%;
@@ -129,7 +185,7 @@
         border-radius: 30px;
         object-fit: cover;
       }
-      .titleStrumenti {
+      .titlestrumentazione {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -141,8 +197,8 @@
         text-transform: uppercase;
       }
     }
-    .cardStrumenti:hover {
-      .titleStrumenti {
+    .cardstrumentazione:hover {
+      .titlestrumentazione {
         opacity: 1;
         transition: all 0.5s ease-in-out;
       }
@@ -328,6 +384,7 @@
   // Header General
 
   .generalHeader {
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .logo {
@@ -429,6 +486,7 @@
 
     .topbarHamburger {
       display: flex;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       gap: 40px;
