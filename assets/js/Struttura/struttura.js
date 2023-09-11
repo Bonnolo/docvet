@@ -481,7 +481,10 @@ const struttura = () => {
           //console.log(selector);
         }
         mainElement.innerHTML = `
-                                <h1 class="roomtitle">${selector}</h1>
+                                <h1 class="roomtitle">${selector.replace(
+                                  "-",
+                                  " "
+                                )}</h1>
                                 <div class="${selector}-open">
                                   <div class="close-modal">
                                     <img src="assets/imgs/icons/icon _close circle.svg">
