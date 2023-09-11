@@ -9,8 +9,8 @@ const carosello = () => {
   let i = 0;
 
   homeVideoButton1?.addEventListener("click", async () => {
-    await gsap.fromTo(homeVideo, { opacity: 1 }, { opacity: 0, duration: 0.5 });
-    console.log("Avanti");
+    //await gsap.fromTo(homeVideo, { opacity: 1 }, { opacity: 0, duration: 0.5 });
+    console.log("Indietro");
     if (i == 0) {
       homeVideo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
       i = 2;
