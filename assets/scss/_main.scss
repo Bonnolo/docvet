@@ -42,6 +42,7 @@
 
 
 #loader {
+  width: 100%;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -49,7 +50,7 @@
   font-size: 80px;
   font-family: $mainFontBold, sans-serif;
   img{
-    width: 60%;
+    width: 40%;
   }
 }
 
@@ -97,10 +98,11 @@
     color: $primaryColor;
     font-size: 10px;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    
     img{
       width: 20px;
-      position: relative;
-      top: 5px;
       margin-right: 3px;
     }
     a{

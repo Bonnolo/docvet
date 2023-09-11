@@ -1,5 +1,4 @@
 @media (min-width: 1179px) {
-
   body {
     overflow-x: hidden;
   }
@@ -20,27 +19,24 @@
     gap: 40px;
     width: 100vw;
     padding-right: 40px;
-      li{
-        z-index: 20;
-
+    li {
+      z-index: 20;
       height: 30px;
       font-family: $mainFontBold;
       color: $primaryColor;
       font-size: 16px;
       text-transform: uppercase;
-      img {
-
-      a{
+      a {
+        display: flex;
+        justify-content: center;
         color: $primaryColor;
         text-decoration: none;
       }
-      img{
+      img {
         height: 20px;
-        position: relative;
       }
     }
   }
-}
 
   .gridHome {
     display: grid;
@@ -190,7 +186,7 @@
         top: 50%;
         left: 50%;
         opacity: 0;
-        transform: translate(-50%, -50% );
+        transform: translate(-50%, -50%);
         color: $primaryColor;
         font-family: $mainFontBold;
         font-size: $fontSizeExtraLarge;
@@ -384,7 +380,6 @@
   // Header General
 
   .generalHeader {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     .logo {
