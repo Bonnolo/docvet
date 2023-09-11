@@ -480,8 +480,9 @@ const struttura = () => {
           selector = selector.replace("-mobile", "");
           //console.log(selector);
         }
+
         mainElement.innerHTML = `
-                                <h1 class="roomtitle">${selector.replace(
+                                <h1 class="roomtitle">${selector.replaceAll(
                                   "-",
                                   " "
                                 )}</h1>
