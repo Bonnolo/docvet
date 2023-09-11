@@ -5,7 +5,8 @@ const carosello = () => {
   const homeVideoButton1 = document.querySelector("#homeVideoButton1");
   const homeVideoButton2 = document.querySelector("#homeVideoButton2");
 
-  const video = ["chemio_orizz.webm", "chirurgia_orizz.webm", "tc_orizz.webm"];
+  const video = ["chirurgia_orizz.webm", "chemio_orizz.webm", "tc_orizz.webm"];
+  homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
   let i = 0;
 
   homeVideoButton1?.addEventListener("click", async () => {
