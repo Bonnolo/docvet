@@ -1036,9 +1036,11 @@ footer {
   border: none;
   cursor: pointer;
 }
+
+
 .roomtitle{
   text-align: center;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: $mainFontBold;
   font-size: $fontSizeLarge;
   color: $primaryColor;
