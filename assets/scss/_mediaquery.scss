@@ -1,6 +1,5 @@
 @media (min-width: 1179px) {
-
-  body{
+  body {
     overflow-x: hidden;
   }
 
@@ -12,7 +11,7 @@
     display: none;
   }
 
-  .topbar{
+  .topbar {
     position: relative;
     top: 10px;
     display: flex;
@@ -20,20 +19,78 @@
     gap: 40px;
     width: 100vw;
     padding-right: 40px;
-    z-index: 20;
-      li{
+    li {
+      z-index: 20;
       height: 30px;
       font-family: $mainFontBold;
       color: $primaryColor;
-      font-size: 12px;
+      font-size: 16px;
       text-transform: uppercase;
-      a{
+      a {
+        display: flex;
+        justify-content: center;
         color: $primaryColor;
         text-decoration: none;
       }
-      img{
+      img {
         height: 20px;
+      }
+    }
+  }
+
+  .gridHome {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+    top: -30px;
+    height: 10vh;
+    margin-bottom: 10px;
+    .logo {
+      padding-left: 20px;
+      img {
+        width: 60%;
+      }
+    }
+    .head {
+      display: flex;
+      justify-content: space-between;
+      li {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      li:nth-child(6) {
+        padding-right: 40px;
+      }
+      .active {
+        border-bottom: 3px solid $primaryColor;
+      }
+      a {
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        font-family: $mainFontBold;
+        text-decoration: none;
+        text-transform: uppercase;
         position: relative;
+      }
+      a::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 2px;
+        background-color: $primaryColor;
+        border-radius: 20px;
+        scale: 0;
+        transform-origin: right;
+        transition: scale 0.5s;
+      }
+      a:hover::before {
+        scale: 1;
+        transform-origin: left;
+        height: 2px;
       }
     }
   }
@@ -41,8 +98,8 @@
     display: grid;
     grid-template-columns: 1fr 4fr;
     position: relative;
-    top: -30px;
     height: 10vh;
+    margin-bottom: 50px;
     .logo {
       padding-left: 20px;
       img {
@@ -101,7 +158,7 @@
     height: 80vh;
     padding-bottom: 20px;
     padding-top: 20px;
-    h1{
+    h1 {
       position: fixed;
       top: 50%;
       left: 50%;
@@ -111,14 +168,52 @@
 
   // End Main Video Home
 
+  .strumentazioneMain {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    margin: 20px 30px;
+    .cardstrumentazione {
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        object-fit: cover;
+      }
+      .titlestrumentazione {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, -50%);
+        color: $primaryColor;
+        font-family: $mainFontBold;
+        font-size: $fontSizeExtraLarge;
+        text-transform: uppercase;
+      }
+    }
+    .cardstrumentazione:hover {
+      .titlestrumentazione {
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+      }
+      img {
+        opacity: 0.4;
+        transition: all 0.5s ease-in-out;
+      }
+    }
+  }
+
   // Main Contatti
 
   .contatti {
     display: flex;
-    height: 80vh;
+    height: 75vh;
     justify-content: center;
     flex-direction: row;
     gap: 50px;
+    margin-bottom: 25px;
     .contattiLeft {
       display: flex;
       justify-content: center;
@@ -269,6 +364,7 @@
 
   .custom-footer {
     margin-top: 0;
+    
   }
 
   footer {
@@ -385,18 +481,18 @@
       }
     }
 
-    .topbarHamburger{
+    .topbarHamburger {
       display: flex;
-      flex-direction: center;
+      flex-direction: row;
       justify-content: center;
       align-items: center;
       gap: 40px;
-      li{
+      li {
         font-family: $mainFontBold;
         color: $primaryColor;
         font-size: 14px;
         text-transform: uppercase;
-        img{
+        img {
           width: 25px;
           padding-right: 5px;
           position: relative;
@@ -413,7 +509,7 @@
     grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 75vh;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     .grid-2rows {
       display: grid;
       grid-template-rows: 1fr 1fr;
@@ -838,7 +934,7 @@
     border-radius: 30px;
   }
 
-  .sala-attesa-cani-open{
+  .sala-attesa-cani-open {
     background-image: url(/assets/imgs/struttura/sala-attesa-cani.jpg);
     background-size: cover;
     background-position: center;
@@ -848,7 +944,7 @@
     border-radius: 30px;
   }
 
-  .sala-attesa-gatti-open{
+  .sala-attesa-gatti-open {
     background-image: url(/assets/imgs/struttura/sala-attesa-gatti.jpg);
     background-size: cover;
     background-position: center;
@@ -858,7 +954,7 @@
     border-radius: 30px;
   }
 
-  .sala-riunioni-open{
+  .sala-riunioni-open {
     background-image: url(/assets/imgs/struttura/sala-riunioni.jpg);
     background-size: cover;
     background-position: center;
@@ -868,7 +964,7 @@
     border-radius: 30px;
   }
 
-  .ufficio-imperatore-open{
+  .ufficio-imperatore-open {
     background-image: url(/assets/imgs/struttura/ufficio-imperatore.jpg);
     background-size: cover;
     background-position: center;
@@ -878,7 +974,7 @@
     border-radius: 30px;
   }
 
-  .ufficio-open{
+  .ufficio-open {
     background-image: url(/assets/imgs/struttura/ufficio.jpg);
     background-size: cover;
     background-position: center;
@@ -888,7 +984,7 @@
     border-radius: 30px;
   }
 
-  .spogliatoio-open{
+  .spogliatoio-open {
     background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
     background-size: cover;
     background-position: center;
@@ -897,7 +993,7 @@
     margin: 30px;
     border-radius: 30px;
   }
-  .spogliatoio2-open{
+  .spogliatoio2-open {
     background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
     background-size: cover;
     background-position: center;
@@ -906,9 +1002,6 @@
     margin: 30px;
     border-radius: 30px;
   }
-
-
-  
 
   .close-modal {
     position: absolute;
@@ -980,7 +1073,6 @@
           color: white;
           font-size: $fontSizeMedium;
           text-shadow: 1px 1px 1px black;
-
         }
       }
       .staff-details-show {
@@ -1006,7 +1098,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 10px;
     button {
       background: none;
       border: none;
