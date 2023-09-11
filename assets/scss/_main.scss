@@ -1015,3 +1015,16 @@ footer {
   border: none;
   cursor: pointer;
 }
+
+//icon social
+
+.social {
+  gap:  20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 25px;
+    height: 25px;
+  }
+}
