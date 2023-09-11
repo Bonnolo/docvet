@@ -209,10 +209,11 @@
 
   .contatti {
     display: flex;
-    height: 80vh;
+    height: 75vh;
     justify-content: center;
     flex-direction: row;
     gap: 50px;
+    margin-bottom: 25px;
     .contattiLeft {
       display: flex;
       justify-content: center;
@@ -363,6 +364,7 @@
 
   .custom-footer {
     margin-top: 0;
+    
   }
 
   footer {
@@ -507,7 +509,7 @@
     grid-template-rows: 1fr 5fr;
     width: 100vw;
     height: 75vh;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     .grid-2rows {
       display: grid;
       grid-template-rows: 1fr 1fr;
