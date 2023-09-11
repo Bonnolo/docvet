@@ -4,6 +4,7 @@ import struttura from "./Struttura/struttura.js";
 import specializzazioni from "./Specializzazioni/specializzazioni.js";
 import staff from "./Staff/staff.js";
 import gsap from "gsap";
+import carosello from "./Carosello/carosello.js";
 
 window.addEventListener("DOMContentLoaded", () => {
   console.log("DOM fully loaded and parsed");
@@ -12,6 +13,7 @@ window.addEventListener("DOMContentLoaded", () => {
   struttura();
   specializzazioni();
   staff();
+  carosello();
 });
 
 const loadingScreen = () => {
