@@ -16,22 +16,6 @@ const personaleMedico = [
     study: "DVM, Dipl. ECVS, GPCert. SASTS",
   },
   {
-    name: "Marco",
-    surname: "Bianchi",
-    picture: "./assets/imgs/staffimgs/MarcoBianchiresize.jpg",
-    title: "Dott.",
-    description: "Oncologia Medica",
-    study: "DVM, MSc",
-  },
-  {
-    name: "Gianluca",
-    surname: "Maresca",
-    picture: "./assets/imgs/staffimgs/GianlucaMarescaresize.jpg",
-    title: "Dott.",
-    description: "Oncologia Medica",
-    study: "DVM, MSc, GPCert. (Onco)",
-  },
-  {
     name: "Dario",
     surname: "Drudi",
     picture: "./assets/imgs/staffimgs/DarioDrudiresize.jpg",
@@ -70,6 +54,22 @@ const personaleMedico = [
     title: "Dott.ssa",
     description: "Intern specialist in chirurgia oncologica, dei tessuti molli e mininvasiva",
     study: "DVM",
+  },
+  {
+    name: "Marco",
+    surname: "Bianchi",
+    picture: "./assets/imgs/staffimgs/MarcoBianchiresize.jpg",
+    title: "Dott.",
+    description: "Oncologia Medica",
+    study: "DVM, MSc",
+  },
+  {
+    name: "Gianluca",
+    surname: "Maresca",
+    picture: "./assets/imgs/staffimgs/GianlucaMarescaresize.jpg",
+    title: "Dott.",
+    description: "Oncologia Medica",
+    study: "DVM, MSc, GPCert. (Onco)",
   },
   {
     name: "Stefania",
@@ -116,7 +116,7 @@ const personaleMedico = [
     surname: "Barone",
     picture: "./assets/imgs/staffimgs/CaterinaBaroneresize.jpg",
     title: "Dott.ssa",
-    description: "Cardiologia",
+    description: "Ecografia",
     study: "DVM",
   },
   {
@@ -127,6 +127,22 @@ const personaleMedico = [
     description: "Medicina Interna",
     study: "DVM",
   },
+  //{
+  //  name: "Stefano",
+  //  surname: "Borio",
+  //  picture: "./assets/imgs/staffimgs/SilviaColomboresize.jpg",
+  //  title: "Dott.",
+  //  description: "Dermatologia",
+  //  study: "DVM, MRCVS, Dipl. ECVD",
+  //},
+  //{
+  //  name: "Silvia",
+  //  surname: "Colombo",
+  //  picture: "./assets/imgs/staffimgs/SilviaColomboresize.jpg",
+  //  title: "Dott.ssa",
+  //  description: "Dermatologia",
+  //  study: "Dr.Med.Vet, Dipl. ECVD",
+  //},
   {
     name: "Federica",
     surname: "Zausa",
@@ -135,13 +151,6 @@ const personaleMedico = [
     description: "Responsabile degenza",
     study: "DVM",
   },
-  //{
-  //  name: "Silvia",
-  //  surname: "Colombo",
-  //  picture: "./assets/imgs/staffimgs/SilviaColomboresize.jpg",
-  //  title: "Dott.ssa",
-  //  description: "Dermatologia",
-  //},
 ];
 
 const personaleInfermieristico = [
