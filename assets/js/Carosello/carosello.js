@@ -10,13 +10,28 @@ const carosello = () => {
   let i = 0;
 
   homeVideoButton1?.addEventListener("click", async () => {
-    //await gsap.fromTo(homeVideo, { opacity: 1 }, { opacity: 0, duration: 0.5 });
+    //await gsap.to(homeVideo, {
+    //  x: 200,
+    //  duration: 0.2,
+    //  ease: "Power0.easeNone",
+    //});
+    //await gsap.to(homeVideo, { opacity: 0, duration: 0.1 });
     console.log("Indietro");
     if (i == 0) {
       homeVideo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+      // await gsap.fromTo(
+      //   homeVideo,
+      //   { x: -200 },
+      //   { x: 0, opacity: 1, duration: 0.5, ease: "Power0.easeNone" }
+      // );
       i = 2;
     } else {
       homeVideo?.setAttribute("src", `assets/imgs/video/${video[i - 1]}`);
+      // await gsap.fromTo(
+      //   homeVideo,
+      //   { x: -200 },
+      //   { x: 0, opacity: 1, duration: 0.5, ease: "Power0.easeNone" }
+      // );
       i--;
     }
   });

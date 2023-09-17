@@ -695,6 +695,17 @@
   .ufficio {
     cursor: pointer;
   }
+   // FabioTestingStuff
+   .structure-modal{
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    margin: 30px;
+    border-radius: 30px;
+  }
+  // FabioTestingStuff
 
   .deposito-centrale-open {
     background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
@@ -1020,9 +1031,6 @@
     justify-content: center;
     align-items: center;
     height: 65vh;
-    //padding-left: 10px;
-    //padding-right: 10px;
-    //width: 300vw;
     overflow-x: hidden;
     overflow-y: hidden;
 
