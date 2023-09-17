@@ -23,7 +23,7 @@ const struttura = () => {
                     </div>
                     <div class="drone">
                         <video
-                        src="/assets/imgs/video/drone_orizzontale.mp4"
+                        src="/assets/imgs/video/drone_orizz_1080.webm"
                         autoplay="true"
                         muted="true"
                         playsinline="true"
