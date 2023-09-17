@@ -423,6 +423,22 @@ footer {
       text-align: center;
     }
   }
+  .drone{
+    position: relative;
+    height: 65vh;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      position: absolute;
+      font-family: $mainFontBold;
+      color: $white;
+      font-size: 46px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
 }
 
 // specializzazioni
