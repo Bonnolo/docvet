@@ -515,13 +515,33 @@ const struttura = () => {
         ).style.backgroundImage = `url(assets/imgs/struttura/${clinicRooms[selector]})`;
 
         // logic to scroll trough the images
-
-        // TODO
         let keys = Object.keys(clinicRooms);
         let nextIndex = keys.indexOf(selector) + 1;
         let prevIndex = keys.indexOf(selector) - 1;
         let nextItem = keys[nextIndex];
         let prevItem = keys[prevIndex];
+
+        if (nextIndex == keys.length) {
+          nextItem = keys[0];
+        }
+        if (prevIndex == -1) {
+          prevItem = keys[keys.length - 1];
+        }
+
+        const nextButton = document.querySelector(
+          ".structure-modal button:nth-child(2)"
+        );
+        const prevButton = document.querySelector(
+          ".structure-modal button:nth-child(1)"
+        );
+
+        nextButton?.addEventListener("click", () => {
+          modal(nextItem, prevState, clinicRooms);
+        });
+        prevButton?.addEventListener("click", () => {
+          modal(prevItem, prevState, clinicRooms);
+        });
+        // TODO
 
         const closeModal = document.querySelector(".close-modal");
 
