@@ -495,7 +495,7 @@ const struttura = () => {
                                 `;
 
         if (selector.includes("-mobile")) {
-          console.log(selector, "mobile selector");
+          //console.log(selector, "mobile selector");
           selector = selector.replace("-mobile", "");
           gsap.fromTo(
             ".structure-modal",
@@ -621,7 +621,7 @@ const struttura = () => {
 
     let groundFloor = document.querySelector("#pianoterraDesktop");
 
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1179) {
       groundFloor = document.querySelector("#pianoterraMobile");
     }
     groundFloor?.addEventListener("click", async (e) => {
@@ -638,7 +638,7 @@ const struttura = () => {
     });
     let firstFloor = document.querySelector("#primopianoDesktop");
 
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1179) {
       firstFloor = document.querySelector("#primopianoMobile");
     }
     firstFloor?.addEventListener("click", (e) => {
@@ -656,7 +656,7 @@ const struttura = () => {
 
     let secondFloor = document.querySelector("#secondopianoDesktop");
 
-    if (window.innerWidth < 768) {
+    if (window.innerWidth < 1179) {
       secondFloor = document.querySelector("#secondopianoMobile");
     }
     secondFloor?.addEventListener("click", (e) => {
