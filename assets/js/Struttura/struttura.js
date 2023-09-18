@@ -486,8 +486,14 @@ const struttura = () => {
                                   " "
                                 )}</h1>
                                 <div class="structure-modal">
-                                  <button>Indietro</button>
-                                  <button>Avanti</button>
+                                  <div id="structureButtons">
+                                    <button><svg width="548" height="1104" viewBox="0 0 548 1104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M499.387 48.0002L84.7281 462.661C35.7573 511.632 35.7573 591.766 84.7281 640.737L499.387 1055.4" stroke="#30277D" stroke-width="95.3975" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></button>
+                                    <button><svg width="548" height="1104" viewBox="0 0 548 1104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M48 1055.4L462.659 640.738C511.63 591.767 511.63 511.633 462.659 462.663L48 48" stroke="#30277D" stroke-width="95.3975" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg></button>
+                                  </div>
                                   <div class="close-modal">
                                     <img src="assets/imgs/icons/icon _close circle.svg">
                                   </div>
@@ -541,7 +547,6 @@ const struttura = () => {
         prevButton?.addEventListener("click", () => {
           modal(prevItem, prevState, clinicRooms);
         });
-        // TODO
 
         const closeModal = document.querySelector(".close-modal");
 
@@ -625,7 +630,7 @@ const struttura = () => {
       groundFloor = document.querySelector("#pianoterraMobile");
     }
     groundFloor?.addEventListener("click", async (e) => {
-      console.log(e.target.classList[0]);
+      //console.log(e.target.classList[0]);
       let selector = e.target.classList[0];
       if (
         selector != null &&
