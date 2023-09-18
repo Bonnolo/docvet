@@ -21,7 +21,17 @@ const struttura = () => {
                             </p>
                         </div>
                     </div>
-                    <div class="img-content">
+                    <div class="drone">
+                        <video
+                        src="/assets/imgs/video/drone_orizz_1080.webm"
+                        autoplay="true"
+                        muted="true"
+                        playsinline="true"
+                        loop="true"
+                        width="100%"
+                        height="100%"
+                        style="object-fit: cover; object-position: center center">
+                        </video>
                         <h1>Sentirsi al Sicuro</h1>
                     </div>`;
         break;
