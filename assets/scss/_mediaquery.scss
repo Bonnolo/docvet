@@ -154,10 +154,20 @@
 
   // Main Video Home
 
+
+
   .video {
     height: 80vh;
     padding-bottom: 20px;
     padding-top: 20px;
+    .carusellButton{
+      height: 95%;
+    }
+    .videoIndicator{
+      height: 95%;
+      padding-bottom: 1rem;
+    }
+
     h1 {
       position: fixed;
       top: 50%;
