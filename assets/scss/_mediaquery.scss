@@ -365,7 +365,6 @@
 
   .custom-footer {
     margin-top: 0;
-    
   }
 
   footer {
@@ -1112,94 +1111,95 @@
       text-transform: uppercase;
     }
   }
-}
-
-// End Staff
 
 
-.formVet{
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  form{
-    width: 80%;
+  .formVet {
+    width: 100vw;
     display: flex;
-    flex-direction: column;
-    h1 {
-      font-family: $mainFontBold;
-      color: $primaryColor;
-      font-size: $fontSizeTitle;
-      text-transform: uppercase;
-    }
-    p {
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      text-align: center;
-    }
-    input {
-      width: 100%;
-      height: 55px;
-      border: none;
-      border-radius: 30px;
-      margin-top: 20px;
-      padding-left: 20px;
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      background: #fff;
-    }
-    textarea {
-      width: 100%;
-      height: 120px;
-      border: none;
-      border-radius: 30px;
-      margin-top: 20px;
-      padding-left: 20px;
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeMedium;
-      background: #fff;
-    }
-    .button {
-      width: 100%;
-      height: 50px;
-      border: none;
-      border-radius: 30px;
-      margin-top: 20px;
-      font-family: $mainFontRegular;
-      color: #fff;
-      font-size: $fontSizeMedium;
-      background: $primaryColor;
-      box-shadow: 2px 2px 0px 1px $secondaryColor;
-      cursor: pointer;
-      transition: all 0.8s;
-    }
-    .button:hover {
-      box-shadow: 2px 2px 0px 1px $primaryColor;
-      background-color: $secondaryColor;
-      color: $primaryColor;
-    }
-    .checkbox {
+    justify-content: center;
+    align-items: center;
+    form {
+      width: 80%;
       display: flex;
-      align-items: center;
-      flex-direction: row;
-      margin-top: 20px;
-      input {
-        margin-right: 10px;
-        height: 20px;
-        width: 20px;
-        margin-top: 0px;
+      flex-direction: column;
+      .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
       }
-      label {
+      p {
         font-family: $mainFontRegular;
         color: $primaryColor;
-        font-size: $fontSizeSmall;
+        font-size: $fontSizeMedium;
+        text-align: center;
+      }
+      input {
+        width: 100%;
+        height: 55px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-left: 20px;
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        background: #fff;
+      }
+      textarea {
+        width: 100%;
+        height: 120px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        padding-left: 20px;
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeMedium;
+        background: #fff;
+      }
+      .button {
+        width: 100%;
+        height: 50px;
+        border: none;
+        border-radius: 30px;
+        margin-top: 20px;
+        font-family: $mainFontRegular;
+        color: #fff;
+        font-size: $fontSizeMedium;
+        background: $primaryColor;
+        box-shadow: 2px 2px 0px 1px $secondaryColor;
+        cursor: pointer;
+        transition: all 0.8s;
+        margin-bottom: 60px;
+        margin-top: 40px;
+      }
+      .button:hover {
+        box-shadow: 2px 2px 0px 1px $primaryColor;
+        background-color: $secondaryColor;
+        color: $primaryColor;
+      }
+      .checkbox {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 20px;
+        input {
+          margin-right: 10px;
+          height: 20px;
+          width: 20px;
+          margin-top: 0px;
+        }
+        label {
+          font-family: $mainFontRegular;
+          color: $primaryColor;
+          font-size: $fontSizeSmall;
+        }
+      }
+      .recaptcha {
+        margin-top: 20px;
       }
     }
-    .recaptcha {
-      margin-top: 20px;
-    }
-       }
   }
+  
+}
+

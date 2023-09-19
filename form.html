@@ -113,15 +113,17 @@
           placeholder="Codice Fiscale"
           required
         />
-        <div class="grid3">
+        <div class="grid2">
           <input
             type="text"
             name="Indirizzo"
             placeholder="Indirizzo"
             required
           />
-          <input type="text" name="Cap" placeholder="Cap" required />
-          <input type="text" name="Città" placeholder="Città" required />
+          <div class="grid2">
+            <input type="text" name="Cap" placeholder="Cap" required />
+            <input type="text" name="Città" placeholder="Città" required />
+          </div>
         </div>
         <div class="grid2">
           <input type="text" name="Telefono" placeholder="Telefono" required />
@@ -135,15 +137,73 @@
           </select>
           <input type="text" name="Compagnia" placeholder="Compagnia" />
         </div>
-        <textarea name="message"></textarea>
-
+        <h3>Dati del paziente</h3>
+        <div class="grid2">
+          <input type="text" name="Nome" placeholder="Nome" required />
+          <select name="Specie">
+            <option value="" disabled selected>Specie</option>
+            <option value="Cane">Cane</option>
+            <option value="Gatto">Gatto</option>
+          </select>
+        </div>
+        <div class="grid2">
+          <input type="text" name="Razza" placeholder="Razza" />
+          <select name="Sesso" id="">
+            <option value="" disabled selected>Sesso</option>
+            <option value="Maschio">Maschio</option>
+            <option value="Femmina">Femmina</option>
+          </select>
+        </div>
+        <div class="grid2">
+          <div class="grid2">
+            <input type="text" name="Età" placeholder="Età" />
+            <input type="text" name="Peso" placeholder="Peso" />
+          </div>
+          <input type="text" name="Chip" placeholder="Chip" />
+        </div>
+        <div class="grid2">
+          <select name="Richiesta" id="">
+            <option value="" disabled selected>Richiesta</option>
+            <option value="Visita">Visita</option>
+            <option value="Vaccino">Vaccino</option>
+            <option value="Controllo">Controllo</option>
+            <option value="Altro">Altro</option>
+          </select>
+          <select name="Urgenza" id="">
+            <option value="" disabled selected>Urgenza</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <h3>Dati Veterinario Referente</h3>
+        <div class="grid2">
+          <input type="text" name="NomeVet" placeholder="Nome" required />
+          <input type="text" name="CognomeVet" placeholder="Cognome" required />
+        </div>
+        <div class="grid2">
+          <input type="text" name="Clinica" placeholder="Clinica" required />
+          <input
+            type="text"
+            name="IndirizzoVet"
+            placeholder="Indirizzo"
+            required
+          />
+        </div>
+        <div class="grid2">
+          <input
+            type="text"
+            name="TelefonoVet"
+            placeholder="Telefono"
+            required
+          />
+          <input type="text" name="EmailVet" placeholder="Email" required />
+        </div>
         <input
           type="hidden"
           name="redirectTo"
           value="https://example.com/contact/success"
         />
-
-        <input class="button" type="submit" value="Submit" />
+        <input class="button" type="submit" value="Invia" />
       </form>
     </main>
     <footer class="custom-footer">
