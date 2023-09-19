@@ -101,75 +101,81 @@
         <input
           type="hidden"
           name="accessKey"
-          value="e44fc5d0-0b52-4cb1-9f79-fefc3800d89c"
+          value="a9c81c01-0a55-438a-91e9-f0c0f4a5ddb6"
         />
         <div class="grid2">
-          <input type="text" name="Nome" placeholder="Nome" required />
-          <input type="text" name="Cognome" placeholder="Cognome" required />
+          <input type="text" name="$Nome" placeholder="Nome" required />
+          <input type="text" name="$Cognome" placeholder="Cognome" required />
         </div>
         <input
           type="text"
-          name="Codice Fiscale"
+          name="$Codice Fiscale"
           placeholder="Codice Fiscale"
           required
         />
         <div class="grid2">
           <input
             type="text"
-            name="Indirizzo"
+            name="$Indirizzo"
             placeholder="Indirizzo"
             required
           />
           <div class="grid2">
-            <input type="text" name="Cap" placeholder="Cap" required />
-            <input type="text" name="Città" placeholder="Città" required />
+            <input type="text" name="$Cap" placeholder="Cap" required />
+            <input type="text" name="$Città" placeholder="Città" required />
           </div>
         </div>
         <div class="grid2">
-          <input type="text" name="Telefono" placeholder="Telefono" required />
-          <input type="text" name="Email" placeholder="Email" required />
+          <input type="text" name="$Telefono" placeholder="Telefono" required />
+          <input type="text" name="$Email" placeholder="Email" required />
         </div>
         <div class="grid2">
-          <select name="Assicurazione" required>
+          <select name="$Assicurazione">
             <option value="" disabled selected>Assicurazione</option>
             <option value="Si">Si</option>
             <option value="No">No</option>
           </select>
-          <input type="text" name="Compagnia" placeholder="Compagnia" />
+          <input
+            type="text"
+            name="$Compagnia"
+            placeholder="Se si, indicare compagnia"
+          />
         </div>
         <h3>Dati del paziente</h3>
         <div class="grid2">
-          <input type="text" name="Nome" placeholder="Nome" required />
-          <select name="Specie">
+          <input type="text" name="$NomeAnimale" placeholder="Nome" required />
+          <select name="$Specie" required>
             <option value="" disabled selected>Specie</option>
             <option value="Cane">Cane</option>
             <option value="Gatto">Gatto</option>
           </select>
         </div>
         <div class="grid2">
-          <input type="text" name="Razza" placeholder="Razza" />
-          <select name="Sesso" id="">
+          <input type="text" name="$Razza" placeholder="Razza" required />
+          <select name="$Sesso" id="" required>
             <option value="" disabled selected>Sesso</option>
             <option value="Maschio">Maschio</option>
+            <option value="Maschio Castrato">Maschio castrato</option>
             <option value="Femmina">Femmina</option>
+            <option value="Femmina Sterilizzata">Femmina sterilizzata</option>
           </select>
         </div>
         <div class="grid2">
           <div class="grid2">
-            <input type="text" name="Età" placeholder="Età" />
-            <input type="text" name="Peso" placeholder="Peso" />
+            <input type="text" name="$Età" placeholder="Età" required />
+            <input type="text" name="$Peso" placeholder="Peso" />
           </div>
-          <input type="text" name="Chip" placeholder="Chip" />
+          <input type="text" name="$Chip" placeholder="Chip" required />
         </div>
         <div class="grid2">
-          <select name="Richiesta" id="">
+          <select name="$Richiesta" id="" required>
             <option value="" disabled selected>Richiesta</option>
-            <option value="Visita">Visita</option>
-            <option value="Vaccino">Vaccino</option>
-            <option value="Controllo">Controllo</option>
-            <option value="Altro">Altro</option>
+            <option value="Chirurgia">Chirurgia</option>
+            <option value="Oncologia">Oncologia</option>
+            <option value="Medicina Interna">Medicina interna</option>
+            <option value="Dermatologia">Dermatologia</option>
           </select>
-          <select name="Urgenza" id="">
+          <select name="$Urgenza" id="">
             <option value="" disabled selected>Urgenza</option>
             <option value="Si">Si</option>
             <option value="No">No</option>
@@ -177,14 +183,19 @@
         </div>
         <h3>Dati Veterinario Referente</h3>
         <div class="grid2">
-          <input type="text" name="NomeVet" placeholder="Nome" required />
-          <input type="text" name="CognomeVet" placeholder="Cognome" required />
-        </div>
-        <div class="grid2">
-          <input type="text" name="Clinica" placeholder="Clinica" required />
+          <input type="text" name="$NomeVet" placeholder="Nome" required />
           <input
             type="text"
-            name="IndirizzoVet"
+            name="$CognomeVet"
+            placeholder="Cognome"
+            required
+          />
+        </div>
+        <div class="grid2">
+          <input type="text" name="$Clinica" placeholder="Clinica" required />
+          <input
+            type="text"
+            name="$IndirizzoVet"
             placeholder="Indirizzo"
             required
           />
@@ -192,7 +203,7 @@
         <div class="grid2">
           <input
             type="text"
-            name="TelefonoVet"
+            name="$TelefonoVet"
             placeholder="Telefono"
             required
           />
