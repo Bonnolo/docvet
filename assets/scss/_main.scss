@@ -748,6 +748,13 @@ footer {
   .hiddenDesktop {
     display: block;
   }
+  
+  //svg tooltip testing
+  svg > path > title{
+    background-color: transparent;
+    color: $prima;
+    border:none;
+  }
 }
 
 .primopiano {
@@ -806,6 +813,7 @@ footer {
     }
   }
 }
+
 // FabioTestingStuff
 
 /* .deposito-centrale-open {
