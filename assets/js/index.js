@@ -49,7 +49,7 @@ const loadingScreen = () => {
     } else {
       i++;
       document.getElementById("loader").innerHTML =
-        i + `%  <img src="assets/imgs/logoDocVet.png" alt="" />`;
+         `  <img src="assets/imgs/logoDocVet.png" alt="" />`;
     }
   }
   window.onload = function () {

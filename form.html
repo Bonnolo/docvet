@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/css/style.min.css" />
+    <link rel="icon" type="image/png" href="assets/imgs/zampaDocvet.png" />
+    <script type="module" src="dist/js/index.js"></script>
+    <title>DOCVET | Per veterinari</title>
+  </head>
+  <body class="bg">
+    <script>
+      function visit() {
+        window.sessionStorage.setItem("visit", 1);
+      }
+    </script>
+    <!-- hamburger menu -->
+    <section id="hamburger" class="hamburger">
+      <div class="hamburger-bg">
+        <button id="close-hamburger" class="close-menu">
+          <img src="/assets/imgs/icons/icon _close circle.svg" alt="" />
+        </button>
+        <ul>
+          <li>
+            <a href="index.html" onclick="visit()"><span>Home</span></a>
+          </li>
+          <li>
+            <a href="struttura.html" onclick="visit()">Struttura clinica</a>
+          </li>
+          <li>
+            <a href="specializzazioni.html" onclick="visit()"
+              >Specializzazione</a
+            >
+          </li>
+          <li><a href="staff.html" onclick="visit()">Staff</a></li>
+          <li>
+            <a href="form.html" onclick="visit()">form</a>
+          </li>
+          <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
+          <div class="topbarHamburger">
+            <li>
+              <img src="assets/imgs/icons/clock.svg" alt="" /> LUN-VEN: 9:00 -
+              18:00 SAB-DOM: CHIUSI
+            </li>
+            <li>
+              <img src="assets/imgs/icons/phone.svg" alt="" /> +39 0331 588 696
+            </li>
+            <li>
+              <img src="assets/imgs/icons/email.svg" alt="" /> info@docvet.it
+            </li>
+          </div>
+        </ul>
+      </div>
+    </section>
+    <div class="hamburger-blur"></div>
+    <!-- End Hamburger Menu -->
+    <header class="generalHeaderMobile">
+      <div class="logo">
+        <a href="index.html" onclick="visit()"
+          ><img src="/assets/imgs/zampaDocvet.png" alt=""
+        /></a>
+      </div>
+      <div class="flexCenter">
+        <h1><a href="#">Strumetazione</a></h1>
+      </div>
+      <div class="flexEnd">
+        <button id="open-hamburger">
+          <img src="/assets/imgs/icons/icon _menu.svg" alt="" />
+        </button>
+      </div>
+    </header>
+    <nav class="grid">
+      <div class="logo">
+        <a href="index.html" onclick="visit()">
+          <img src="/assets/imgs/logoDocVet.png" alt="logoDocVet" />
+        </a>
+      </div>
+      <ul class="head">
+        <li><a href="index.html" onclick="visit()">Home</a></li>
+        <li>
+          <a href="struttura.html" onclick="visit()">Struttura Clinica</a>
+        </li>
+        <li>
+          <a href="specializzazioni.html" onclick="visit()">specializzazioni</a>
+        </li>
+        <li><a href="staff.html" onclick="visit()">Staff</a></li>
+        <li>
+          <a class="active" href="form.html" onclick="visit()"
+            >Per veterinari</a
+          >
+        </li>
+        <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
+      </ul>
+    </nav>
+    <div class="description">
+      <h1>Referta un caso</h1>
+      <p>
+        Per ulteriori richieste, mandare un'email a
+        <a href="mailto:info@docvet.it">info@docvet.it</a>.
+      </p>
+    </div>
+    <main class="formVet">
+      <form action="https://api.staticforms.xyz/submit" method="post">
+        <h3>Dati del proprietario</h3>
+        <input
+          type="hidden"
+          name="accessKey"
+          value="a9c81c01-0a55-438a-91e9-f0c0f4a5ddb6"
+        />
+        <div class="grid2">
+          <input type="text" name="$Nome" placeholder="Nome" required />
+          <input type="text" name="$Cognome" placeholder="Cognome" required />
+        </div>
+        <input
+          type="text"
+          name="$Codice Fiscale"
+          placeholder="Codice Fiscale"
+          required
+        />
+        <div class="grid2">
+          <input
+            type="text"
+            name="$Indirizzo"
+            placeholder="Indirizzo"
+            required
+          />
+          <div class="grid2">
+            <input type="text" name="$Cap" placeholder="Cap" required />
+            <input type="text" name="$Città" placeholder="Città" required />
+          </div>
+        </div>
+        <div class="grid2">
+          <input type="text" name="$Telefono" placeholder="Telefono" required />
+          <input type="text" name="$Email" placeholder="Email" required />
+        </div>
+        <div class="grid2">
+          <select name="$Assicurazione">
+            <option value="" disabled selected>Assicurazione</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+          <input
+            type="text"
+            name="$Compagnia"
+            placeholder="Se si, indicare compagnia"
+          />
+        </div>
+        <h3>Dati del paziente</h3>
+        <div class="grid2">
+          <input type="text" name="$Nome-Animale" placeholder="Nome" required />
+          <select name="$Specie" required>
+            <option value="" disabled selected>Specie</option>
+            <option value="Cane">Cane</option>
+            <option value="Gatto">Gatto</option>
+          </select>
+        </div>
+        <div class="grid2">
+          <input type="text" name="$Razza" placeholder="Razza" required />
+          <select name="$Sesso" id="" required>
+            <option value="" disabled selected>Sesso</option>
+            <option value="Maschio">Maschio</option>
+            <option value="Maschio Castrato">Maschio castrato</option>
+            <option value="Femmina">Femmina</option>
+            <option value="Femmina Sterilizzata">Femmina sterilizzata</option>
+          </select>
+        </div>
+        <div class="grid2">
+          <div class="grid2">
+            <input type="text" name="$Età" placeholder="Età" required />
+            <input type="text" name="$Peso" placeholder="Peso" />
+          </div>
+          <input type="text" name="$Chip" placeholder="Chip" required />
+        </div>
+        <div class="grid2">
+          <select name="$Richiesta" id="" required>
+            <option value="" disabled selected>Richiesta</option>
+            <option value="Chirurgia">Chirurgia</option>
+            <option value="Oncologia">Oncologia</option>
+            <option value="Medicina Interna">Medicina interna</option>
+            <option value="Dermatologia">Dermatologia</option>
+          </select>
+          <select name="$Urgenza" id="">
+            <option value="" disabled selected>Urgenza</option>
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <h3>Dati Veterinario Referente</h3>
+        <div class="grid2">
+          <input type="text" name="$Nome-Vet" placeholder="Nome" required />
+          <input
+            type="text"
+            name="$CognomeVet"
+            placeholder="Cognome"
+            required
+          />
+        </div>
+        <div class="grid2">
+          <input type="text" name="$Clinica" placeholder="Clinica" required />
+          <input
+            type="text"
+            name="$IndirizzoVet"
+            placeholder="Indirizzo"
+            required
+          />
+        </div>
+        <div class="grid2">
+          <input
+            type="text"
+            name="$Telefono-Vet"
+            placeholder="Telefono"
+            required
+          />
+          <input type="text" name="$EmailVet" placeholder="Email" required />
+        </div>
+        <div class="grid2">
+          <h4>Documenti da allegare</h4>
+          <div></div>
+          <input
+            class="upload"
+            type="file"
+            name="$Documenti"
+            accept=".pdf, .doc, .docx , image/jpeg, image/png"
+          />
+        </div>
+        <input
+          type="hidden"
+          name="redirectTo"
+          value="https://example.com/contact/success"
+        />
+        <input class="button" type="submit" value="Invia" />
+      </form>
+    </main>
+    <footer class="custom-footer">
+      <!-- footer injected from assets/js/time/time.js -->
+      <!-- <span class="hiddenTime" id="time"></span> -->
+      <span id="year"></span>
+      <span class="social" id="social">
+        <a
+          href="https://www.facebook.com/clinicaveterinartianervianese?locale=it_IT"
+          target="_blank"
+        >
+          <img src="/assets/imgs/icons/2021_Facebook_icon 1.svg" alt="" />
+        </a>
+        <a
+          href="https://www.instagram.com/docvet_cv_nervianese/"
+          target="_blank"
+        >
+          <img src="/assets/imgs/icons/icon_insta.svg" alt="" />
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>

@@ -10,6 +10,7 @@
       #fff 100%
     )
   );
+  background-repeat: no-repeat;
 }
 
 // loading
@@ -39,7 +40,6 @@
   align-items: center;
 }
 
-
 #loader {
   width: 100%;
   display: flex;
@@ -48,7 +48,7 @@
   justify-content: center;
   font-size: 80px;
   font-family: $mainFontBold, sans-serif;
-  img{
+  img {
     width: 40%;
   }
 }
@@ -71,27 +71,27 @@
 }
 .transition-container.from-left span {
   background: var(
-  --sfondo-home,
-  radial-gradient(
-    165.01% 59.17% at 50% 47.78%,
-    #0094cc 0%,
-    #99d6ea 0.01%,
-    #fff 100%
-  )
-);
+    --sfondo-home,
+    radial-gradient(
+      165.01% 59.17% at 50% 47.78%,
+      #0094cc 0%,
+      #99d6ea 0.01%,
+      #fff 100%
+    )
+  );
   height: 100%;
   width: 0%;
 }
 
 // topbar
 
-.topbar{
+.topbar {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  li{
+  li {
     height: 30px;
     font-family: $mainFontBold;
     color: $primaryColor;
@@ -99,12 +99,12 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    
-    img{
+
+    img {
       width: 20px;
       margin-right: 3px;
     }
-    a{
+    a {
       color: $primaryColor;
       text-decoration: none;
     }
@@ -113,7 +113,8 @@
 
 // general header
 
-.grid, .gridHome {
+.grid,
+.gridHome {
   display: none;
 }
 
@@ -223,17 +224,17 @@
   z-index: 9999;
   height: 100vh;
   width: 100vw;
-  .topbarHamburger{
+  .topbarHamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    li{
+    li {
       font-family: $mainFontBold;
       color: $primaryColor;
       font-size: 12px;
       text-transform: uppercase;
-      img{
+      img {
         width: 20px;
         position: relative;
         top: 5px;
@@ -368,46 +369,53 @@ footer {
 
 .description {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   p {
     font-family: $mainFontRegular;
     color: $primaryColor;
     font-size: $fontSizeSmall;
   }
+  h1{
+    font-family: $mainFontBold;
+    color: $primaryColor;
+    font-size: $fontSizeLarge;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+  }
 }
-  .strumentazioneMain {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 150px;
-    margin: 20px 30px;
-    .cardstrumentazione {
-      position: relative;
-      img{
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        object-fit: cover;
-      } 
-    }
-    .titlestrumentazione{
-      color: $primaryColor;
-      text-align: center;
-      font-family: $mainFontBold;
-      font-size: 30px;
-      text-transform: uppercase;
-      h2{
-        font-size: 30px;
-      }
-      p{
-        text-transform: none;
-        font-size: 18px;
-      }
+.strumentazioneMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 150px;
+  margin: 20px 30px;
+  .cardstrumentazione {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      object-fit: cover;
     }
   }
-
+  .titlestrumentazione {
+    color: $primaryColor;
+    text-align: center;
+    font-family: $mainFontBold;
+    font-size: 30px;
+    text-transform: uppercase;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      text-transform: none;
+      font-size: 18px;
+    }
+  }
+}
 
 .main-content {
   width: 100vw;
@@ -464,7 +472,7 @@ footer {
       text-align: center;
     }
   }
-  .drone{
+  .drone {
     position: relative;
     height: 65vh;
     margin-bottom: 20px;
@@ -608,6 +616,7 @@ footer {
   height: 120vh;
   justify-content: center;
   gap: 40px;
+  margin-top: 50px;
   .contattiLeft {
     display: flex;
     justify-content: center;
@@ -731,7 +740,7 @@ footer {
           text-align: center;
           margin-top: 10px;
         }
-        img{
+        img {
           margin-right: 5px;
           height: 30px;
           width: 30px;
@@ -739,11 +748,11 @@ footer {
       }
     }
   }
-  .orari{
+  .orari {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+    img {
       margin-right: 5px;
       height: 30px;
       width: 30px;
@@ -1054,7 +1063,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.sala-attesa-cani-open{
+.sala-attesa-cani-open {
   background-image: url(/assets/imgs/struttura/sala-attesa-cani.jpg);
   background-size: cover;
   background-position: center;
@@ -1063,7 +1072,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.sala-attesa-gatti-open{
+.sala-attesa-gatti-open {
   background-image: url(/assets/imgs/struttura/sala-attesa-gatti.jpg);
   background-size: cover;
   background-position: center;
@@ -1072,7 +1081,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.sala-riunioni-open{
+.sala-riunioni-open {
   background-image: url(/assets/imgs/struttura/sala-riunioni.jpg);
   background-size: cover;
   background-position: center;
@@ -1081,7 +1090,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.ufficio-imperatore-open{
+.ufficio-imperatore-open {
   background-image: url(/assets/imgs/struttura/ufficio-imperatore.jpg);
   background-size: cover;
   background-position: center;
@@ -1090,7 +1099,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.ufficio-open{
+.ufficio-open {
   background-image: url(/assets/imgs/struttura/ufficio.jpg);
   background-size: cover;
   background-position: center;
@@ -1099,7 +1108,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.spogliatoio-open{
+.spogliatoio-open {
   background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
   background-size: cover;
   background-position: center;
@@ -1108,7 +1117,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.spogliatoio2-open{
+.spogliatoio2-open {
   background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
   background-size: cover;
   background-position: center;
@@ -1129,8 +1138,7 @@ footer {
   cursor: pointer;
 }
 
-
-.roomtitle{
+.roomtitle {
   text-align: center;
   text-transform: uppercase;
   font-family: $mainFontBold;
@@ -1141,12 +1149,143 @@ footer {
 //icon social
 
 .social {
-  gap:  20px;
+  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   img {
     width: 25px;
     height: 25px;
+  }
+}
+
+// form vet
+
+.formVet {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .formtitle {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: $mainFontBold;
+    font-size: $fontSizeLarge;
+    color: $primaryColor;
+  }
+  form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    h3 {
+      font-family: $mainFontBold;
+      color: $primaryColor;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 60px 40px 20px;
+    }
+    p {
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeMedium;
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      height: 55px;
+      border: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      padding-left: 20px;
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeMedium;
+      background: #fff;
+    }
+    select {
+      width: 100%;
+      height: 55px;
+      border: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      padding-left: 20px;
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeMedium;
+      background: #fff;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      border: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      padding-left: 20px;
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeMedium;
+      background: #fff;
+    }
+    h4{
+      font-family: $mainFontBold;
+      color: $primaryColor;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 60px 0 0 40px;
+    }
+    .button {
+      width: 100%;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      font-family: $mainFontRegular;
+      color: #fff;
+      font-size: $fontSizeMedium;
+      background: $primaryColor;
+      box-shadow: 2px 2px 0px 1px $secondaryColor;
+      cursor: pointer;
+      transition: all 0.8s;
+    }
+    .button:hover {
+      box-shadow: 2px 2px 0px 1px $primaryColor;
+      background-color: $secondaryColor;
+      color: $primaryColor;
+    }
+    .checkbox {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      margin-top: 20px;
+      input {
+        margin-right: 10px;
+        height: 20px;
+        width: 20px;
+        margin-top: 0px;
+      }
+      label {
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeSmall;
+      }
+    }
+    .recaptcha {
+      margin-top: 20px;
+    }
+    input[type="file"] {
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      button {
+        color: red;
+      }
+    }
   }
 }
