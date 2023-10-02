@@ -232,7 +232,7 @@
     li {
       font-family: $mainFontBold;
       color: $primaryColor;
-      font-size: 12px;
+      font-size: 10px;
       text-transform: uppercase;
       img {
         width: 20px;
@@ -240,6 +240,13 @@
         top: 5px;
         margin-right: 3px;
       }
+    }
+    a{
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeSmall;
+      text-align: center;
+      margin-top: 10px;
     }
   }
 
@@ -744,6 +751,13 @@ footer {
           margin-right: 5px;
           height: 30px;
           width: 30px;
+        }
+        a{
+          font-family: $mainFontRegular;
+          color: $primaryColor;
+          font-size: $fontSizeSmall;
+          text-align: center;
+          margin-top: 10px;
         }
       }
     }
