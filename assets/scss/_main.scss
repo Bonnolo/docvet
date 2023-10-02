@@ -754,12 +754,12 @@ footer {
           height: 30px;
           width: 30px;
         }
-        a{
-          
-          color: $primaryColor;
-          font-size: $fontSizeSmall;
-          text-align: center;
-          text-decoration: none;
+        a{ 
+          font-family: $mainFontRegular !important;
+color: $primaryColor !important;
+font-size: $fontSizeSmall !important;
+text-align: center !important;
+margin-top: 10px !important;
         }
       }
     }
