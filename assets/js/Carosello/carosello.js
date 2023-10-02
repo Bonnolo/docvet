@@ -2,6 +2,7 @@ import { gsap } from "gsap";
 
 const carosello = () => {
   const homeVideo = document.querySelector("#homeVideo");
+  const homeVideoTwo = document.querySelector("#homeVideo2");
   const homeVideoButton1 = document.querySelector("#homeVideoButton1");
   const homeVideoButton2 = document.querySelector("#homeVideoButton2");
 
@@ -11,40 +12,44 @@ const carosello = () => {
 
   const video = ["chirurgia_orizz.webm", "chemio_orizz.webm", "tc_orizz.webm"];
   homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+  homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
   let i = 0;
 
   homeVideoButton1?.addEventListener("click", async () => {
-    //await gsap.to(homeVideo, {
-    //  x: 200,
-    //  duration: 0.2,
-    //  ease: "Power0.easeNone",
-    //});
-    //await gsap.to(homeVideo, { opacity: 0, duration: 0.1 });
     //console.log("Indietro");
     if (i == 0) {
-      homeVideo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+      //da 0 a 2
+      homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+      await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
+
       circleOne?.classList.remove("circle-active");
       circleThree?.classList.add("circle-active");
-      // await gsap.fromTo(
-      //   homeVideo,
-      //   { x: -200 },
-      //   { x: 0, opacity: 1, duration: 0.5, ease: "Power0.easeNone" }
-      // );
+
+      homeVideo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+      await gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       i = 2;
     } else {
       if (i == 2) {
+        //da 2 a 1
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
+
         circleThree?.classList.remove("circle-active");
         circleTwo?.classList.add("circle-active");
+
+        homeVideo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
+        gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       } else {
+        //da 1 a 0
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
+
         circleTwo?.classList.remove("circle-active");
         circleOne?.classList.add("circle-active");
+
+        homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+        gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       }
-      homeVideo?.setAttribute("src", `assets/imgs/video/${video[i - 1]}`);
-      // await gsap.fromTo(
-      //   homeVideo,
-      //   { x: -200 },
-      //   { x: 0, opacity: 1, duration: 0.5, ease: "Power0.easeNone" }
-      // );
       i--;
     }
   });
@@ -52,19 +57,38 @@ const carosello = () => {
   homeVideoButton2?.addEventListener("click", async () => {
     //console.log("Avanti");
     if (i == 2) {
-      homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+      //da 2 a 0
+      homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+      await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
+
       circleOne?.classList.add("circle-active");
       circleThree?.classList.remove("circle-active");
+
+      homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+      gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       i = 0;
     } else {
       if (i == 0) {
+        //da 0 a 1
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
+
         circleOne?.classList.remove("circle-active");
         circleTwo?.classList.add("circle-active");
+
+        homeVideo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
+        gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       } else {
+        //da 1 a 2
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
+
         circleTwo?.classList.remove("circle-active");
         circleThree?.classList.add("circle-active");
+
+        homeVideo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+        gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       }
-      homeVideo?.setAttribute("src", `assets/imgs/video/${video[i + 1]}`);
       i++;
     }
   });

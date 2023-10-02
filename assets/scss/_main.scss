@@ -298,6 +298,21 @@ footer {
 .video {
   position: relative;
   height: 60vh;
+  .video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //overflow: hidden;
+    .single-video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   .carusellButton{
     position: absolute;
     width: 100%;
