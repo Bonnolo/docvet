@@ -229,23 +229,24 @@
     justify-content: center;
     align-items: center;
     li {
-      font-family: $mainFontBold;
-      color: $primaryColor;
-      font-size: 10px;
-      text-transform: uppercase;
+      font-family: $mainFontBold !important;
+      color: $primaryColor !important;
+      font-size: 10px !important;
+      text-transform: uppercase !important;
       img {
         width: 20px;
         position: relative;
         top: 5px;
         margin-right: 3px;
       }
-    }
-    a{
-      font-family: $mainFontRegular;
-      color: $primaryColor;
-      font-size: $fontSizeSmall;
-      text-align: center;
-      margin-top: 10px;
+      a{
+        font-family: $mainFontRegular;
+        color: $primaryColor;
+        font-size: $fontSizeSmall;
+        text-align: center;
+        margin-top: 10px;
+      }
+     
     }
   }
 
@@ -739,11 +740,11 @@ footer {
         justify-content: center;
         align-items: center;
         p {
-          font-family: $mainFontRegular;
-          color: $primaryColor;
-          font-size: $fontSizeSmall;
-          text-align: center;
-          margin-top: 10px;
+          font-family: $mainFontRegular !important;
+          color: $primaryColor !important;
+          font-size: $fontSizeSmall !important;
+          text-align: center !important;
+          margin-top: 10px !important;
         }
         img {
           margin-right: 5px;
