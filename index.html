@@ -119,17 +119,39 @@
         <button id="homeVideoButton1"><</button>
         <button id="homeVideoButton2">></button>
       </div>
-      <video
-        id="homeVideo"
-        src=""
-        autoplay="true"
-        muted="true"
-        playsinline="true"
-        loop="true"
-        width="100%"
-        height="100%"
-        style="object-fit: cover; object-position: center center"
-      ></video>
+      <div class="videoIndicator">
+        <span id="circleOne" class="circle circle-active"></span>
+        <span id="circleTwo" class="circle"></span>
+        <span id="circleThree" class="circle"></span>
+      </div>
+      <div class="video-container">
+        <div class="single-video">
+          <video
+            id="homeVideo2"
+            src=""
+            autoplay="true"
+            muted="true"
+            playsinline="true"
+            loop="true"
+            width="100%"
+            height="100%"
+            style="object-fit: cover; object-position: center center"
+          ></video>
+        </div>
+        <div class="single-video">
+          <video
+            id="homeVideo"
+            src=""
+            autoplay="true"
+            muted="true"
+            playsinline="true"
+            loop="true"
+            width="100%"
+            height="100%"
+            style="object-fit: cover; object-position: center center"
+          ></video>
+        </div>
+      </div>
       <!-- <h1>la tua clinica</h1> -->
     </main>
     <footer class="custom-footer">

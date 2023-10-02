@@ -227,10 +227,10 @@ const staff = () => {
         //console.log(event);
         if (event.deltaY > 0) {
           //how much each scroll should scroll
-          scrollElement.scrollLeft += 100;
+          scrollElement.scrollLeft += 85;
           //console.log("scrolling down");
         } else {
-          scrollElement.scrollLeft -= 100;
+          scrollElement.scrollLeft -= 85;
           //console.log("scrolling up");
         }
       });

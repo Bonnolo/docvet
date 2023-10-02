@@ -297,15 +297,29 @@ footer {
 .video {
   position: relative;
   height: 60vh;
-  .carusellButton {
+  .video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    //overflow: hidden;
+    .single-video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .carusellButton{
     position: absolute;
     width: 100%;
-    height: 95%;
-    z-index: 9999;
+    height: 100%;
+    z-index: 5000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     button {
       padding: 0.8rem;
       font-size: $fontSizeExtraLarge;
@@ -313,6 +327,33 @@ footer {
       background: none;
       border: none;
       cursor: pointer;
+    }
+  }
+
+  .videoIndicator{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 0.6rem;
+    gap: 8px;
+
+    .circle{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $secondaryColor;
+      transition: all 0.4s;
+    }
+
+    .circle-active{
+      width: 30px;
+      height: 10px;
+      border-radius: 9999px;
+      background-color: $secondaryColor;
     }
   }
 
@@ -493,7 +534,7 @@ footer {
     overflow-x: scroll;
     overflow-y: hidden;
   }
-
+  
   .card {
     display: flex;
     flex-direction: column;
@@ -760,8 +801,36 @@ footer {
     transform: translate(6%);
   }
 }
+ // FabioTestingStuff
+ .structure-modal{
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 75vh;
+  margin: 30px;
+  border-radius: 30px;
 
-.deposito-centrale-open {
+  #structureButtons{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+      background: none;
+      border: none;
+      cursor: pointer;
+
+      svg{
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+// FabioTestingStuff
+
+/* .deposito-centrale-open {
   background-image: url(/assets/imgs/struttura/deposito-centrale2.jpg);
   background-size: cover;
   background-position: center;
@@ -1054,7 +1123,7 @@ footer {
   height: 75vh;
   margin: 30px;
   border-radius: 30px;
-}
+} */
 
 // modale struttura
 
