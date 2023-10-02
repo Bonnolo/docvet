@@ -42,7 +42,7 @@ const loadingScreen = () => {
     id = setInterval(frame, 20);
   }
   function frame() {
-    if (i >= 100) {
+    if (i >= 50) {
       clearInterval(id);
       tl1.play();
       welcomeScreen.play();

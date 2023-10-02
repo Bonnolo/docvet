@@ -1,6 +1,5 @@
 // Background
 .bg {
-  height: 100vh;
   width: 100vw;
   background: var(
     --sfondo-home,
@@ -303,7 +302,8 @@ footer {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 95%;
+    margin-top: 1rem;
     //overflow: hidden;
     .single-video{
       position: absolute;

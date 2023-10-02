@@ -10,7 +10,7 @@ const carosello = () => {
   const circleTwo = document.querySelector("#circleTwo");
   const circleThree = document.querySelector("#circleThree");
 
-  const video = ["chirurgia_orizz.webm", "chemio_orizz.webm", "tc_orizz.webm"];
+  const video = ["chirurgia_orizz.mp4", "chemio_orizz.mp4", "tc_orizz.mp4"];
   homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
   homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
   let i = 0;
