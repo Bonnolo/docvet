@@ -226,7 +226,6 @@
   z-index: 9999;
   height: 100vh;
   width: 100vw;
-  margin-bottom: 100px;
   .topbarHamburger {
     display: flex;
     flex-direction: column;
@@ -261,7 +260,7 @@
     position: fixed;
     display: flex;
     justify-content: center;
-
+    padding-bottom: 100px;
     button {
       background: none;
       border: none;
@@ -296,12 +295,13 @@ footer {
   font-family: $mainFontBold;
   color: $primaryColor;
   display: flex;
-  width: 100vw;
   text-align: center;
   gap: 20px;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
+  
 }
 
 // home page
@@ -623,7 +623,6 @@ footer {
 .contatti {
   display: flex;
   flex-direction: column;
-  height: 120vh;
   justify-content: center;
   gap: 40px;
   margin-top: 50px;
