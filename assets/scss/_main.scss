@@ -330,13 +330,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    button {
-      padding: 0.8rem;
-      font-size: $fontSizeExtraLarge;
-      color: #fff;
+    button{
       background: none;
       border: none;
       cursor: pointer;
+      padding: 0 8px;
+
+      svg{
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 
