@@ -41,17 +41,17 @@ const loadingScreen = () => {
   function loader() {
     id = setInterval(frame, 20);
   }
-  /* function frame() { */
-  /*   if (i >= 100) { */
-  /*     clearInterval(id); */
-  /*     tl1.play(); */
-  /*     welcomeScreen.play(); */
-  /*   } else { */
-  /*     i++; */
-  /*     document.getElementById("loader").innerHTML = */
-  /*       i + `%  <img src="assets/imgs/logoDocVet.png" alt="" />`; */
-  /*   } */
-  /* } */
+  function frame() {
+    if (i >= 100) {
+      clearInterval(id);
+      tl1.play();
+      welcomeScreen.play();
+    } else {
+      i++;
+      document.getElementById("loader").innerHTML =
+        i + `%  <img src="assets/imgs/logoDocVet.png" alt="" />`;
+    }
+  }
   window.onload = function () {
     loader();
   };
