@@ -245,7 +245,7 @@
         color: $primaryColor;
         font-size: $fontSizeSmall;
         text-align: center;
-        margin-top: 10px;
+        text-decoration: none;
       }
      
     }
@@ -757,11 +757,11 @@ footer {
           width: 30px;
         }
         a{
-          font-family: $mainFontRegular;
+          
           color: $primaryColor;
           font-size: $fontSizeSmall;
           text-align: center;
-          margin-top: 10px;
+          text-decoration: none;
         }
       }
     }
