@@ -86,11 +86,11 @@
 // topbar
 
 .topbar {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  padding-top: 20px;
   li {
     height: 30px;
     font-family: $mainFontBold;
@@ -99,6 +99,9 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 
     img {
       width: 20px;
