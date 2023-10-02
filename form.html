@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
     <link rel="stylesheet" href="/dist/css/style.min.css" />
     <link rel="icon" type="image/png" href="assets/imgs/zampaDocvet.png" />
     <script type="module" src="dist/js/index.js"></script>
@@ -34,7 +36,7 @@
           </li>
           <li><a href="staff.html" onclick="visit()">Staff</a></li>
           <li>
-            <a href="form.html" onclick="visit()">form</a>
+            <a href="form.html" onclick="visit()">Per veterinari</a>
           </li>
           <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
           <div class="topbarHamburger">
@@ -185,6 +187,16 @@
             <option value="No">No</option>
           </select>
         </div>
+        <div class="grid2">
+          <h4>Documenti da allegare</h4>
+          <div></div>
+          <input
+            class="upload"
+            type="file"
+            name="$Documenti"
+            accept=".pdf, .doc, .docx , image/jpeg, image/png"
+          />
+        </div>
         <h3>Dati Veterinario Referente</h3>
         <div class="grid2">
           <input type="text" name="$Nome-Vet" placeholder="Nome" required />
@@ -212,16 +224,6 @@
             required
           />
           <input type="text" name="$EmailVet" placeholder="Email" required />
-        </div>
-        <div class="grid2">
-          <h4>Documenti da allegare</h4>
-          <div></div>
-          <input
-            class="upload"
-            type="file"
-            name="$Documenti"
-            accept=".pdf, .doc, .docx , image/jpeg, image/png"
-          />
         </div>
         <input
           type="hidden"
