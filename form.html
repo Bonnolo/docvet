@@ -34,7 +34,7 @@
           </li>
           <li><a href="staff.html" onclick="visit()">Staff</a></li>
           <li>
-            <a href="strumentazione.html" onclick="visit()">strumentazione</a>
+            <a href="form.html" onclick="visit()">form</a>
           </li>
           <li><a href="contatti.html" onclick="visit()">Contatti</a></li>
           <div class="topbarHamburger">
@@ -81,7 +81,7 @@
           <a href="struttura.html" onclick="visit()">Struttura Clinica</a>
         </li>
         <li>
-          <a href="specializzazioni.html" onclick="visit()">Specializzazioni</a>
+          <a href="form.html" onclick="visit()">form</a>
         </li>
         <li><a href="staff.html" onclick="visit()">Staff</a></li>
         <li>
@@ -208,6 +208,16 @@
             required
           />
           <input type="text" name="$EmailVet" placeholder="Email" required />
+        </div>
+        <div class="grid2">
+          <h4>Documenti da allegare</h4>
+          <div></div>
+          <input
+            class="upload"
+            type="file"
+            name="$Documenti"
+            accept=".pdf, .doc, .docx , image/jpeg, image/png"
+          />
         </div>
         <input
           type="hidden"

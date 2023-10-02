@@ -1,7 +1,5 @@
 // Background
 .bg {
-  height: 100vh;
-  width: 100vw;
   background: var(
     --sfondo-home,
     radial-gradient(
@@ -11,6 +9,7 @@
       #fff 100%
     )
   );
+  background-repeat: no-repeat;
 }
 
 // loading
@@ -40,7 +39,6 @@
   align-items: center;
 }
 
-
 #loader {
   width: 100%;
   display: flex;
@@ -49,7 +47,7 @@
   justify-content: center;
   font-size: 80px;
   font-family: $mainFontBold, sans-serif;
-  img{
+  img {
     width: 40%;
   }
 }
@@ -72,27 +70,27 @@
 }
 .transition-container.from-left span {
   background: var(
-  --sfondo-home,
-  radial-gradient(
-    165.01% 59.17% at 50% 47.78%,
-    #0094cc 0%,
-    #99d6ea 0.01%,
-    #fff 100%
-  )
-);
+    --sfondo-home,
+    radial-gradient(
+      165.01% 59.17% at 50% 47.78%,
+      #0094cc 0%,
+      #99d6ea 0.01%,
+      #fff 100%
+    )
+  );
   height: 100%;
   width: 0%;
 }
 
 // topbar
 
-.topbar{
+.topbar {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  li{
+  li {
     height: 30px;
     font-family: $mainFontBold;
     color: $primaryColor;
@@ -100,12 +98,12 @@
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    
-    img{
+
+    img {
       width: 20px;
       margin-right: 3px;
     }
-    a{
+    a {
       color: $primaryColor;
       text-decoration: none;
     }
@@ -114,7 +112,8 @@
 
 // general header
 
-.grid, .gridHome {
+.grid,
+.gridHome {
   display: none;
 }
 
@@ -224,17 +223,17 @@
   z-index: 9999;
   height: 100vh;
   width: 100vw;
-  .topbarHamburger{
+  .topbarHamburger {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    li{
+    li {
       font-family: $mainFontBold;
       color: $primaryColor;
       font-size: 12px;
       text-transform: uppercase;
-      img{
+      img {
         width: 20px;
         position: relative;
         top: 5px;
@@ -298,7 +297,7 @@ footer {
 .video {
   position: relative;
   height: 60vh;
-  .carusellButton{
+  .carusellButton {
     position: absolute;
     width: 100%;
     height: 95%;
@@ -337,36 +336,35 @@ footer {
     font-size: $fontSizeSmall;
   }
 }
-  .strumentazioneMain {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 150px;
-    margin: 20px 30px;
-    .cardstrumentazione {
-      position: relative;
-      img{
-        width: 100%;
-        height: 100%;
-        border-radius: 30px;
-        object-fit: cover;
-      } 
-    }
-    .titlestrumentazione{
-      color: $primaryColor;
-      text-align: center;
-      font-family: $mainFontBold;
-      font-size: 30px;
-      text-transform: uppercase;
-      h2{
-        font-size: 30px;
-      }
-      p{
-        text-transform: none;
-        font-size: 18px;
-      }
+.strumentazioneMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 150px;
+  margin: 20px 30px;
+  .cardstrumentazione {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+      object-fit: cover;
     }
   }
-
+  .titlestrumentazione {
+    color: $primaryColor;
+    text-align: center;
+    font-family: $mainFontBold;
+    font-size: 30px;
+    text-transform: uppercase;
+    h2 {
+      font-size: 30px;
+    }
+    p {
+      text-transform: none;
+      font-size: 18px;
+    }
+  }
+}
 
 .main-content {
   width: 100vw;
@@ -423,7 +421,7 @@ footer {
       text-align: center;
     }
   }
-  .drone{
+  .drone {
     position: relative;
     height: 65vh;
     margin-bottom: 20px;
@@ -690,7 +688,7 @@ footer {
           text-align: center;
           margin-top: 10px;
         }
-        img{
+        img {
           margin-right: 5px;
           height: 30px;
           width: 30px;
@@ -698,11 +696,11 @@ footer {
       }
     }
   }
-  .orari{
+  .orari {
     display: flex;
     justify-content: center;
     align-items: center;
-    img{
+    img {
       margin-right: 5px;
       height: 30px;
       width: 30px;
@@ -985,7 +983,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.sala-attesa-cani-open{
+.sala-attesa-cani-open {
   background-image: url(/assets/imgs/struttura/sala-attesa-cani.jpg);
   background-size: cover;
   background-position: center;
@@ -994,7 +992,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.sala-attesa-gatti-open{
+.sala-attesa-gatti-open {
   background-image: url(/assets/imgs/struttura/sala-attesa-gatti.jpg);
   background-size: cover;
   background-position: center;
@@ -1003,7 +1001,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.sala-riunioni-open{
+.sala-riunioni-open {
   background-image: url(/assets/imgs/struttura/sala-riunioni.jpg);
   background-size: cover;
   background-position: center;
@@ -1012,7 +1010,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.ufficio-imperatore-open{
+.ufficio-imperatore-open {
   background-image: url(/assets/imgs/struttura/ufficio-imperatore.jpg);
   background-size: cover;
   background-position: center;
@@ -1021,7 +1019,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.ufficio-open{
+.ufficio-open {
   background-image: url(/assets/imgs/struttura/ufficio.jpg);
   background-size: cover;
   background-position: center;
@@ -1030,7 +1028,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.spogliatoio-open{
+.spogliatoio-open {
   background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
   background-size: cover;
   background-position: center;
@@ -1039,7 +1037,7 @@ footer {
   margin: 30px;
   border-radius: 30px;
 }
-.spogliatoio2-open{
+.spogliatoio2-open {
   background-image: url(/assets/imgs/struttura/spogliatoio.jpg);
   background-size: cover;
   background-position: center;
@@ -1060,8 +1058,7 @@ footer {
   cursor: pointer;
 }
 
-
-.roomtitle{
+.roomtitle {
   text-align: center;
   text-transform: uppercase;
   font-family: $mainFontBold;
@@ -1072,7 +1069,7 @@ footer {
 //icon social
 
 .social {
-  gap:  20px;
+  gap: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1084,12 +1081,12 @@ footer {
 
 // form vet
 
-.formVet{
+.formVet {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  .formtitle{
+  .formtitle {
     display: flex;
     justify-content: start;
     text-align: left;
@@ -1098,16 +1095,16 @@ footer {
     font-size: $fontSizeLarge;
     color: $primaryColor;
   }
-  form{
+  form {
     width: 80%;
     display: flex;
     flex-direction: column;
 
-  .grid2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;  
-  }
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
     h3 {
       font-family: $mainFontBold;
       color: $primaryColor;
@@ -1133,17 +1130,17 @@ footer {
       font-size: $fontSizeMedium;
       background: #fff;
     }
-    select{
+    select {
       width: 100%;
-height: 55px;
-border: none;
-border-radius: 30px;
-margin-top: 20px;
-padding-left: 20px;
-font-family: $mainFontRegular;
-color: $primaryColor;
-font-size: $fontSizeMedium;
-background: #fff;
+      height: 55px;
+      border: none;
+      border-radius: 30px;
+      margin-top: 20px;
+      padding-left: 20px;
+      font-family: $mainFontRegular;
+      color: $primaryColor;
+      font-size: $fontSizeMedium;
+      background: #fff;
     }
     textarea {
       width: 100%;
@@ -1156,6 +1153,13 @@ background: #fff;
       color: $primaryColor;
       font-size: $fontSizeMedium;
       background: #fff;
+    }
+    h4{
+      font-family: $mainFontBold;
+      color: $primaryColor;
+      font-size: 24px;
+      text-transform: uppercase;
+      margin: 60px 0 0 40px;
     }
     .button {
       width: 100%;
@@ -1196,5 +1200,12 @@ background: #fff;
     .recaptcha {
       margin-top: 20px;
     }
-       }
+    input[type="file"] {
+      margin-top: 20px;
+      background-color: rgba(255, 255, 255, 0);
+      button {
+        color: red;
+      }
+    }
   }
+}
