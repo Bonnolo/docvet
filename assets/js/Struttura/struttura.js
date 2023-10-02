@@ -488,6 +488,7 @@ const struttura = () => {
         selector != "hiddenDesktop" &&
         selector != "hiddenMobile"
       ) {
+        selector = selector.replace("-mobile", "");
         mainElement.innerHTML = `
                                 <h1 class="roomtitle">${selector.replaceAll(
                                   "-",
