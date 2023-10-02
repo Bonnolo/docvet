@@ -28,8 +28,18 @@ const staff = () => {
                   </p>
                 </div>
               </div>
-              <div class="img-content">
-                <h1>Attenzione e professionalità</h1>
+              <div class="drone">
+                <video
+                  src="/assets/imgs/video/varie_staff.mp4"
+                  autoplay="true"
+                  muted="true"
+                  playsinline="true"
+                  loop="true"
+                  width="100%"
+                  height="100%"
+                  style="object-fit: cover; object-position: center center">
+                </video>
+                <h1>Attenzione e Professionalità</h1>
               </div>`;
         break;
       case "medico":

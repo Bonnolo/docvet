@@ -27,7 +27,7 @@ const struttura = () => {
                         </div>
                     </div>
                     <div class="drone">
-                        <video
+                      <video
                         src="/assets/imgs/video/drone_orizz_1080.mp4"
                         autoplay="true"
                         muted="true"
@@ -36,8 +36,8 @@ const struttura = () => {
                         width="100%"
                         height="100%"
                         style="object-fit: cover; object-position: center center">
-                        </video>
-                        <h1>Sentirsi al Sicuro</h1>
+                      </video>
+                      <h1>Sentirsi al Sicuro</h1>
                     </div>`;
         break;
       case "pianoterra":
