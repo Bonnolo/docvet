@@ -227,6 +227,7 @@
   z-index: 9999;
   height: 100vh;
   width: 100vw;
+  margin-top: 100px;
   .topbarHamburger {
     display: flex;
     flex-direction: column;
@@ -631,6 +632,7 @@ footer {
   justify-content: center;
   gap: 40px;
   margin-top: 50px;
+  margin-bottom: 50px;
   .contattiLeft {
     display: flex;
     justify-content: center;
