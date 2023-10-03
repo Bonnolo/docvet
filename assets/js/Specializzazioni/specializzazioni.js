@@ -119,7 +119,7 @@ const specializzazioni = () => {
         </div>
         <div class="grid-2columns">
           <div class="grid-2columns-left">
-            <img src="assets/imgs/bg.jpg" alt="img chir min" />
+            <img src="assets/imgs/struttura/preparazione-chemio.jpg" alt="preparazione chemio" />
           </div>
           <div class="grid-2columns-right">
             <p>
