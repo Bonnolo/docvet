@@ -371,6 +371,17 @@
         }
       }
     }
+    .orari {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin-right: 5px;
+        height: 30px;
+        width: 30px;
+      }
+    }
   }
 
   // End Main Contatti
