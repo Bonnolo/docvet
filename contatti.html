@@ -107,45 +107,40 @@
         <div class="contattiLeft">
           <!-- form contatti -->
           <form
-            class="formGroup"
             action="https://api.staticforms.xyz/submit"
             method="post"
+            class="formGroup"
           >
+            <!-- Replace with accesKey sent to your email -->
             <input
               type="hidden"
               name="accessKey"
               value="cb2a87ef-09e7-4f3a-ae0e-72a5722bfc25"
             />
-            <input type="text" id="$Nome" placeholder="Nome e Cognome" />
-
-            <input type="email" id="$Email" placeholder="Email" />
-
-            <textarea
-              name="messaggio"
-              id="$Messaggio"
-              placeholder="Messaggio..."
-              cols="30"
-              rows="10"
-            ></textarea>
-
+            <!-- Required -->
+            <input type="text" name="name" />
+            <!-- Optional -->
+            <input type="email" name="email" />
+            <!-- Optional -->
+            <textarea name="message"></textarea>
             <div class="checkbox">
               <input type="checkbox" id="$Privacy" required />
-
               <label for="privacy"
                 >Acconsento al trattamento dei dati personali</label
               >
             </div>
-
             <div
               class="g-recaptcha recaptcha"
               data-sitekey="6LdGa-wnAAAAAOj003YhWbnDUp9ajvVEX8KDNKDC"
             ></div>
-            <input class="button" type="submit" value="Invia" />
             <input
               type="hidden"
               name="redirectTo"
               value="https://example.com/contact/success"
             />
+            <!-- Optional -->
+            <!-- If you want replyTo to be set to specific email -->
+            <input class="button" type="submit" value="Submit" />
             <script
               src="https://www.google.com/recaptcha/api.js"
               async

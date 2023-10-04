@@ -1,4 +1,17 @@
 // Background
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 .bg {
   width: 100vw;
   background: var(
@@ -238,10 +251,10 @@
     align-items: center;
     gap: 10px;
     li {
-      font-family: $mainFontBold !important;
-      color: $primaryColor !important;
-      font-size: 10px !important;
-      text-transform: uppercase !important;
+      font-family: $mainFontBold;
+      color: $primaryColor ;
+      font-size: 10px ;
+      text-transform: uppercase ;
       img {
         width: 20px;
         position: relative;
@@ -657,6 +670,9 @@ footer {
         font-size: $fontSizeMedium;
         background: #fff;
         padding-left: 20px;
+        &:focus{
+          outline: $primaryColor auto 1px;
+        }
       }
       textarea {
         width: 100%;
@@ -745,6 +761,7 @@ footer {
       justify-content: center;
       align-items: center;
       margin-top: 20px;
+      gap: 20px;
       .contattiRightBottomLeft {
         display: flex;
         flex-direction: column;
@@ -764,11 +781,11 @@ footer {
         justify-content: center;
         align-items: center;
         p {
-          font-family: $mainFontRegular !important;
-          color: $primaryColor !important;
-          font-size: $fontSizeSmall !important;
-          text-align: center !important;
-          margin-top: 10px !important;
+          font-family: $mainFontRegular ;
+          color: $primaryColor ;
+          font-size: $fontSizeSmall ;
+          text-align: center ;
+          margin-top: 10px ;
         }
         img {
           margin-right: 5px;
@@ -776,11 +793,11 @@ footer {
           width: 30px;
         }
         a{ 
-          font-family: $mainFontRegular !important;
-          color: $primaryColor !important;
-          font-size: $fontSizeSmall !important;
-          text-align: center !important;
-          margin-top: 10px !important;
+          font-family: $mainFontRegular ;
+          color: $primaryColor ;
+          font-size: $fontSizeSmall ;
+          text-align: center ;
+          margin-top: 10px ;
         }
       }
     }
@@ -1249,6 +1266,9 @@ footer {
       color: $primaryColor;
       font-size: $fontSizeMedium;
       background: #fff;
+      &:focus{
+        outline: $primaryColor auto 1px;
+      }
     }
     select {
       width: 100%;
@@ -1256,11 +1276,14 @@ footer {
       border: none;
       border-radius: 30px;
       margin-top: 20px;
-      padding-left: 20px;
+      padding-left: 20px !important;
       font-family: $mainFontRegular;
       color: $primaryColor;
       font-size: $fontSizeMedium;
       background: #fff;
+      &:focus{
+        outline: $primaryColor auto 1px;
+      }
     }
     textarea {
       width: 100%;
@@ -1273,6 +1296,10 @@ footer {
       color: $primaryColor;
       font-size: $fontSizeMedium;
       background: #fff;
+      resize: none;
+      &:focus{
+        outline: $primaryColor auto 1px;
+      }
     }
     h4{
       font-family: $mainFontBold;
@@ -1294,6 +1321,7 @@ footer {
       box-shadow: 2px 2px 0px 1px $secondaryColor;
       cursor: pointer;
       transition: all 0.8s;
+      padding-left: 0;
     }
     .button:hover {
       box-shadow: 2px 2px 0px 1px $primaryColor;
@@ -1305,11 +1333,17 @@ footer {
       align-items: center;
       flex-direction: row;
       margin-top: 20px;
+      &:focus{
+        outline: $primaryColor auto 1px;
+      }
       input {
         margin-right: 10px;
         height: 20px;
         width: 20px;
         margin-top: 0px;
+        &:focus{
+          outline: $primaryColor auto 1px;
+        }
       }
       label {
         font-family: $mainFontRegular;
@@ -1319,13 +1353,13 @@ footer {
     }
     .recaptcha {
       margin-top: 20px;
+      &:focus{
+        outline: $primaryColor auto 1px;
+      }
     }
     input[type="file"] {
       margin-top: 20px;
       background-color: rgba(255, 255, 255, 0);
-      button {
-        color: red;
-      }
     }
   }
 }

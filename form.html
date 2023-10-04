@@ -110,7 +110,7 @@
         <input
           type="hidden"
           name="accessKey"
-          value="cb2a87ef-09e7-4f3a-ae0e-72a5722bfc25"
+          value="a9c81c01-0a55-438a-91e9-f0c0f4a5ddb6"
         />
         <div class="grid2">
           <input type="text" name="$Nome" placeholder="Nome" required />
@@ -130,13 +130,18 @@
             required
           />
           <div class="grid2">
-            <input type="text" name="$Cap" placeholder="Cap" required />
+            <input type="number" name="$Cap" placeholder="Cap" required />
             <input type="text" name="$Città" placeholder="Città" required />
           </div>
         </div>
         <div class="grid2">
-          <input type="text" name="$Telefono" placeholder="Telefono" required />
-          <input type="text" name="$Email" placeholder="Email" required />
+          <input
+            type="number"
+            name="$Telefono"
+            placeholder="Telefono"
+            required
+          />
+          <input type="email" name="$Email" placeholder="Email" required />
         </div>
         <div class="grid2">
           <select name="$Assicurazione">
@@ -171,7 +176,7 @@
         </div>
         <div class="grid2">
           <div class="grid2">
-            <input type="text" name="$Età" placeholder="Età" required />
+            <input type="number" name="$Età" placeholder="Età" required />
             <input type="text" name="$Peso" placeholder="Peso" />
           </div>
           <input type="text" name="$Chip" placeholder="Chip" required />
@@ -222,19 +227,23 @@
         </div>
         <div class="grid2">
           <input
-            type="text"
+            type="number"
             name="$Telefono-Vet"
             placeholder="Telefono"
             required
           />
-          <input type="text" name="$EmailVet" placeholder="Email" required />
+          <input type="email" name="$EmailVet" placeholder="Email" required />
         </div>
         <input
           type="hidden"
           name="redirectTo"
           value="https://example.com/contact/success"
         />
-        <input class="button" type="submit" value="Invia" />
+        <div class="grid3">
+          <div></div>
+          <input class="button" type="submit" value="Invia" />
+          <div></div>
+        </div>
       </form>
     </main>
     <footer class="custom-footer">
