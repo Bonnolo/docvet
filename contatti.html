@@ -100,21 +100,30 @@
     <main class="contatti">
       <div class="contattiLeft">
         <!-- form contatti -->
-        <form class="formGroup" action="">
-          <input type="text" id="nome" placeholder="Nome e Cognome" />
+        <form
+          class="formGroup"
+          action="https://api.staticforms.xyz/submit"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="accessKey"
+            value="a9c81c01-0a55-438a-91e9-f0c0f4a5ddb6"
+          />
+          <input type="text" id="$Nome" placeholder="Nome e Cognome" />
 
-          <input type="email" id="email" placeholder="Email" />
+          <input type="email" id="$Email" placeholder="Email" />
 
           <textarea
             name="messaggio"
-            id="messaggio"
+            id="$Messaggio"
             placeholder="Messaggio..."
             cols="30"
             rows="10"
           ></textarea>
 
           <div class="checkbox">
-            <input type="checkbox" id="privacy" required />
+            <input type="checkbox" id="$Privacy" required />
 
             <label for="privacy"
               >Acconsento al trattamento dei dati personali</label
@@ -125,7 +134,12 @@
             class="g-recaptcha recaptcha"
             data-sitekey="6LdGa-wnAAAAAOj003YhWbnDUp9ajvVEX8KDNKDC"
           ></div>
-          <button type="submit">Invia</button>
+          <input class="button" type="submit" value="Invia" />
+          <input
+            type="hidden"
+            name="redirectTo"
+            value="https://example.com/contact/success"
+          />
           <script
             src="https://www.google.com/recaptcha/api.js"
             async
