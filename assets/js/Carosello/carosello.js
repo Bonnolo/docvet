@@ -19,11 +19,11 @@ const carosello = () => {
     //console.log("Indietro");
     if (i == 0) {
       //da 0 a 2
-      homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
-      await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
-
       circleOne?.classList.remove("circle-active");
       circleThree?.classList.add("circle-active");
+
+      homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+      await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
 
       homeVideo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
       await gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
@@ -31,21 +31,21 @@ const carosello = () => {
     } else {
       if (i == 2) {
         //da 2 a 1
-        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
-        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
-
         circleThree?.classList.remove("circle-active");
         circleTwo?.classList.add("circle-active");
+
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
 
         homeVideo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
         gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       } else {
         //da 1 a 0
-        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
-        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
-
         circleTwo?.classList.remove("circle-active");
         circleOne?.classList.add("circle-active");
+
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: 1000 });
 
         homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
         gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
@@ -58,11 +58,11 @@ const carosello = () => {
     //console.log("Avanti");
     if (i == 2) {
       //da 2 a 0
-      homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
-      await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
-
       circleOne?.classList.add("circle-active");
       circleThree?.classList.remove("circle-active");
+
+      homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
+      await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
 
       homeVideo?.setAttribute("src", `assets/imgs/video/${video[0]}`);
       gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
@@ -70,21 +70,21 @@ const carosello = () => {
     } else {
       if (i == 0) {
         //da 0 a 1
-        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
-        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
-
         circleOne?.classList.remove("circle-active");
         circleTwo?.classList.add("circle-active");
+
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
 
         homeVideo?.setAttribute("src", `assets/imgs/video/${video[1]}`);
         gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
       } else {
         //da 1 a 2
-        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
-        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
-
         circleTwo?.classList.remove("circle-active");
         circleThree?.classList.add("circle-active");
+
+        homeVideoTwo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
+        await gsap.to(homeVideo, { opacity: 0, duration: 0.5, x: -1000 });
 
         homeVideo?.setAttribute("src", `assets/imgs/video/${video[2]}`);
         gsap.to(homeVideo, { opacity: 1, duration: 0, x: 0 });
