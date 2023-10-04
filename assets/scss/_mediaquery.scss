@@ -48,11 +48,11 @@
     position: relative;
     top: -30px;
     height: 15vh;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     .logo {
       padding-left: 20px;
       img {
-        width: 60%;
+        width: 240px;
       }
     }
     .head {
@@ -162,7 +162,7 @@
 
   .video {
     height: 70vh;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     .carusellButton{
       height: 95%;
     }
@@ -388,7 +388,7 @@
   // Footer Home
 
   .custom-footer {
-    margin-top: 0;
+    
   }
 
   footer {
@@ -399,7 +399,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
+    margin-top: 20px;
   }
 
   // End Footer Home
