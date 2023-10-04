@@ -36,7 +36,8 @@ const personaleMedico = [
     surname: "De Giovanni",
     picture: "./assets/imgs/staffimgs/LorenzoDeGiovanni.jpg",
     title: "Dott.",
-    description: "Intern specialist in chirurgia oncologica, dei tessuti molli e mininvasiva",
+    description:
+      "Intern specialist in chirurgia oncologica, dei tessuti molli e mininvasiva",
     study: "DVM",
   },
   {
@@ -44,7 +45,8 @@ const personaleMedico = [
     surname: "Mioni",
     picture: "./assets/imgs/staffimgs/LauraMioni.jpg",
     title: "Dott.ssa",
-    description: "Intern specialist in chirurgia oncologica, dei tessuti molli e mininvasiva",
+    description:
+      "Intern specialist in chirurgia oncologica, dei tessuti molli e mininvasiva",
     study: "DVM",
   },
   {
@@ -52,7 +54,8 @@ const personaleMedico = [
     surname: "Spoletini",
     picture: "./assets/imgs/staffimgs/RobertaSpoletini.jpg",
     title: "Dott.ssa",
-    description: "Intern specialist in chirurgia oncologica, dei tessuti molli e mininvasiva",
+    description:
+      "Intern specialist in chirurgia oncologica, dei tessuti molli e mininvasiva",
     study: "DVM",
   },
   {
